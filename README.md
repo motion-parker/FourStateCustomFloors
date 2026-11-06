@@ -15,7 +15,7 @@ Photos are grid placeholders labeled with the shot that goes there. Anything in 
 - Waterproofing system, dust control equipment, insurance
 - Tile supply and full-remodel scope answers
 - Project towns, service-area lines, hours, response time
-- Logo file (`assets/four-state-logo.png`), GBP / Facebook / Houzz links (also add to schema `sameAs`)
+- GBP / Facebook / Houzz links (also add to schema `sameAs`)
 - Town list in the service area, FAQ and schema (draft guesses, confirm with Tim)
 
 ## Preview locally

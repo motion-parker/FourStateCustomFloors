@@ -135,10 +135,6 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 .header-inner { display: flex; align-items: center; gap: 16px; height: 72px; }
 .logo { display: inline-flex; align-items: center; text-decoration: none; flex-shrink: 0; min-height: 44px; }
 .logo img { height: 48px; width: auto; }
-/* Text stand-in until four-state-logo.png lands in /assets */
-.logo-text { display: flex; flex-direction: column; line-height: 1; }
-.logo-text b { font-size: 21px; font-weight: 700; font-style: italic; color: var(--color-green-text); letter-spacing: -0.01em; }
-.logo-text small { font-size: 10px; font-weight: 700; letter-spacing: .18em; color: var(--color-text); margin-top: 4px; }
 
 .nav { flex: 1; display: flex; justify-content: center; }
 .nav ul { display: flex; gap: 28px; }
@@ -412,8 +408,6 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 .footer-top { display: flex; flex-wrap: wrap; gap: 48px; }
 .footer-brand { flex: 2 1 300px; }
 .footer-brand .logo img { height: 56px; }
-.footer-brand .logo-text b { font-size: 25px; }
-.footer-brand .logo-text small { font-size: 11px; }
 .nap { margin-top: 20px; font-style: normal; font-size: 15px; color: var(--color-text-muted); line-height: 1.7; }
 .nap a { color: var(--color-text); font-weight: 600; text-decoration: none; }
 .footer-col { flex: 1 1 180px; }
