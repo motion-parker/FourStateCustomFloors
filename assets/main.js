@@ -26,13 +26,24 @@
     set();
   });
 
-  // Close the mobile menu after tapping a link
-  document.querySelectorAll('.menu-panel a').forEach(function (a) {
-    a.addEventListener('click', function () {
-      var d = a.closest('details');
-      if (d) d.removeAttribute('open');
+  // Mobile menu: lock page scroll while open, close on link tap or Escape
+  var menu = document.querySelector('.menu');
+  if (menu) {
+    var summary = menu.querySelector('summary');
+    menu.addEventListener('toggle', function () {
+      document.body.classList.toggle('no-scroll', menu.open);
+      summary.setAttribute('aria-label', menu.open ? 'Close menu' : 'Open menu');
     });
-  });
+    menu.querySelectorAll('.menu-panel a').forEach(function (a) {
+      a.addEventListener('click', function () { menu.open = false; });
+    });
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && menu.open) { menu.open = false; summary.focus(); }
+    });
+    window.matchMedia('(min-width: 1001px)').addEventListener('change', function (m) {
+      if (m.matches) menu.open = false;
+    });
+  }
 
   // Show the chosen photo's file name in the upload box
   var file = document.getElementById('f-photo');
