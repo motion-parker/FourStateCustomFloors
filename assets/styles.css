@@ -134,7 +134,7 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 }
 .header-inner { display: flex; align-items: center; gap: 16px; height: 72px; }
 .logo { display: inline-flex; align-items: center; text-decoration: none; flex-shrink: 0; min-height: 44px; }
-.logo img { height: 48px; width: auto; }
+.logo img { height: 60px; width: auto; }
 
 .nav { flex: 1; display: flex; justify-content: center; }
 .nav ul { display: flex; gap: 28px; }
@@ -187,6 +187,7 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 /* Phone: logo left, hamburger right. Call + estimate live in the menu and the sticky bottom bar */
 @media (max-width: 768px) {
   .header-inner { height: 64px; }
+  .site-header .logo img { height: 52px; }
   .desk-only { display: none; }
   .menu summary { border: 0; width: 44px; margin-right: -10px; }
   .menu-panel { top: 64px; height: calc(100vh - 64px); height: calc(100dvh - 64px); }
@@ -407,7 +408,7 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 .site-footer { border-top: 1px solid var(--color-border); padding: 72px 0 40px; }
 .footer-top { display: flex; flex-wrap: wrap; gap: 48px; }
 .footer-brand { flex: 2 1 300px; }
-.footer-brand .logo img { height: 56px; }
+.footer-brand .logo img { height: 64px; }
 .nap { margin-top: 20px; font-style: normal; font-size: 15px; color: var(--color-text-muted); line-height: 1.7; }
 .nap a { color: var(--color-text); font-weight: 600; text-decoration: none; }
 .footer-col { flex: 1 1 180px; }
