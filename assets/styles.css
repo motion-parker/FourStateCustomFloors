@@ -404,6 +404,25 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 .form-shell .fine { margin-top: 16px; }
 .form-shell .fine a { color: var(--color-green-text); }
 
+/* ---------- Service pages ---------- */
+.page-hero { padding-top: 40px; }
+.crumbs { margin-bottom: 48px; }
+.crumbs ol { display: flex; flex-wrap: wrap; justify-content: center; gap: 4px 8px; font-size: 14px; color: var(--color-text-quiet); }
+.crumbs li + li::before { content: "›"; margin-right: 8px; }
+.crumbs a { color: var(--color-text-quiet); text-decoration: none; display: inline-flex; align-items: center; min-height: 44px; }
+.crumbs a:hover { color: var(--color-green-text); }
+.crumbs [aria-current] { display: inline-flex; align-items: center; min-height: 44px; color: var(--color-text); font-weight: 500; }
+.answer .updated { text-align: center; margin-top: 20px; }
+.check-list { flex: 2 1 560px; }
+.check-list li { display: flex; gap: 18px; padding: 24px 0; border-top: 1px solid var(--color-divider); }
+.check-list li:last-child { border-bottom: 1px solid var(--color-divider); }
+.check { font-size: 20px; font-weight: 700; line-height: 1.35; color: var(--color-green-text); }
+.check-list h3 { font-size: 21px; font-weight: 600; line-height: 1.35; letter-spacing: -0.01em; }
+.check-list p { margin-top: 4px; color: var(--color-text-muted); }
+.bento-third .bento-text p { margin-top: 6px; color: var(--color-text-muted); }
+.final-cta .section-head { margin-bottom: 36px; }
+@media (max-width: 768px) { .page-hero { padding-top: 24px; } .crumbs { margin-bottom: 32px; } }
+
 /* ---------- Footer ---------- */
 .site-footer { border-top: 1px solid var(--color-border); padding: 72px 0 40px; }
 .footer-top { display: flex; flex-wrap: wrap; gap: 48px; }

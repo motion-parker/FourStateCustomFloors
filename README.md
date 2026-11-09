@@ -23,3 +23,7 @@ Photos are grid placeholders labeled with the shot that goes there. Anything in 
 ```bash
 python3 -m http.server 8000
 ```
+
+## Service pages
+
+The five service pages (`custom-tile-showers/`, `tile-flooring/`, `backsplashes/`, `vinyl-plank-and-hardwood/`, `dust-free-tile-removal/`) are generated from `tools/build_services.py`. Edit the copy in that file and run `python3 tools/build_services.py .` from the repo root to rebuild them. Bracketed text marks facts to confirm with Tim.
