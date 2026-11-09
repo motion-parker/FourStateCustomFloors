@@ -355,7 +355,7 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
   padding: 10px 18px; font-size: 15px; font-weight: 500;
 }
 .town-notes { display: flex; flex-wrap: wrap; gap: 0 48px; max-width: 980px; margin: 56px auto 0; }
-.town-notes li { flex: 1 1 280px; padding: 20px 0; border-top: 1px solid var(--color-divider); }
+.town-notes li { flex: 1 1 200px; padding: 20px 0; border-top: 1px solid var(--color-divider); }
 .town-notes b { display: block; font-size: 17px; font-weight: 600; }
 .town-notes span { font-size: 15px; color: var(--color-text-quiet); }
 .map { margin-top: 56px; height: 420px; border-radius: var(--radius-card); overflow: hidden; }
