@@ -16,7 +16,7 @@ Photos are grid placeholders labeled with the shot that goes there. Anything in 
 - Tile supply and full-remodel scope answers
 - Project towns, service-area lines, hours, response time
 - GBP / Facebook / Houzz links (also add to schema `sameAs`)
-- Service area towns: Joplin, Pittsburg, Miami, Grove, Bentonville, Rogers (add or swap as Tim confirms)
+- Service area town list (confirm with Tim)
 
 ## Preview locally
 
