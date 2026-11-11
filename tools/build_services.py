@@ -1,6 +1,12 @@
 """Generate the five service pages for fourstatecustomfloors from one template.
 Usage (from the repo root): python3 tools/build_services.py .
 Edit the SERVICES data here and re-run; it overwrites each <slug>/index.html.
+
+Copy rules (StoryBrand): the homeowner is the hero, we are the guide.
+Say "we" in body copy. Name Tim only in the answer block (so search and AI
+tools can tie the owner to the business). Keep the business name written out
+in full: "Four State Custom Floors". Anything Tim has not confirmed stays in
+[brackets] or is listed in docs/for-tim-to-confirm.md.
 """
 import html, json, os, sys
 
@@ -11,250 +17,255 @@ STATES = ["Missouri", "Kansas", "Oklahoma", "Arkansas"]
 
 SERVICES = [
   {
-    "slug": "custom-tile-showers", "projects_sub": "Real showers Tim has built around the Four State area.", "nav": "Custom Tile Showers", "short": "Custom tile showers",
+    "slug": "custom-tile-showers", "nav": "Custom Tile Showers", "short": "Custom tile showers",
+    "projects_sub": "Real showers we've built around the Four State area.",
     "title": "Custom Tile Showers | Four State Custom Floors",
-    "desc": "Walk-in, curbless and tub-to-shower conversions built by Tim Schmit. Fully waterproofed, dust-controlled demo, written quote. Call 417-825-8240.",
+    "desc": "Walk-in showers and tub-to-shower conversions, fully waterproofed. 25+ years of tile work, a written quote up front and dust-controlled demo. Call 417-825-8240.",
     "eyebrow": "Our specialty",
     "h1": "Custom tile showers in the Four State area.",
-    "sub": "Walk-in, curbless and tub-to-shower conversions. Fully waterproofed and built by Tim, start to finish.",
+    "sub": "Get the shower you've been picturing, built to stay watertight for years. No leaks, no surprises, no dust through the house.",
     "hero_ph": "Hero: finished custom shower, straight on",
-    "answer": "Four State Custom Floors builds custom tile showers for homeowners across Missouri, Kansas, Oklahoma and Arkansas. Most showers run [$X,XXX to $XX,XXX] and take [X to X] working days from demo to grout. Tim does the work himself, from tear-out and waterproofing to the last grout line.",
+    "answer": "Four State Custom Floors builds custom tile showers for homeowners across Missouri, Kansas, Oklahoma and Arkansas. The company is owned by Tim Schmit, who has set tile for 25+ years and is on every job. Most showers run [$X,XXX to $XX,XXX] and take [X to X] working days from demo to grout.",
     "included_h": "What's included.",
     "included": [
-      ("Dust-controlled demo", "The old shower or tub comes out with the room sealed off."),
-      ("Full waterproofing", "[Waterproofing system] on every wall and the floor before any tile goes up."),
-      ("Sloped pan and drain", "Built so water runs to the drain, not into the corners."),
-      ("Tile install", "Walls, floor and ceiling if you want it, laid out before the first cut."),
-      ("Niches and benches", "Built in and waterproofed with the rest of the shower."),
-      ("Grout, sealing and cleanup", "You get the room back clean and ready to use."),
+      ("Dust-controlled demo", "Your old shower or tub comes out with the room sealed off from the rest of the house."),
+      ("Waterproofing", "[Waterproofing system] goes on the walls and floor before any tile goes up."),
+      ("Sloped pan and drain", "Water runs to the drain instead of sitting in the corners."),
+      ("Tile install", "We plan the layout with you before the first cut."),
+      ("Niches and benches", "Built in and waterproofed along with the rest of the shower."),
+      ("Grout and cleanup", "You get your bathroom back clean and ready to use."),
     ],
-    "options_h": "Your shower, your way.",
-    "options_sub": "A few of the styles Tim builds most.",
+    "options_h": "What your shower could look like.",
+    "options_sub": "A few of the styles homeowners ask us for most.",
     "options": [
-      ("Walk-in showers", "Open, easy to step into, no tub to climb over."),
-      ("Curbless showers", "Flush with the bathroom floor. Great for aging in place."),
-      ("Tub-to-shower conversions", "Swap the tub you never use for a real shower."),
-      ("Niches and benches", "Storage and a place to sit, tiled in."),
+      ("Walk-in showers", "Easy to step into, with no tub to climb over."),
+      ("Curbless showers", "Level with the bathroom floor, so there's nothing to trip on."),
+      ("Tub-to-shower conversions", "Trade the tub you never use for a shower you'll use every day."),
+      ("Niches and benches", "A place for your shampoo and a place to sit."),
       ("Tile patterns", "Stacked, offset, herringbone or vertical layouts."),
-      ("Linear and square drains", "Clean lines that match the tile."),
+      ("Drain styles", "Linear or square drains to match your tile."),
     ],
-    "steps_h": "How a shower gets built.",
+    "steps_h": "How your shower gets built.",
     "steps": [
-      ("Call or text Tim a photo.", "Send a picture of your current shower. Tim gets back to you [same day]."),
-      ("Design and written quote.", "Tim measures, helps you pick the layout and tile, and puts the price in writing."),
-      ("Demo and waterproofing.", "Old shower out, room sealed off, waterproofing in. About [X] days."),
-      ("Tile, grout and cleanup.", "Tile goes up, grout gets sealed, and the room is cleaned. About [X] days."),
+      ("Send us a photo.", "Text or call with a picture of your current shower. We'll get back to you [same day]."),
+      ("Get a design and written quote.", "We measure, help you choose the layout and tile, and put the price in writing."),
+      ("Demo and waterproofing.", "The old shower comes out, the room stays sealed off, and the waterproofing goes in."),
+      ("Tile, grout and cleanup.", "The tile goes up, the grout goes in, and we clean up before we leave."),
     ],
-    "steps_ph": "Tall: Tim waterproofing a shower",
+    "steps_ph": "Tall: waterproofing going on before tile",
     "projects": ["Walk-in shower with niche and bench", "Curbless shower with linear drain", "Tub-to-shower conversion"],
     "faqs": [
-      ("How much does a custom tile shower cost?", "Most custom tile showers Tim builds across the Four State area run [$X,XXX to $XX,XXX]. Size, tile choice, niches, benches and glass drive the price. You get a written quote before any work starts."),
-      ("How long does a tile shower take?", "Most showers take [X to X] working days from demo to grout. Tim gives you the schedule in writing with your quote."),
-      ("What waterproofing system do you use?", "Every shower gets [waterproofing system] behind the tile. It is a full membrane system, so water never reaches the studs or subfloor."),
-      ("Can you turn my tub into a walk-in shower?", "Yes. Tub-to-shower conversions are one of the most common jobs Tim does. The tub comes out, the plumbing gets moved for the new drain [confirm who handles plumbing], and the shower is built in its place."),
-      ("Can I use my bathroom during the job?", "Not the shower being rebuilt. If you have another bathroom, plan to use it for the [X to X] days the job takes."),
-      ("Do you install the glass?", "[Answer to confirm with Tim: whether he installs glass or works with a glass company he trusts.]"),
-      ("Do I have to pick out and buy the tile?", "[Answer to confirm with Tim: whether he supplies tile or sends you to a supplier he trusts.]"),
+      ("How much does a custom tile shower cost?", "Most custom tile showers we build across the Four State area run [$X,XXX to $XX,XXX]. Size, tile choice, niches, benches and glass drive the price. You get a written quote before any work starts."),
+      ("How long does a tile shower take?", "Most showers take [X to X] working days from demo to grout. You get the schedule in writing with your quote."),
+      ("What waterproofing system do you use?", "Every shower gets [waterproofing system] behind the tile, so water stays away from the studs and subfloor."),
+      ("Can you turn my tub into a walk-in shower?", "Yes. The tub comes out and a tile shower is built in its place. [Confirm with Tim: who handles moving the drain and plumbing.]"),
+      ("Can I use my bathroom during the job?", "Not the shower being rebuilt. If you have another bathroom, plan to use it while the job is underway."),
+      ("Do you install the glass?", "[Answer to confirm with Tim: whether we install glass or work with a glass company we trust.]"),
+      ("Do I have to pick out and buy the tile?", "[Answer to confirm with Tim: whether we supply tile or send you to a supplier we trust.]"),
     ],
     "related": ["tile-flooring", "backsplashes", "dust-free-tile-removal"],
     "cta_h": "Ready for a new shower?",
-    "cta_sub": "Text Tim a photo of the one you have now. He will tell you what it takes.",
+    "cta_sub": "Send us a photo of the one you have now and we'll tell you what it takes.",
   },
   {
-    "slug": "tile-flooring", "projects_sub": "Real tile floors Tim has laid around the Four State area.", "nav": "Tile Floors", "short": "Tile floors",
+    "slug": "tile-flooring", "nav": "Tile Floors", "short": "Tile floors",
+    "projects_sub": "Real tile floors we've laid around the Four State area.",
     "title": "Tile Floor Installation | Four State Custom Floors",
-    "desc": "Porcelain, ceramic and large format tile floors installed flat and tight by Tim Schmit across the Four State area. Call 417-825-8240.",
+    "desc": "Porcelain, ceramic and large format tile floors, set flat on a properly prepped subfloor across the Four State area. Call 417-825-8240.",
     "eyebrow": "Tile floors",
     "h1": "Tile floors in the Four State area.",
-    "sub": "Porcelain, ceramic and large format tile. Flat, tight and built on a floor that is ready for it.",
+    "sub": "A tile floor that looks great and stays that way, without cracked tiles or uneven edges a year from now.",
     "hero_ph": "Hero: large format tile floor, wide shot",
-    "answer": "Four State Custom Floors installs tile floors in kitchens, bathrooms, entries and whole homes across Missouri, Kansas, Oklahoma and Arkansas. Most tile floors run [$X to $X per square foot] installed and take [X to X] days, depending on size and prep. Tim checks and preps the subfloor first, because that is what keeps tile from cracking.",
+    "answer": "Four State Custom Floors installs tile floors in kitchens, bathrooms, entries and whole homes across Missouri, Kansas, Oklahoma and Arkansas. The company is owned by Tim Schmit, who has set tile for 25+ years. Most tile floors run [$X to $X per square foot] installed and take [X to X] days. We check and prep the subfloor first, because that's what keeps tile from cracking.",
     "included_h": "What's included.",
     "included": [
-      ("Old floor removal", "Dust-controlled tear-out of tile, vinyl or carpet."),
-      ("Subfloor check and prep", "Leveling and repairs so the tile sits flat."),
-      ("Underlayment", "[Backer board or uncoupling membrane] under every tile floor."),
-      ("Layout first", "Planned from the center of the room so cuts land where you will not see them."),
-      ("Install and grout", "Tight grout lines, sealed when the job calls for it."),
-      ("Transitions and cleanup", "Clean edges into the next room and a clean house when Tim leaves."),
+      ("Old floor removal", "Your old tile, vinyl or carpet comes out with dust control."),
+      ("Subfloor prep", "We level and repair the floor so your tile sits flat."),
+      ("Underlayment", "[Underlayment we use] goes down under every tile floor."),
+      ("Layout first", "We plan the layout so cuts land where you won't notice them."),
+      ("Install and grout", "Even grout lines, sealed when the tile calls for it."),
+      ("Transitions and cleanup", "Clean edges into the next room and a clean house when we leave."),
     ],
-    "options_h": "Floors Tim lays most.",
+    "options_h": "Floors homeowners ask for.",
     "options_sub": "Every one starts with a flat, solid base.",
     "options": [
-      ("Large format porcelain", "Big tiles, fewer grout lines, a clean modern look."),
-      ("Wood-look tile", "The look of hardwood that does not mind water."),
+      ("Large format porcelain", "Bigger tiles and fewer grout lines for a clean look."),
+      ("Wood-look tile", "The look of hardwood in rooms that get wet."),
       ("Patterned layouts", "Herringbone, chevron and offset patterns."),
-      ("Bathroom floors", "Often paired with a new tile shower."),
-      ("Kitchens and entries", "Hard-wearing floors for the busiest rooms."),
-      ("Heated floors", "[Confirm with Tim: whether he installs in-floor heat.]"),
+      ("Bathroom floors", "Often done along with a new tile shower."),
+      ("Kitchens and entries", "Hard-wearing floors for your busiest rooms."),
+      ("Heated floors", "[Confirm with Tim: whether we install in-floor heat.]"),
     ],
-    "steps_h": "How a tile floor goes in.",
+    "steps_h": "How your new floor goes in.",
     "steps": [
-      ("Call or text Tim a photo.", "Send a picture of the room and rough measurements if you have them."),
-      ("Measure and written quote.", "Tim checks the subfloor, talks through tile and layout, and puts the price in writing."),
-      ("Tear-out and prep.", "Old floor out with dust control, subfloor leveled and underlayment down."),
-      ("Tile, grout and cleanup.", "Tile goes down, grout goes in, and the room is cleaned."),
+      ("Send us a photo.", "Text or call with a picture of the room and rough measurements if you have them."),
+      ("Get a written quote.", "We check the subfloor, talk through tile and layout, and put the price in writing."),
+      ("Tear-out and prep.", "Your old floor comes out with dust control and the subfloor gets prepped."),
+      ("Tile, grout and cleanup.", "The tile goes down, the grout goes in, and we clean up before we leave."),
     ],
-    "steps_ph": "Tall: Tim setting large format tile",
+    "steps_ph": "Tall: large format tile being set",
     "projects": ["Large format porcelain kitchen floor", "Wood-look tile living room", "Herringbone bathroom floor"],
     "faqs": [
-      ("How much does tile flooring cost?", "Most tile floors Tim installs run [$X to $X per square foot], including prep. Tile choice, layout pattern and subfloor repairs change the price. You get a written quote first."),
-      ("How long does a tile floor take?", "A bathroom floor usually takes [X to X] days. A kitchen or larger area takes [X to X] days, plus time for the grout to cure before heavy use."),
-      ("Can you tile over my existing floor?", "Sometimes, but usually not. Tim checks what is there first. Tiling over a bad floor is one of the main reasons tile cracks later."),
-      ("Will large tiles be uneven?", "Not if the floor is flat and the tile is set right. Tim flattens the subfloor and uses [leveling system] so edges line up."),
-      ("Do you move appliances and toilets?", "[Answer to confirm with Tim: whether he pulls and resets toilets and appliances.]"),
-      ("Do I have to pick out and buy the tile?", "[Answer to confirm with Tim: whether he supplies tile or sends you to a supplier he trusts.]"),
+      ("How much does tile flooring cost?", "Most tile floors we install run [$X to $X per square foot], including prep. Tile choice, layout and subfloor repairs change the price. You get a written quote first."),
+      ("How long does a tile floor take?", "A bathroom floor usually takes [X to X] days. A kitchen or larger area takes [X to X] days, plus time for the grout to cure."),
+      ("Can you tile over my existing floor?", "Usually not. We check what's there first, because tiling over a bad floor is one of the main reasons tile cracks later."),
+      ("Will large tiles be uneven?", "Not on a flat floor with the tile set right. We prep the subfloor so the edges line up."),
+      ("Do you move appliances and toilets?", "[Answer to confirm with Tim: whether we pull and reset toilets and appliances.]"),
+      ("Do I have to pick out and buy the tile?", "[Answer to confirm with Tim: whether we supply tile or send you to a supplier we trust.]"),
     ],
     "related": ["custom-tile-showers", "vinyl-plank-and-hardwood", "dust-free-tile-removal"],
     "cta_h": "Ready for a new floor?",
-    "cta_sub": "Send Tim a photo of the room and he will tell you what it takes.",
+    "cta_sub": "Send us a photo of the room and we'll tell you what it takes.",
   },
   {
-    "slug": "backsplashes", "projects_sub": "Real backsplashes Tim has installed around the Four State area.", "nav": "Backsplashes", "short": "Backsplashes",
+    "slug": "backsplashes", "nav": "Backsplashes", "short": "Backsplashes",
+    "projects_sub": "Real backsplashes we've installed around the Four State area.",
     "title": "Kitchen Backsplash Installation | Four State Custom Floors",
-    "desc": "Kitchen backsplashes installed clean and straight in a day or two by Tim Schmit across the Four State area. Call 417-825-8240.",
+    "desc": "Kitchen tile backsplashes with clean cuts and finished edges across the Four State area. Written quote up front. Call 417-825-8240.",
     "eyebrow": "Kitchen backsplashes",
     "h1": "Kitchen backsplashes in the Four State area.",
-    "sub": "Subway, mosaic, handmade-look and full-height tile. Usually done in a day or two.",
+    "sub": "Finish your kitchen with a backsplash that looks like it was always meant to be there.",
     "hero_ph": "Hero: kitchen backsplash, straight on",
-    "answer": "Four State Custom Floors installs kitchen backsplashes across Missouri, Kansas, Oklahoma and Arkansas. Most backsplashes run [$X to $X] and are done in [1 to 2] days. Tim protects your counters, cuts clean around outlets and windows, and finishes every edge.",
+    "answer": "Four State Custom Floors installs kitchen tile backsplashes across Missouri, Kansas, Oklahoma and Arkansas. The company is owned by Tim Schmit, who has set tile for 25+ years. Most backsplashes run [$X to $X] and take [X to X] days. We protect your counters, cut clean around outlets and windows, and finish every edge.",
     "included_h": "What's included.",
     "included": [
-      ("Counter and cabinet protection", "Everything covered before work starts."),
-      ("Old backsplash removal", "If there is one, it comes out with dust control."),
-      ("Wall prep", "Patched and flat so the tile sits straight."),
-      ("Clean cuts", "Around outlets, switches and windows, with outlet extenders where needed."),
-      ("Edge finish", "Trim or finished edges where the tile stops."),
-      ("Grout, caulk and cleanup", "Sealed where needed and cleaned up the same day."),
+      ("Counter and cabinet protection", "Everything gets covered before we start."),
+      ("Old backsplash removal", "If you have one, it comes out with dust control."),
+      ("Wall prep", "We patch and flatten the wall so your tile sits straight."),
+      ("Clean cuts", "Around outlets, switches and windows."),
+      ("Finished edges", "Clean trim or finished edges where the tile stops."),
+      ("Grout, caulk and cleanup", "Your kitchen is cleaned up before we leave."),
     ],
     "options_h": "Backsplash styles.",
-    "options_sub": "A few of the looks Tim installs most.",
+    "options_sub": "A few of the looks homeowners ask for most.",
     "options": [
       ("Subway tile", "Classic, clean and easy to live with."),
-      ("Handmade-look tile", "Glossy, uneven tile with a lot of character."),
-      ("Mosaics", "Small tile on sheets for a detailed look."),
-      ("Full-height backsplash", "Tile from counter to ceiling or up to the hood."),
-      ("Herringbone and patterns", "A little more work, a lot more interest."),
-      ("Range feature wall", "A standout section behind the stove."),
+      ("Handmade-look tile", "Glossy, slightly uneven tile with a lot of character."),
+      ("Mosaics", "Small tiles on sheets for a detailed look."),
+      ("Full-height backsplash", "Tile from the counter to the ceiling or up to the hood."),
+      ("Herringbone and patterns", "A little more work for a lot more interest."),
+      ("Range feature wall", "A standout section behind your stove."),
     ],
-    "steps_h": "How a backsplash goes in.",
+    "steps_h": "How your backsplash goes in.",
     "steps": [
-      ("Call or text Tim a photo.", "Send a picture of the wall and the counters."),
-      ("Measure and written quote.", "Tim measures, talks through tile and layout, and puts the price in writing."),
-      ("Install day.", "Counters protected, tile set, cuts made around every outlet."),
-      ("Grout and cleanup.", "Grout, caulk and a clean kitchen, usually by day [two]."),
+      ("Send us a photo.", "Text or call with a picture of the wall and your counters."),
+      ("Get a written quote.", "We measure, talk through tile and layout, and put the price in writing."),
+      ("Install day.", "Your counters get covered, the tile goes up, and every outlet gets a clean cut."),
+      ("Grout and cleanup.", "We grout, caulk and leave your kitchen clean."),
     ],
-    "steps_ph": "Tall: backsplash detail around outlet",
+    "steps_ph": "Tall: backsplash detail around an outlet",
     "projects": ["Subway tile backsplash", "Full-height backsplash to the hood", "Herringbone backsplash"],
     "faqs": [
-      ("How much does a backsplash cost?", "Most kitchen backsplashes Tim installs run [$X to $X]. The size of the wall, the tile and the number of outlets and windows change the price."),
-      ("How long does a backsplash take?", "Most are done in [1 to 2] days. Bigger or patterned jobs can take a day longer."),
-      ("Do I need to clear off my counters?", "Yes, clear the counters along the wall being tiled. Tim covers them and the cabinets before he starts."),
-      ("What happens with the outlets?", "Tim cuts around them and adds outlet extenders so the covers sit flush with the new tile."),
-      ("Can you remove my old backsplash?", "Yes. Old tile comes out with dust control and the wall gets patched before the new tile goes up."),
-      ("Do I have to pick out and buy the tile?", "[Answer to confirm with Tim: whether he supplies tile or sends you to a supplier he trusts.]"),
+      ("How much does a backsplash cost?", "Most kitchen backsplashes we install run [$X to $X]. The size of the wall, the tile and the number of outlets and windows change the price."),
+      ("How long does a backsplash take?", "Most take [X to X] days. Bigger or patterned jobs can take longer."),
+      ("Do I need to clear off my counters?", "Yes, clear the counters along the wall being tiled. We cover them and your cabinets before we start."),
+      ("What happens with the outlets?", "We cut around them so the covers sit flush with the new tile. [Confirm with Tim: whether we add outlet extenders.]"),
+      ("Can you remove my old backsplash?", "Yes. The old tile comes out with dust control and the wall gets patched before the new tile goes up."),
+      ("Do I have to pick out and buy the tile?", "[Answer to confirm with Tim: whether we supply tile or send you to a supplier we trust.]"),
     ],
     "related": ["custom-tile-showers", "tile-flooring", "vinyl-plank-and-hardwood"],
     "cta_h": "Ready for a new backsplash?",
-    "cta_sub": "Send Tim a photo of the wall and he will get back to you with next steps.",
+    "cta_sub": "Send us a photo of the wall and we'll get back to you with next steps.",
   },
   {
-    "slug": "vinyl-plank-and-hardwood", "projects_sub": "Real LVP and hardwood jobs from around the Four State area.", "nav": "LVP and Hardwood", "short": "LVP and hardwood",
+    "slug": "vinyl-plank-and-hardwood", "nav": "LVP and Hardwood", "short": "LVP and hardwood",
+    "projects_sub": "Real LVP and hardwood jobs from around the Four State area.",
     "title": "LVP and Hardwood Installation | Four State Custom Floors",
-    "desc": "Luxury vinyl plank and hardwood floors installed right by Tim Schmit across the Four State area. Flat subfloor, clean trim. Call 417-825-8240.",
+    "desc": "Luxury vinyl plank and hardwood floors installed on a flat, prepped subfloor with clean trim across the Four State area. Call 417-825-8240.",
     "eyebrow": "LVP and hardwood",
     "h1": "LVP and hardwood floors in the Four State area.",
-    "sub": "Luxury vinyl plank and hardwood, installed on a flat floor with clean trim and transitions.",
+    "sub": "New floors that lie flat, lock tight and don't bounce, gap or squeak.",
     "hero_ph": "Hero: LVP living room, wide shot",
-    "answer": "Four State Custom Floors installs luxury vinyl plank (LVP) and hardwood floors across Missouri, Kansas, Oklahoma and Arkansas. Most installs run [$X to $X per square foot] and take [X to X] days for a typical home. Tim flattens the subfloor first so planks lock tight and do not bounce or gap.",
+    "answer": "Four State Custom Floors installs luxury vinyl plank (LVP) and hardwood floors across Missouri, Kansas, Oklahoma and Arkansas. The company is owned by Tim Schmit, who has 25+ years in the trade. Most installs run [$X to $X per square foot] and take [X to X] days for a typical home. We flatten the subfloor first so your new floor lies flat and stays tight.",
     "included_h": "What's included.",
     "included": [
-      ("Old floor removal", "Carpet, vinyl or tile out, with dust control."),
-      ("Subfloor flattening", "High spots ground down, low spots filled."),
-      ("Underlayment and moisture barrier", "The right one for your floor and your subfloor."),
-      ("Install", "Planks laid out so seams are staggered and the room looks right."),
-      ("Trim and transitions", "Clean edges at doorways, tile and stairs. [Confirm baseboards and quarter round.]"),
-      ("Cleanup", "Scraps hauled off and the floor cleaned."),
+      ("Old floor removal", "Carpet, vinyl or tile comes out with dust control."),
+      ("Subfloor prep", "We fix high and low spots so the floor lies flat."),
+      ("Underlayment", "The right underlayment for your floor and subfloor."),
+      ("Install", "Seams staggered so the room looks right."),
+      ("Trim and transitions", "Clean edges at doorways and where your new floor meets tile. [Confirm with Tim: baseboards and quarter round.]"),
+      ("Cleanup", "Scraps hauled off and your floor cleaned."),
     ],
-    "options_h": "Floors Tim installs.",
-    "options_sub": "Pick the look and how much water it needs to handle.",
+    "options_h": "Floors homeowners ask for.",
+    "options_sub": "Pick the look you want and how much water it needs to handle.",
     "options": [
-      ("Whole-house LVP", "One floor through the main living areas."),
+      ("Whole-house LVP", "One floor through your main living areas."),
       ("LVP in kitchens and baths", "Water-resistant floors where you need them most."),
-      ("Engineered hardwood", "Real wood on top, stable in Four State humidity."),
+      ("Engineered hardwood", "Real wood on top with a stable core underneath."),
       ("Solid hardwood", "[Confirm with Tim: prefinished only, or site-finished too.]"),
-      ("Stairs", "[Confirm with Tim: whether he wraps stairs in LVP or hardwood.]"),
-      ("Transitions to tile", "Clean lines where wood or LVP meets a tile floor."),
+      ("Stairs", "[Confirm with Tim: whether we do stairs in LVP or hardwood.]"),
+      ("Transitions to tile", "Clean lines where your new floor meets tile."),
     ],
-    "steps_h": "How a new floor goes in.",
+    "steps_h": "How your new floor goes in.",
     "steps": [
-      ("Call or text Tim a photo.", "Send pictures of the rooms and a rough square footage if you know it."),
-      ("Measure and written quote.", "Tim measures, checks the subfloor and puts the price in writing."),
-      ("Tear-out and prep.", "Old floor out, subfloor flattened and underlayment down."),
-      ("Install, trim and cleanup.", "Planks go down, trim goes on, and the house is cleaned."),
+      ("Send us a photo.", "Text or call with pictures of the rooms and a rough square footage if you know it."),
+      ("Get a written quote.", "We measure, check the subfloor and put the price in writing."),
+      ("Tear-out and prep.", "Your old floor comes out and the subfloor gets flattened."),
+      ("Install, trim and cleanup.", "The new floor goes down, the trim goes on, and we clean up before we leave."),
     ],
     "steps_ph": "Tall: LVP being installed",
     "projects": ["Whole-house LVP", "Engineered hardwood living room", "LVP kitchen and dining room"],
     "faqs": [
-      ("Should I pick LVP or hardwood?", "LVP handles water, pets and kids better and usually costs less. Hardwood is real wood and can be refinished. Tim can walk you through which fits each room."),
-      ("Is LVP waterproof?", "Most LVP is water-resistant to waterproof on the surface. Water can still get under it at the edges, so the install and transitions matter in kitchens and baths."),
-      ("How long does it take?", "Most homes take [X to X] days depending on square footage and how much prep the subfloor needs."),
+      ("Should I pick LVP or hardwood?", "LVP handles water, pets and kids better and usually costs less. Hardwood is real wood and can be refinished. We'll help you decide what fits each room."),
+      ("Is LVP waterproof?", "Most LVP is water-resistant on the surface, but water can still get under it at the edges. That's why the install and transitions matter in kitchens and baths."),
+      ("How long does it take?", "Most homes take [X to X] days, depending on square footage and how much subfloor prep is needed."),
       ("How much does it cost?", "Most installs run [$X to $X per square foot] for labor and prep. Flooring, subfloor repairs and stairs change the price. You get a written quote first."),
-      ("Do you move furniture?", "[Answer to confirm with Tim: whether he moves furniture or the homeowner clears the rooms.]"),
-      ("Do I buy the flooring?", "[Answer to confirm with Tim: whether he supplies flooring or sends you to a supplier he trusts.]"),
+      ("Do you move furniture?", "[Answer to confirm with Tim: whether we move furniture or you clear the rooms.]"),
+      ("Do I buy the flooring?", "[Answer to confirm with Tim: whether we supply flooring or send you to a supplier we trust.]"),
     ],
     "related": ["tile-flooring", "dust-free-tile-removal", "custom-tile-showers"],
     "cta_h": "Ready for new floors?",
-    "cta_sub": "Send Tim photos of the rooms and he will get back to you with next steps.",
+    "cta_sub": "Send us photos of the rooms and we'll get back to you with next steps.",
   },
   {
-    "slug": "dust-free-tile-removal", "projects_sub": "Real removal jobs from around the Four State area.", "nav": "Dust-Controlled Removal", "short": "Dust-controlled removal",
+    "slug": "dust-free-tile-removal", "nav": "Dust-Controlled Removal", "short": "Dust-controlled removal",
+    "projects_sub": "Real removal jobs from around the Four State area.",
     "title": "Dust-Controlled Tile Removal | Four State Custom Floors",
-    "desc": "Old tile out without dust through the whole house. Sealed work area, dust control equipment and full cleanup by Tim Schmit. Call 417-825-8240.",
+    "desc": "Old tile removed with the work area sealed off and dust control running, so the rest of your house stays clean. Call 417-825-8240.",
     "eyebrow": "Dust-controlled removal",
-    "h1": "Old tile out. Dust stays in the room.",
-    "sub": "Tile removal with the work area sealed off, so the rest of your house stays clean.",
+    "h1": "Your old tile out, without dust through the house.",
+    "sub": "We seal off the room so the dust stays where the work is, not on your furniture, vents and floors.",
     "hero_ph": "Hero: sealed-off room during tile removal",
-    "answer": "Four State Custom Floors removes old tile floors, shower walls and backsplashes with dust control across Missouri, Kansas, Oklahoma and Arkansas. Tim seals the work area with plastic walls and runs [dust control equipment] while he works, so the dust that normally covers a whole house stays in one room. Most removals take [X to X] days.",
+    "answer": "Four State Custom Floors removes old tile floors, shower walls and backsplashes with dust control across Missouri, Kansas, Oklahoma and Arkansas. The company is owned by Tim Schmit, who has 25+ years in the trade. We seal off the work area and run [dust control equipment], so the dust that normally covers a whole house stays in one room. Most removals take [X to X] days.",
     "included_h": "What's included.",
     "included": [
-      ("Sealed work area", "Plastic walls and zip doors around the room."),
-      ("Protected path", "Floor protection from the door to the work area."),
-      ("Dust control equipment", "[Dust control equipment] running the whole time."),
-      ("Tile and thinset removal", "Tile and the old adhesive or mortar bed come up."),
-      ("Floor left ready", "Slab or subfloor cleaned up and ready for what is next."),
-      ("Haul-off and cleanup", "Debris gone and the room vacuumed."),
+      ("Sealed work area", "The room gets closed off from the rest of your house."),
+      ("Protected path", "We cover the floor from your door to the work area."),
+      ("Dust control equipment", "[Dust control equipment] runs the whole time."),
+      ("Tile and adhesive removal", "Your old tile and what's holding it down come up."),
+      ("Floor left ready", "The slab or subfloor is cleaned up and ready for what's next."),
+      ("Haul-off and cleanup", "Debris is hauled away and the room is cleaned."),
     ],
-    "options_h": "What Tim removes.",
+    "options_h": "What we remove.",
     "options_sub": "Dust control on every one.",
     "options": [
       ("Tile floors", "Kitchens, bathrooms, entries and whole homes."),
-      ("Shower walls and pans", "The first step of a new tile shower."),
-      ("Backsplashes", "Old tile off the wall without wrecking the counters."),
-      ("Mortar beds", "Old-school thick mortar floors, broken up and hauled out."),
-      ("Tile on slab", "Ground down clean and ready for new flooring."),
+      ("Shower walls and pans", "The first step toward a new tile shower."),
+      ("Backsplashes", "Old tile off the wall without damaging your counters."),
+      ("Mortar beds", "Thick mortar floors broken up and hauled out."),
+      ("Tile on slab", "Removed and cleaned up, ready for new flooring."),
       ("Tile on wood subfloor", "Removed and checked for damage underneath."),
     ],
     "steps_h": "How dust-controlled removal works.",
     "steps": [
-      ("Call or text Tim a photo.", "Send a picture of the tile that needs to come out."),
-      ("Walkthrough and written quote.", "Tim checks the floor or wall and puts the price in writing."),
-      ("Seal and remove.", "Room sealed off, dust control running, old tile out."),
-      ("Clean up and next steps.", "Debris hauled away and the space left ready for the new install."),
+      ("Send us a photo.", "Text or call with a picture of the tile that needs to come out."),
+      ("Get a written quote.", "We look at the floor or wall and put the price in writing."),
+      ("Seal and remove.", "The room gets sealed off, dust control runs, and your old tile comes out."),
+      ("Clean up.", "Debris is hauled away and the space is ready for your new floor or shower."),
     ],
-    "steps_ph": "Tall: containment wall with zip door",
+    "steps_ph": "Tall: sealed-off room during removal",
     "projects": ["Kitchen tile floor removal", "Shower tear-out before rebuild", "Whole-house tile removal on slab"],
     "faqs": [
-      ("Is it really dust-free?", "No removal is completely dust-free, so we call it dust-controlled. With the room sealed and [dust control equipment] running, the dust stays in the work area instead of spreading through the house."),
-      ("Can I stay home during removal?", "Yes. The work area is sealed off, so most homeowners stay home. It is loud while tile is coming up."),
-      ("How long does tile removal take?", "Most rooms take [X to X] days. Whole-house removal or thick mortar beds take longer."),
-      ("Do you haul the old tile away?", "Yes. Debris is hauled off and the work area is cleaned before Tim leaves."),
-      ("Can you just remove tile without installing new flooring?", "[Answer to confirm with Tim: whether he takes removal-only jobs.]"),
+      ("Is it really dust-free?", "No removal is completely dust-free, which is why we call it dust-controlled. With the room sealed and [dust control equipment] running, the dust stays in the work area instead of spreading through your house."),
+      ("Can I stay home during removal?", "Yes. The work area is sealed off, so most homeowners stay home. It is loud while the tile is coming up."),
+      ("How long does tile removal take?", "Most rooms take [X to X] days. Whole-house removal and thick mortar beds take longer."),
+      ("Do you haul the old tile away?", "Yes. Debris is hauled off and the work area is cleaned before we leave."),
+      ("Can you remove tile without installing new flooring?", "[Answer to confirm with Tim: whether we take removal-only jobs.]"),
       ("What does removal cost?", "Most removals run [$X to $X per square foot]. Thick mortar beds and glued-down tile cost more. You get a written quote first."),
     ],
     "related": ["tile-flooring", "custom-tile-showers", "vinyl-plank-and-hardwood"],
     "cta_h": "Ready to get the old tile out?",
-    "cta_sub": "Send Tim a photo and he will tell you what it takes.",
+    "cta_sub": "Send us a photo and we'll tell you what it takes.",
   },
 ]
 BY_SLUG = {s["slug"]: s for s in SERVICES}
@@ -264,11 +275,11 @@ CARD_PH = {
   "dust-free-tile-removal": "Dust-controlled demo",
 }
 CARD_LINE = {
-  "custom-tile-showers": "Walk-in, curbless and tub-to-shower, fully waterproofed.",
-  "tile-flooring": "Porcelain and large format tile, flat and tight.",
-  "backsplashes": "Kitchen backsplashes done in a day or two.",
-  "vinyl-plank-and-hardwood": "Vinyl plank and hardwood, installed right.",
-  "dust-free-tile-removal": "Old tile out. Dust stays in the room.",
+  "custom-tile-showers": "A walk-in shower or a tub-to-shower conversion, waterproofed so it lasts.",
+  "tile-flooring": "Porcelain and large format tile, set flat and tight.",
+  "backsplashes": "Kitchen backsplashes with clean cuts around every outlet and edge.",
+  "vinyl-plank-and-hardwood": "Vinyl plank and hardwood for the rest of your home.",
+  "dust-free-tile-removal": "Your old tile comes out. The dust stays in that room.",
 }
 
 e = html.escape
@@ -308,7 +319,7 @@ def header(p):
             </nav>
             <div class="menu-ctas">
               <a class="btn btn--block" href="{p}#estimate">Get a Free Estimate</a>
-              <a class="btn btn--outline btn--block" href="tel:+14178258240">Call Tim at 417-825-8240</a>
+              <a class="btn btn--outline btn--block" href="tel:+14178258240">Call 417-825-8240</a>
             </div>
           </div>
         </details>
@@ -357,7 +368,7 @@ def footer(p):
 
   <!-- ===== Mobile sticky bar ===== -->
   <div class="mobile-bar">
-    <a class="btn btn--outline" href="tel:+14178258240">Call Tim</a>
+    <a class="btn btn--outline" href="tel:+14178258240">Call now</a>
     <a class="btn" href="{p}#estimate">Free Estimate</a>
   </div>
 
@@ -469,7 +480,7 @@ def page(s):
         <p class="subhead">{e(s["sub"])}</p>
         <div class="cta-row">
           <a class="btn" href="{p}#estimate">Get a Free Estimate</a>
-          <a class="link-cta" href="sms:+14178258240">Text Tim a photo&nbsp;›</a>
+          <a class="link-cta" href="sms:+14178258240">Text us a photo&nbsp;›</a>
         </div>
         <div class="hero-photo ph" role="img" aria-label="{e(s["nav"])} by Four State Custom Floors">
           <span>{e(s["hero_ph"])}</span>
@@ -490,7 +501,7 @@ def page(s):
       <div class="container split split--top">
         <div class="faq-head reveal">
           <h2 class="h2 h2--split" id="inc-h">{e(s["included_h"])}</h2>
-          <p class="subhead">Tim on every job, a written quote and a full cleanup, every time.</p>
+          <p class="subhead">The owner on every job, a written quote and a full cleanup, every time.</p>
         </div>
         <ul class="check-list reveal">
 {inc}
@@ -519,7 +530,7 @@ def page(s):
           <ol class="steps">
 {steps}
           </ol>
-          <p class="promise">Tim on every job · Written quote, no surprises · Dust control · Full cleanup</p>
+          <p class="promise">Owner on every job · Written quote, no surprises · Dust control · Full cleanup</p>
         </div>
         <div class="split-media reveal">
           <div class="steps-photo ph" role="img" aria-label="{e(s["steps_ph"])}"><span>{e(s["steps_ph"])}</span></div>
@@ -545,7 +556,7 @@ def page(s):
       <div class="container split split--top">
         <div class="faq-head reveal">
           <h2 class="h2 h2--split">Questions, answered.</h2>
-          <p class="subhead">Still wondering? Call Tim at <a class="link-cta" style="display:inline;font-size:inherit;white-space:nowrap" href="tel:+14178258240">417-825-8240</a>.</p>
+          <p class="subhead">Still have a question? Call <a class="link-cta" style="display:inline;font-size:inherit;white-space:nowrap" href="tel:+14178258240">417-825-8240</a>.</p>
         </div>
         <div class="faq-list reveal">
 {faqs}
@@ -557,7 +568,7 @@ def page(s):
     <section class="section" aria-labelledby="rel-h">
       <div class="container">
         <div class="section-head reveal">
-          <h2 class="h2" id="rel-h">More from Tim.</h2>
+          <h2 class="h2" id="rel-h">Other projects we do.</h2>
         </div>
         <div class="grid">
 {rel}
@@ -574,7 +585,7 @@ def page(s):
         </div>
         <div class="cta-row reveal">
           <a class="btn" href="{p}#estimate">Get a Free Estimate</a>
-          <a class="link-cta" href="tel:+14178258240">Call Tim at 417-825-8240&nbsp;›</a>
+          <a class="link-cta" href="tel:+14178258240">Call 417-825-8240&nbsp;›</a>
         </div>
       </div>
     </section>
