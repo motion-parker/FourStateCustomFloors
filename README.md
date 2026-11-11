@@ -27,3 +27,7 @@ python3 -m http.server 8000
 ## Service pages
 
 The five service pages (`custom-tile-showers/`, `tile-flooring/`, `backsplashes/`, `vinyl-plank-and-hardwood/`, `dust-free-tile-removal/`) are generated from `tools/build_services.py`. Edit the copy in that file and run `python3 tools/build_services.py .` from the repo root to rebuild them. Bracketed text marks facts to confirm with Tim.
+
+## Cache busting
+
+When you change `assets/styles.css` or `assets/main.js`, bump the `?v=` number in `index.html` and `ASSET_VERSION` in `tools/build_services.py`, then rebuild the service pages. Otherwise phones keep the old file for a while.

@@ -13,6 +13,8 @@ import html, json, os, sys
 REPO = sys.argv[1]
 SITE = "https://www.fourstatecustomfloors.com"
 UPDATED = "November 2026"
+# Bump when styles.css or main.js changes (also in index.html) so phones fetch the new files
+ASSET_VERSION = "20261111b"
 STATES = ["Missouri", "Kansas", "Oklahoma", "Arkansas"]
 
 SERVICES = [
@@ -430,7 +432,7 @@ def footer(p):
     <a class="btn" href="{p}#estimate">Free Estimate</a>
   </div>
 
-  <script src="{p}assets/main.js" defer></script>
+  <script src="{p}assets/main.js?v={ASSET_VERSION}" defer></script>
 </body>
 </html>
 '''
@@ -516,7 +518,7 @@ def page(s):
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="{p}assets/styles.css">
+  <link rel="stylesheet" href="{p}assets/styles.css?v={ASSET_VERSION}">
 
   <script type="application/ld+json">
 {schema(s)}
