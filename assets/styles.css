@@ -17,6 +17,8 @@
   --color-divider: #E3E3E3;
   --color-header-border: #ECECEC;
   --color-pill-border: #E0E1DE;
+  --color-map-land: #ECEEEA;    /* service area map: alternating state fills */
+  --color-map-land-alt: #F3F4F1;
 
   /* Type */
   --font-sans: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
@@ -359,12 +361,48 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 .town {
   background: #fff; border: 1px solid var(--color-pill-border); border-radius: var(--radius-pill);
   padding: 10px 18px; font-size: 15px; font-weight: 500;
+  font-family: inherit; color: var(--color-text); min-height: 44px; cursor: pointer;
+  transition: background-color .15s ease, border-color .15s ease, color .15s ease;
 }
+.town:hover { border-color: var(--color-green); }
+.town.is-active { background: var(--color-green); border-color: var(--color-green); color: var(--color-on-green); }
 .town-notes { display: flex; flex-wrap: wrap; gap: 0 48px; max-width: 980px; margin: 56px auto 0; }
 .town-notes li { flex: 1 1 280px; padding: 20px 0; border-top: 1px solid var(--color-divider); }
 .town-notes b { display: block; font-size: 17px; font-weight: 600; }
 .town-notes span { font-size: 15px; color: var(--color-text-quiet); }
-.map { margin-top: 56px; height: 420px; border-radius: var(--radius-card); overflow: hidden; }
+/* Service area map (inline SVG, see index.html #area) */
+.area-map { max-width: 980px; margin: 0 auto 28px; }
+.area-map svg { display: block; width: 100%; height: auto; border-radius: var(--radius-card); border: 1px solid var(--color-border); background: var(--color-surface); }
+.area-map figcaption { margin-top: 14px; text-align: center; min-height: 24px; }
+.area-map figcaption b { color: var(--color-text); font-weight: 600; }
+.map-bg { fill: var(--color-surface); }
+.st { stroke: var(--color-bg); stroke-width: 4; stroke-linejoin: round; }
+.st-kansas, .st-arkansas { fill: var(--color-map-land); }
+.st-missouri, .st-oklahoma { fill: var(--color-map-land-alt); }
+.st-name { font-size: 20px; font-weight: 700; letter-spacing: .16em; fill: var(--color-text-quiet); opacity: .75; }
+.pin { cursor: pointer; outline: none; }
+.pin-hit { fill: transparent; }
+.pin-dot { fill: var(--color-green); stroke: var(--color-bg); stroke-width: 3; transition: r .2s ease; }
+.pin-home .pin-dot { fill: var(--color-text); }
+.pin-ring { fill: none; stroke: var(--color-green); stroke-width: 2; opacity: 0; transform-box: fill-box; transform-origin: center; }
+.pin.is-active .pin-dot { r: 10px; }
+.pin.is-active .pin-ring { animation: pin-ping 1.8s ease-out infinite; }
+.pin:focus-visible .pin-dot { stroke: var(--color-green-text); stroke-width: 4; }
+.pin-label { display: none; pointer-events: none; }
+.pin-label rect { fill: var(--color-bg); stroke: var(--color-border); }
+.pin-label text { font-size: 15px; font-weight: 600; fill: var(--color-text); }
+@keyframes pin-ping { 0% { opacity: .7; transform: scale(1); } 100% { opacity: 0; transform: scale(2.6); } }
+@media (min-width: 700px) {
+  .pin.is-active .pin-label, .pin:hover .pin-label, .pin:focus-visible .pin-label, .pin-home .pin-label { display: block; }
+}
+@media (max-width: 699px) {
+  .pin-dot { r: 11px; stroke-width: 4; }
+  .pin-home .pin-dot { r: 13px; }
+  .pin.is-active .pin-dot { r: 15px; }
+  .pin-ring { r: 15px; stroke-width: 4; }
+  .st-name { font-size: 30px; }
+}
+@media (prefers-reduced-motion: reduce) { .pin.is-active .pin-ring { animation: none; opacity: .5; transform: scale(1.8); } }
 
 /* ---------- Estimate form ---------- */
 .estimate-intro { flex: 1 1 380px; }
