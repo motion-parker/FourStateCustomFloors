@@ -284,6 +284,59 @@ CARD_LINE = {
 
 e = html.escape
 
+# ---------- Real photos (see tools/photos.py) ----------
+# Each entry: photo name, alt text, object-position. Anything not listed keeps its labeled placeholder.
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from photos import img
+CARD_IMG = {
+  "custom-tile-showers": ("gray-subway-tile-walk-in-shower-penny-floor", "Walk-in shower with gray subway tile, a penny tile floor and a fold-down teak seat", "50% 55%"),
+  "tile-flooring": ("hex-mosaic-bathroom-floor-walk-in-shower", "Bathroom floor in white and gray hex mosaic with brass accent tiles", "50% 75%"),
+  "backsplashes": ("stone-subway-tile-kitchen-backsplash", "Stone subway tile backsplash behind a range", "50% 55%"),
+  "dust-free-tile-removal": ("dust-control-containment-tile-removal", "Bathroom sealed off with plastic sheeting during tile removal", "50% 45%"),
+}
+PAGE_IMG = {
+  "custom-tile-showers": {
+    "hero": ("curbless-walk-in-shower-marble-subway-tile", "Curbless walk-in shower with marble subway tile walls and a hex mosaic floor", "50% 62%"),
+    "steps": ("schluter-kerdi-waterproofing-before-tile", "Shower walls and floor covered in Schluter-KERDI waterproofing before tile", "60% 45%"),
+    "Walk-in showers": ("tiled-shower-bench-niche-detail", "Dark marble-look walk-in shower with a tiled bench and niche", "50% 60%"),
+    "Curbless showers": ("hex-mosaic-bathroom-floor-walk-in-shower", "Curbless shower with a glass panel and a hex mosaic floor that runs through the bathroom", "60% 55%"),
+    "Niches and benches": ("shower-niche-hex-mosaic-metal-trim", "Built-in shower niche with a hex mosaic back and metal trim", "50% 40%"),
+    "Tile patterns": ("hex-mosaic-brass-accent-grout-detail", "Hex mosaic tile with brass accent tiles", "50% 50%"),
+    "projects": [
+      ("Subway tile shower with teak seat and grab bar", "subway-tile-shower-teak-seat-grab-bar", "Subway tile shower with a fold-down teak seat, grab bar and handheld shower", "50% 45%"),
+      ("Gray tile shower with niche and teak seat", "gray-tile-shower-niche-teak-seat", "Gray tile shower with a hex mosaic niche, hex floor and fold-down teak seat", "50% 50%"),
+      ("Hex mosaic tub surround with brass accents", "hex-mosaic-tub-surround-brass-accents", "Hex mosaic tub surround with brass accent tiles", "50% 50%"),
+    ],
+  },
+  "tile-flooring": {
+    "hero": ("hex-mosaic-bathroom-floor-walk-in-shower", "Bathroom floor in white and gray hex mosaic with brass accents", "50% 70%"),
+    "steps": ("uncoupling-membrane-bathroom-floor-prep", "Uncoupling membrane down on a bathroom floor before tile, with the vanity covered in plastic", "50% 55%"),
+    "Patterned layouts": ("black-hex-mosaic-shower-floor-detail", "Black hex mosaic floor with tight, even grout", "50% 60%"),
+    "Bathroom floors": ("curbless-walk-in-shower-marble-subway-tile", "Hex mosaic bathroom floor running into a curbless shower", "50% 80%"),
+    "projects": [
+      ("River pebble stone floor", "river-pebble-stone-floor", "River pebble stone floor", "50% 50%"),
+      ("Black hex mosaic shower floor", "black-hex-mosaic-shower-floor-detail", "Black hex mosaic shower floor meeting the bathroom floor tile in a clean edge", "50% 60%"),
+      ("Large format porcelain kitchen floor", None, None, None),
+    ],
+  },
+  "backsplashes": {
+    "hero": ("stone-subway-tile-kitchen-backsplash", "Stone subway tile backsplash behind a range, between two windows", "50% 50%"),
+  },
+  "dust-free-tile-removal": {
+    "hero": ("dust-control-containment-tile-removal", "Bathroom sealed off with plastic sheeting and an air scrubber running during tile removal", "50% 45%"),
+    "steps": ("uncoupling-membrane-bathroom-floor-prep", "Vanity and mirror covered in plastic to keep dust off during floor work", "50% 30%"),
+  },
+}
+
+def box(cls, label, ph_text, photo=None, p="../", sizes="(min-width: 900px) 30vw, 100vw", eager=False):
+  """A .ph box: real photo if given, otherwise the labeled grid placeholder."""
+  classes = " ".join(c for c in [cls, "ph"] if c)
+  if photo and photo[0]:
+    name, alt, pos = photo
+    return f'<div class="{classes} has-img">{img(name, alt, p, sizes, pos, eager)}</div>'
+  return f'<div class="{classes}" role="img" aria-label="{e(label)}"><span>{e(ph_text)}</span></div>'
+
+
 def header(p):
   return f'''  <a class="skip-link" href="#main">Skip to content</a>
 
@@ -409,8 +462,9 @@ def schema(s):
 def page(s):
   p = "../"
   inc = "\n".join(f'          <li><span class="check" aria-hidden="true">✓</span><div><h3>{e(t)}</h3><p>{e(d)}</p></div></li>' for t, d in s["included"])
+  pi = PAGE_IMG.get(s["slug"], {})
   opts = "\n".join(f'''          <article class="bento-card bento-third reveal">
-            <div class="ph" role="img" aria-label="{e(t)}"><span>{e(t)}</span></div>
+            {box("", t, t, pi.get(t))}
             <div class="bento-text"><h3 class="h3">{e(t)}.</h3><p>{e(d)}</p></div>
           </article>''' for t, d in s["options"])
   steps = "\n".join(f'''            <li class="step">
@@ -420,17 +474,18 @@ def page(s):
                 <p>{e(d)}</p>
               </div>
             </li>''' for i, (t, d) in enumerate(s["steps"], 1))
+  proj_list = pi.get("projects") or [(t, None, None, None) for t in s["projects"]]
   projs = "\n".join(f'''          <article class="project reveal">
-            <div class="ph" role="img" aria-label="{e(t)}"><span>Project photo</span></div>
+            {box("", t, "Project photo", (n, a, pos) if n else None)}
             <h3>{e(t)}</h3>
             <p class="caption">[Town, ST]</p>
-          </article>''' for t in s["projects"])
+          </article>''' for t, n, a, pos in proj_list)
   faqs = "\n".join(f'''          <div class="faq-item">
             <h3>{e(q)}</h3>
             <p>{e(a)}</p>
           </div>''' for q, a in s["faqs"])
   rel = "\n".join(f'''          <a class="card-link svc reveal" href="{p}{r}/">
-            <div class="ph" role="img" aria-label="{e(BY_SLUG[r]['nav'])}"><span>{e(CARD_PH[r])}</span></div>
+            {box("", BY_SLUG[r]['nav'], CARD_PH[r], CARD_IMG.get(r), sizes="(min-width: 900px) 30vw, 100vw")}
             <div class="card-body">
               <h3 class="h3">{e(BY_SLUG[r]['short'])}.</h3>
               <p>{e(CARD_LINE[r])}</p>
@@ -482,9 +537,7 @@ def page(s):
           <a class="btn" href="{p}#estimate">Get a Free Estimate</a>
           <a class="link-cta" href="sms:+14178258240">Text us a photo&nbsp;›</a>
         </div>
-        <div class="hero-photo ph" role="img" aria-label="{e(s["nav"])} by Four State Custom Floors">
-          <span>{e(s["hero_ph"])}</span>
-        </div>
+        {box("hero-photo", s["nav"] + " by Four State Custom Floors", s["hero_ph"], pi.get("hero"), sizes="(min-width: 1240px) 1192px, 100vw", eager=True)}
       </div>
     </section>
 
@@ -533,7 +586,7 @@ def page(s):
           <p class="promise">Owner on every job · Written quote, no surprises · Dust control · Full cleanup</p>
         </div>
         <div class="split-media reveal">
-          <div class="steps-photo ph" role="img" aria-label="{e(s["steps_ph"])}"><span>{e(s["steps_ph"])}</span></div>
+          {box("steps-photo", s["steps_ph"], s["steps_ph"], pi.get("steps"), sizes="(min-width: 900px) 45vw, 100vw")}
         </div>
       </div>
     </section>

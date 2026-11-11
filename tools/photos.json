@@ -1,0 +1,170 @@
+{
+ "1": {
+  "name": "black-hex-mosaic-shower-floor-detail",
+  "widths": [
+   640,
+   1000
+  ],
+  "w": 1536,
+  "h": 2048
+ },
+ "2": {
+  "name": "dark-marble-look-walk-in-shower-bench-niche",
+  "widths": [
+   640,
+   1000
+  ],
+  "w": 1536,
+  "h": 2048
+ },
+ "3": {
+  "name": "shower-niche-hex-mosaic-metal-trim",
+  "widths": [
+   640,
+   1000
+  ],
+  "w": 1536,
+  "h": 2048
+ },
+ "4": {
+  "name": "gray-tile-shower-niche-teak-seat",
+  "widths": [
+   640,
+   1000
+  ],
+  "w": 1500,
+  "h": 1420
+ },
+ "5": {
+  "name": "schluter-kerdi-waterproofing-before-tile",
+  "widths": [
+   640,
+   1000
+  ],
+  "w": 1536,
+  "h": 2048
+ },
+ "6": {
+  "name": "stone-subway-tile-kitchen-backsplash",
+  "widths": [
+   640,
+   1000,
+   1600
+  ],
+  "w": 2048,
+  "h": 1536
+ },
+ "7": {
+  "name": "dust-control-containment-tile-removal",
+  "widths": [
+   640,
+   1000
+  ],
+  "w": 1536,
+  "h": 2048
+ },
+ "8": {
+  "name": "large-format-wall-tile-leveling-system",
+  "widths": [
+   640,
+   1000
+  ],
+  "w": 1536,
+  "h": 2048
+ },
+ "9": {
+  "name": "subway-tile-shower-teak-seat-grab-bar",
+  "widths": [
+   640,
+   1000
+  ],
+  "w": 1536,
+  "h": 2048
+ },
+ "10": {
+  "name": "gray-subway-tile-walk-in-shower-penny-floor",
+  "widths": [
+   640,
+   1000
+  ],
+  "w": 1536,
+  "h": 2048
+ },
+ "11": {
+  "name": "uncoupling-membrane-bathroom-floor-prep",
+  "widths": [
+   640,
+   1000
+  ],
+  "w": 1536,
+  "h": 2048
+ },
+ "12": {
+  "name": "hex-mosaic-tub-surround-brass-accents",
+  "widths": [
+   640,
+   1000
+  ],
+  "w": 1536,
+  "h": 2048
+ },
+ "13": {
+  "name": "hex-mosaic-bathroom-floor-walk-in-shower",
+  "widths": [
+   640,
+   1000
+  ],
+  "w": 1536,
+  "h": 2048
+ },
+ "14": {
+  "name": "curbless-walk-in-shower-marble-subway-tile",
+  "widths": [
+   640,
+   1000
+  ],
+  "w": 1536,
+  "h": 2048
+ },
+ "15": {
+  "name": "floral-mosaic-medallion-inlay",
+  "widths": [
+   640
+  ],
+  "w": 840,
+  "h": 840
+ },
+ "16": {
+  "name": "river-pebble-stone-floor",
+  "widths": [
+   640,
+   1000
+  ],
+  "w": 1080,
+  "h": 1440
+ },
+ "17": {
+  "name": "shower-floor-square-drain-detail",
+  "widths": [
+   640
+  ],
+  "w": 760,
+  "h": 620
+ },
+ "18": {
+  "name": "hex-mosaic-brass-accent-grout-detail",
+  "widths": [
+   640
+  ],
+  "w": 800,
+  "h": 600
+ },
+ "19": {
+  "name": "tiled-shower-bench-niche-detail",
+  "widths": [
+   640
+  ],
+  "w": 676,
+  "h": 740
+ }
+}

@@ -124,6 +124,11 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
   color: #5A5E58; background: #fff; padding: 8px 14px; border-radius: 999px;
 }
 
+/* Real photos fill their .ph box; the box keeps its size from the layout rules */
+.ph.has-img { padding: 0; background: var(--color-surface); }
+.has-img { position: relative; overflow: hidden; }
+.has-img > img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; display: block; }
+
 /* ---------- Header ---------- */
 .site-header {
   position: sticky; top: 0; z-index: 50;
