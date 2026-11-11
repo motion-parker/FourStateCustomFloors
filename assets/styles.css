@@ -427,6 +427,8 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 .bento-third .bento-text p { margin-top: 6px; color: var(--color-text-muted); }
 .final-cta .section-head { margin-bottom: 36px; }
 @media (max-width: 768px) { .page-hero { padding-top: 24px; } .crumbs { margin-bottom: 32px; } }
+/* Service page headlines are longer than the homepage one: size them to the screen on phones so they stay at 3 lines or fewer */
+@media (max-width: 600px) { .page-hero .h1 { font-size: clamp(32px, 9.6vw, 46px); } }
 
 /* ---------- Footer ---------- */
 .site-footer { border-top: 1px solid var(--color-border); padding: 72px 0 40px; }
