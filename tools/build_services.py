@@ -292,7 +292,7 @@ CARD_IMG = {
   "custom-tile-showers": ("gray-subway-tile-walk-in-shower-penny-floor", "Walk-in shower with gray subway tile, a penny tile floor and a fold-down teak seat", "50% 55%"),
   "tile-flooring": ("hex-mosaic-bathroom-floor-walk-in-shower", "Bathroom floor in white and gray hex mosaic with brass accent tiles", "50% 75%"),
   "backsplashes": ("stone-subway-tile-kitchen-backsplash", "Stone subway tile backsplash behind a range", "50% 55%"),
-  "dust-free-tile-removal": ("dust-control-containment-tile-removal", "Bathroom sealed off with plastic sheeting during tile removal", "50% 45%"),  "vinyl-plank-and-hardwood": ("wood-look-plank-floor-bedroom", "Wide wood-look plank floor installed through an empty room, seams staggered", "50% 60%"),
+  "dust-free-tile-removal": ("dust-control-containment-tile-removal", "Bathroom sealed off with plastic sheeting during tile removal", "50% 45%"),  "vinyl-plank-and-hardwood": ("gray-wood-look-lvp-floor-bedroom", "Gray wood-look vinyl plank floor with staggered seams across a bedroom", "50% 50%"),
 }
 PAGE_IMG = {
   "custom-tile-showers": {
@@ -324,7 +324,7 @@ PAGE_IMG = {
     "hero": ("stone-subway-tile-kitchen-backsplash", "Stone subway tile backsplash behind a range, between two windows", "50% 50%"),
   },
   "vinyl-plank-and-hardwood": {
-    "hero": ("wood-look-plank-floor-bedroom", "Wide wood-look plank floor installed through an empty room, seams staggered", "50% 55%"),
+    "hero": ("gray-wood-look-lvp-floor-bedroom", "Gray wood-look vinyl plank floor with staggered seams across a bedroom", "50% 55%"),
     "Whole-house LVP": ("wood-look-plank-floor-bedroom", "Wood-look plank floor with long, staggered planks", "50% 75%"),
   },
   "dust-free-tile-removal": {
