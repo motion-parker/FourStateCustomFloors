@@ -23,7 +23,7 @@ SERVICES = [
     "desc": "Walk-in showers and tub-to-shower conversions, fully waterproofed. 25+ years of tile work, a written quote up front and dust-controlled demo. Call 417-825-8240.",
     "eyebrow": "Our specialty",
     "h1": "Custom tile showers in the Four State area.",
-    "sub": "Get the shower you've been picturing, built to stay watertight for years. No leaks, no surprises, no dust through the house.",
+    "sub": "Get the shower you've been picturing, built by a tile setter with 25+ years in the trade and waterproofed to stay dry for decades. No leaks, no surprises, no dust through the house.",
     "hero_ph": "Hero: finished custom shower, straight on",
     "answer": "Four State Custom Floors builds custom tile showers for homeowners across Missouri, Kansas, Oklahoma and Arkansas. The company is owned by Tim Schmit, who has set tile for 25+ years and is on every job. Most showers run [$X,XXX to $XX,XXX] and take [X to X] working days from demo to grout.",
     "included_h": "What's included.",
@@ -64,7 +64,7 @@ SERVICES = [
       ("Do I have to pick out and buy the tile?", "[Answer to confirm with Tim: whether we supply tile or send you to a supplier we trust.]"),
     ],
     "related": ["tile-flooring", "backsplashes", "dust-free-tile-removal"],
-    "cta_h": "Ready for a new shower?",
+    "cta_h": "Ready for a shower you love walking into?",
     "cta_sub": "Send us a photo of the one you have now and we'll tell you what it takes.",
   },
   {
@@ -74,7 +74,7 @@ SERVICES = [
     "desc": "Porcelain, ceramic and large format tile floors, set flat on a properly prepped subfloor across the Four State area. Call 417-825-8240.",
     "eyebrow": "Tile floors",
     "h1": "Tile floors in the Four State area.",
-    "sub": "A tile floor that looks great and stays that way, without cracked tiles or uneven edges a year from now.",
+    "sub": "A tile floor that looks great on day one and still looks great in year twenty. 25+ years of setting tile taught us it all starts under the tile.",
     "hero_ph": "Hero: large format tile floor, wide shot",
     "answer": "Four State Custom Floors installs tile floors in kitchens, bathrooms, entries and whole homes across Missouri, Kansas, Oklahoma and Arkansas. The company is owned by Tim Schmit, who has set tile for 25+ years. Most tile floors run [$X to $X per square foot] installed and take [X to X] days. We check and prep the subfloor first, because that's what keeps tile from cracking.",
     "included_h": "What's included.",
@@ -87,7 +87,7 @@ SERVICES = [
       ("Transitions and cleanup", "Clean edges into the next room and a clean house when we leave."),
     ],
     "options_h": "Floors homeowners ask for.",
-    "options_sub": "Every one starts with a flat, solid base.",
+    "options_sub": "Every one starts with a flat, solid base. That's the part 25+ years taught us never to rush.",
     "options": [
       ("Large format porcelain", "Bigger tiles and fewer grout lines for a clean look."),
       ("Wood-look tile", "The look of hardwood in rooms that get wet."),
@@ -114,7 +114,7 @@ SERVICES = [
       ("Do I have to pick out and buy the tile?", "[Answer to confirm with Tim: whether we supply tile or send you to a supplier we trust.]"),
     ],
     "related": ["custom-tile-showers", "vinyl-plank-and-hardwood", "dust-free-tile-removal"],
-    "cta_h": "Ready for a new floor?",
+    "cta_h": "Ready for a floor you never have to think about?",
     "cta_sub": "Send us a photo of the room and we'll tell you what it takes.",
   },
   {
@@ -124,7 +124,7 @@ SERVICES = [
     "desc": "Kitchen tile backsplashes with clean cuts and finished edges across the Four State area. Written quote up front. Call 417-825-8240.",
     "eyebrow": "Kitchen backsplashes",
     "h1": "Kitchen backsplashes in the Four State area.",
-    "sub": "Finish your kitchen with a backsplash that looks like it was always meant to be there.",
+    "sub": "Finish your kitchen with a backsplash that looks like it was always meant to be there: straight lines, clean cuts and edges that look finished, set by hands with 25+ years of practice.",
     "hero_ph": "Hero: kitchen backsplash, straight on",
     "answer": "Four State Custom Floors installs kitchen tile backsplashes across Missouri, Kansas, Oklahoma and Arkansas. The company is owned by Tim Schmit, who has set tile for 25+ years. Most backsplashes run [$X to $X] and take [X to X] days. We protect your counters, cut clean around outlets and windows, and finish every edge.",
     "included_h": "What's included.",
@@ -164,7 +164,7 @@ SERVICES = [
       ("Do I have to pick out and buy the tile?", "[Answer to confirm with Tim: whether we supply tile or send you to a supplier we trust.]"),
     ],
     "related": ["custom-tile-showers", "tile-flooring", "vinyl-plank-and-hardwood"],
-    "cta_h": "Ready for a new backsplash?",
+    "cta_h": "Ready to finish your kitchen?",
     "cta_sub": "Send us a photo of the wall and we'll get back to you with next steps.",
   },
   {
@@ -174,7 +174,7 @@ SERVICES = [
     "desc": "Luxury vinyl plank and hardwood floors installed on a flat, prepped subfloor with clean trim across the Four State area. Call 417-825-8240.",
     "eyebrow": "LVP and hardwood",
     "h1": "LVP and hardwood floors in the Four State area.",
-    "sub": "New floors that lie flat, lock tight and don't bounce, gap or squeak.",
+    "sub": "New floors that lie flat, lock tight and don't bounce, gap or squeak. Same 25+ years of care we put into every tile job.",
     "hero_ph": "Hero: LVP living room, wide shot",
     "answer": "Four State Custom Floors installs luxury vinyl plank (LVP) and hardwood floors across Missouri, Kansas, Oklahoma and Arkansas. The company is owned by Tim Schmit, who has 25+ years in the trade. Most installs run [$X to $X per square foot] and take [X to X] days for a typical home. We flatten the subfloor first so your new floor lies flat and stays tight.",
     "included_h": "What's included.",
@@ -214,7 +214,7 @@ SERVICES = [
       ("Do I buy the flooring?", "[Answer to confirm with Tim: whether we supply flooring or send you to a supplier we trust.]"),
     ],
     "related": ["tile-flooring", "dust-free-tile-removal", "custom-tile-showers"],
-    "cta_h": "Ready for new floors?",
+    "cta_h": "Ready for floors that feel solid underfoot?",
     "cta_sub": "Send us photos of the rooms and we'll get back to you with next steps.",
   },
   {
@@ -224,7 +224,7 @@ SERVICES = [
     "desc": "Old tile removed with the work area sealed off and dust control running, so the rest of your house stays clean. Call 417-825-8240.",
     "eyebrow": "Dust-controlled removal",
     "h1": "Your old tile out, without dust through the house.",
-    "sub": "We seal off the room so the dust stays where the work is, not on your furniture, vents and floors.",
+    "sub": "We seal off the room so the dust stays where the work is, not on your furniture, vents and floors. Your house stays livable while the old tile comes out.",
     "hero_ph": "Hero: sealed-off room during tile removal",
     "answer": "Four State Custom Floors removes old tile floors, shower walls and backsplashes with dust control across Missouri, Kansas, Oklahoma and Arkansas. The company is owned by Tim Schmit, who has 25+ years in the trade. We seal off the work area and run [dust control equipment], so the dust that normally covers a whole house stays in one room. Most removals take [X to X] days.",
     "included_h": "What's included.",
@@ -268,6 +268,33 @@ SERVICES = [
     "cta_sub": "Send us a photo and we'll tell you what it takes.",
   },
 ]
+STAKES = {
+  "custom-tile-showers": ("What a bad shower costs you.", "Most of it hides behind the tile, where you won't see it for years.", [
+    ("Water behind the wall.", "Skip or rush the waterproofing and the studs soak for years before you notice."),
+    ("A pan that holds water.", "A flat or badly sloped floor leaves puddles in the corners and grows mold."),
+    ("Paying for it twice.", "A cheap shower that fails in a few years costs more than one built right the first time."),
+  ]),
+  "tile-flooring": ("What a bad tile floor costs you.", "Most tile problems start under the tile, not on top of it.", [
+    ("Cracked tile.", "Tile set on a floor that flexes cracks, usually within a year or two."),
+    ("Edges that catch your toes.", "Large tiles set on an uneven floor leave lips you feel every time you walk across."),
+    ("Paying for it twice.", "Cracked tile can't be patched well. Usually the whole floor comes back up."),
+  ]),
+  "backsplashes": ("What a rushed backsplash costs you.", "It sits at eye level, so every mistake is in plain sight.", [
+    ("Crooked lines.", "A wall that isn't checked first throws every row off."),
+    ("Ugly cuts.", "Chipped tile around outlets and windows is the first thing guests notice."),
+    ("Edges that look unfinished.", "Raw tile ends make a new kitchen look half done."),
+  ]),
+  "vinyl-plank-and-hardwood": ("What a bad floor install costs you.", "LVP and hardwood are only as good as the floor under them.", [
+    ("Bouncy, hollow spots.", "High and low spots left in the subfloor make the floor flex and click."),
+    ("Seams that gap.", "Planks forced over a bad base pull apart over time."),
+    ("Water under the edges.", "Sloppy transitions in kitchens and baths let water get under the floor."),
+  ]),
+  "dust-free-tile-removal": ("What a messy tear-out costs you.", "Tile dust is fine, heavy and goes everywhere.", [
+    ("Dust in every room.", "It settles on furniture, in vents and in places you'll be cleaning for weeks."),
+    ("A damaged subfloor.", "Rough removal can gouge the slab or wood, which means more repairs before new flooring."),
+    ("A mess left behind.", "Debris and adhesive left on the floor slows down whatever comes next."),
+  ]),
+}
 BY_SLUG = {s["slug"]: s for s in SERVICES}
 CARD_PH = {
   "custom-tile-showers": "Custom tile shower", "tile-flooring": "Tile floor",
@@ -278,7 +305,7 @@ CARD_LINE = {
   "custom-tile-showers": "A walk-in shower or a tub-to-shower conversion, waterproofed so it lasts.",
   "tile-flooring": "Porcelain and large format tile, set flat and tight.",
   "backsplashes": "Kitchen backsplashes with clean cuts around every outlet and edge.",
-  "vinyl-plank-and-hardwood": "Vinyl plank and hardwood for the rest of your home.",
+  "vinyl-plank-and-hardwood": "Vinyl plank and hardwood for the rest of your home, from the first row to the last cut.",
   "dust-free-tile-removal": "Your old tile comes out. The dust stays in that room.",
 }
 
@@ -437,6 +464,8 @@ def page(s):
               <span class="more">Learn more ›</span>
             </div>
           </a>''' for r in s["related"])
+  sh, ssub, sitems = STAKES[s["slug"]]
+  stakes = "\n".join(f'          <li><h3>{e(t)}</h3><p>{e(d)}</p></li>' for t, d in sitems)
   url = f"{SITE}/{s['slug']}/"
   return f'''<!doctype html>
 <html lang="en">
@@ -492,7 +521,25 @@ def page(s):
     <section class="answer" aria-label="About this service">
       <div class="container">
         <p class="lead reveal">{e(s["answer"])}</p>
+        <ul class="stats reveal">
+          <li class="stat"><b>25+</b><span>Years setting tile</span></li>
+          <li class="stat"><b>Owner</b><span>On every job</span></li>
+          <li class="stat"><b>5.0 ★</b><span>13 five-star Google reviews</span></li>
+        </ul>
         <p class="caption updated">Last updated {UPDATED}</p>
+      </div>
+    </section>
+
+    <!-- ===== Stakes ===== -->
+    <section class="section" aria-labelledby="stakes-h">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2 class="h2" id="stakes-h">{e(sh)}</h2>
+          <p class="subhead">{e(ssub)}</p>
+        </div>
+        <ul class="stakes-list reveal">
+{stakes}
+        </ul>
       </div>
     </section>
 
@@ -501,7 +548,7 @@ def page(s):
       <div class="container split split--top">
         <div class="faq-head reveal">
           <h2 class="h2 h2--split" id="inc-h">{e(s["included_h"])}</h2>
-          <p class="subhead">The owner on every job, a written quote and a full cleanup, every time.</p>
+          <p class="subhead">The way we\'ve done it for 25+ years: the owner on every job, a written quote and a full cleanup.</p>
         </div>
         <ul class="check-list reveal">
 {inc}
@@ -542,7 +589,7 @@ def page(s):
     <section class="section" aria-labelledby="proj-h">
       <div class="container">
         <div class="section-head reveal">
-          <h2 class="h2" id="proj-h">Recent jobs.</h2>
+          <h2 class="h2" id="proj-h">Recent work.</h2>
           <p class="subhead">{e(s["projects_sub"])}</p>
         </div>
         <div class="grid">
@@ -556,7 +603,7 @@ def page(s):
       <div class="container split split--top">
         <div class="faq-head reveal">
           <h2 class="h2 h2--split">Questions, answered.</h2>
-          <p class="subhead">Still have a question? Call <a class="link-cta" style="display:inline;font-size:inherit;white-space:nowrap" href="tel:+14178258240">417-825-8240</a>.</p>
+          <p class="subhead">Have a question that isn\'t here? Call <a class="link-cta" style="display:inline;font-size:inherit;white-space:nowrap" href="tel:+14178258240">417-825-8240</a> and talk it over.</p>
         </div>
         <div class="faq-list reveal">
 {faqs}
@@ -568,7 +615,7 @@ def page(s):
     <section class="section" aria-labelledby="rel-h">
       <div class="container">
         <div class="section-head reveal">
-          <h2 class="h2" id="rel-h">Other projects we do.</h2>
+          <h2 class="h2" id="rel-h">More for your home.</h2>
         </div>
         <div class="grid">
 {rel}
