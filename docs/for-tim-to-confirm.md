@@ -22,7 +22,7 @@ These show on the site in [brackets].
 
 **Products and methods**
 - Waterproofing system on every shower (Schluter, Wedi, Laticrete, other): ________
-  - Job photos show Schluter-KERDI on shower walls and what looks like Schluter DITRA under floor tile. Confirm these are what we use on every job.
+  - Job photos show Schluter-KERDI on shower walls and what looks like Schluter DITRA under floor tile. A drain photo also shows a Schluter drain grate. Confirm these are what we use on every job.
 - Underlayment under tile floors (backer board, uncoupling membrane, other): ________
 - Dust control equipment used during demo: ________
 

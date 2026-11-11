@@ -302,6 +302,7 @@ PAGE_IMG = {
     "Curbless showers": ("hex-mosaic-bathroom-floor-walk-in-shower", "Curbless shower with a glass panel and a hex mosaic floor that runs through the bathroom", "60% 55%"),
     "Niches and benches": ("shower-niche-hex-mosaic-metal-trim", "Built-in shower niche with a hex mosaic back and metal trim", "50% 40%"),
     "Tile patterns": ("hex-mosaic-brass-accent-grout-detail", "Hex mosaic tile with brass accent tiles", "50% 50%"),
+    "Drain styles": ("schluter-shower-drain-pebble-floor-detail", "Square stainless steel shower drain set flush in a river pebble floor", "50% 50%"),
     "projects": [
       ("Subway tile shower with teak seat and grab bar", "subway-tile-shower-teak-seat-grab-bar", "Subway tile shower with a fold-down teak seat, grab bar and handheld shower", "50% 45%"),
       ("Gray tile shower with niche and teak seat", "gray-tile-shower-niche-teak-seat", "Gray tile shower with a hex mosaic niche, hex floor and fold-down teak seat", "50% 50%"),

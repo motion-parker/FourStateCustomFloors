@@ -166,5 +166,14 @@
   ],
   "w": 676,
   "h": 740
+ },
+ "20": {
+  "name": "schluter-shower-drain-pebble-floor-detail",
+  "widths": [
+   640,
+   1000
+  ],
+  "w": 1080,
+  "h": 1440
  }
 }
