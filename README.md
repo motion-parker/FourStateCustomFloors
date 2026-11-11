@@ -31,3 +31,7 @@ The five service pages (`custom-tile-showers/`, `tile-flooring/`, `backsplashes/
 ## Cache busting
 
 When you change `assets/styles.css` or `assets/main.js`, bump the `?v=` number in `index.html` and `ASSET_VERSION` in `tools/build_services.py`, then rebuild the service pages. Otherwise phones keep the old file for a while.
+
+## Launch checklist
+
+- Switch the og:image and twitter:image URLs (index.html and tools/build_services.py) from the github.io preview address to https://www.fourstatecustomfloors.com/assets/share-image.jpg, then rebuild the service pages.
