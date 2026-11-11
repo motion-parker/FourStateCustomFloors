@@ -14,7 +14,7 @@ REPO = sys.argv[1]
 SITE = "https://www.fourstatecustomfloors.com"
 UPDATED = "November 2026"
 # Bump when styles.css or main.js changes (also in index.html) so phones fetch the new files
-ASSET_VERSION = "20261111d"
+ASSET_VERSION = "20261111e"
 STATES = ["Missouri", "Kansas", "Oklahoma", "Arkansas"]
 
 SERVICES = [

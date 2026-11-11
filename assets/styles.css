@@ -70,7 +70,7 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 
 /* ---------- Type ---------- */
 .h1 { font-size: clamp(46px, 6.4vw, 92px); font-weight: 700; line-height: 1.02; letter-spacing: -0.035em; }
-.h1-accent { color: var(--color-green); } /* brand green by request; decorative headline accent only */
+.accent { color: var(--color-green); } /* brand green by request: one key word per headline */
 .h2 { font-size: clamp(40px, 5vw, 72px); font-weight: 700; line-height: 1.05; letter-spacing: -0.03em; }
 .h2--split { font-size: clamp(40px, 4.6vw, 64px); }
 .h3-lg { font-size: 32px; font-weight: 700; line-height: 1.2; letter-spacing: -0.02em; }
