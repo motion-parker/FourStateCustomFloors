@@ -268,33 +268,6 @@ SERVICES = [
     "cta_sub": "Send us a photo and we'll tell you what it takes.",
   },
 ]
-STAKES = {
-  "custom-tile-showers": ("What a bad shower costs you.", "Most of it hides behind the tile, where you won't see it for years.", [
-    ("Water behind the wall.", "Skip or rush the waterproofing and the studs soak for years before you notice."),
-    ("A pan that holds water.", "A flat or badly sloped floor leaves puddles in the corners and grows mold."),
-    ("Paying for it twice.", "A cheap shower that fails in a few years costs more than one built right the first time."),
-  ]),
-  "tile-flooring": ("What a bad tile floor costs you.", "Most tile problems start under the tile, not on top of it.", [
-    ("Cracked tile.", "Tile set on a floor that flexes cracks, usually within a year or two."),
-    ("Edges that catch your toes.", "Large tiles set on an uneven floor leave lips you feel every time you walk across."),
-    ("Paying for it twice.", "Cracked tile can't be patched well. Usually the whole floor comes back up."),
-  ]),
-  "backsplashes": ("What a rushed backsplash costs you.", "It sits at eye level, so every mistake is in plain sight.", [
-    ("Crooked lines.", "A wall that isn't checked first throws every row off."),
-    ("Ugly cuts.", "Chipped tile around outlets and windows is the first thing guests notice."),
-    ("Edges that look unfinished.", "Raw tile ends make a new kitchen look half done."),
-  ]),
-  "vinyl-plank-and-hardwood": ("What a bad floor install costs you.", "LVP and hardwood are only as good as the floor under them.", [
-    ("Bouncy, hollow spots.", "High and low spots left in the subfloor make the floor flex and click."),
-    ("Seams that gap.", "Planks forced over a bad base pull apart over time."),
-    ("Water under the edges.", "Sloppy transitions in kitchens and baths let water get under the floor."),
-  ]),
-  "dust-free-tile-removal": ("What a messy tear-out costs you.", "Tile dust is fine, heavy and goes everywhere.", [
-    ("Dust in every room.", "It settles on furniture, in vents and in places you'll be cleaning for weeks."),
-    ("A damaged subfloor.", "Rough removal can gouge the slab or wood, which means more repairs before new flooring."),
-    ("A mess left behind.", "Debris and adhesive left on the floor slows down whatever comes next."),
-  ]),
-}
 BY_SLUG = {s["slug"]: s for s in SERVICES}
 CARD_PH = {
   "custom-tile-showers": "Custom tile shower", "tile-flooring": "Tile floor",
@@ -464,8 +437,6 @@ def page(s):
               <span class="more">Learn more ›</span>
             </div>
           </a>''' for r in s["related"])
-  sh, ssub, sitems = STAKES[s["slug"]]
-  stakes = "\n".join(f'          <li><h3>{e(t)}</h3><p>{e(d)}</p></li>' for t, d in sitems)
   url = f"{SITE}/{s['slug']}/"
   return f'''<!doctype html>
 <html lang="en">
@@ -521,25 +492,7 @@ def page(s):
     <section class="answer" aria-label="About this service">
       <div class="container">
         <p class="lead reveal">{e(s["answer"])}</p>
-        <ul class="stats reveal">
-          <li class="stat"><b>25+</b><span>Years setting tile</span></li>
-          <li class="stat"><b>Owner</b><span>On every job</span></li>
-          <li class="stat"><b>5.0 ★</b><span>13 five-star Google reviews</span></li>
-        </ul>
         <p class="caption updated">Last updated {UPDATED}</p>
-      </div>
-    </section>
-
-    <!-- ===== Stakes ===== -->
-    <section class="section" aria-labelledby="stakes-h">
-      <div class="container">
-        <div class="section-head reveal">
-          <h2 class="h2" id="stakes-h">{e(sh)}</h2>
-          <p class="subhead">{e(ssub)}</p>
-        </div>
-        <ul class="stakes-list reveal">
-{stakes}
-        </ul>
       </div>
     </section>
 
