@@ -26,7 +26,7 @@ These show on the site in [brackets].
 - Dust control equipment used during demo: ________
 
 **Reviews**
-- Google star rating and review count
+- Google star rating and review count: 5.0, 13 reviews (confirmed Nov 2026, update as it grows)
 - 1 real Google review, quoted word for word, with the reviewer's name and town
 
 **Projects**
