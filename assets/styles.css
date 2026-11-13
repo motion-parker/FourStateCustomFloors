@@ -357,7 +357,7 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 .faq-item a:hover { text-decoration: underline; }
 
 /* ---------- Service area ---------- */
-.towns { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 0 18px; max-width: 860px; margin: 0 auto; }
+.towns { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 0 18px; max-width: 1000px; margin: 0 auto; }
 .towns li { display: flex; align-items: center; }
 .town {
   font-family: inherit; font-size: 15px; font-weight: 500; color: var(--color-text-muted);
@@ -389,7 +389,7 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 .pin-label text { font-size: 15px; font-weight: 600; fill: var(--color-text); }
 @keyframes pin-ping { 0% { opacity: .7; transform: scale(1); } 100% { opacity: 0; transform: scale(2.6); } }
 @media (min-width: 700px) {
-  .pin.is-active .pin-label, .pin:hover .pin-label, .pin:focus-visible .pin-label, .pin-home .pin-label { display: block; }
+  .pin.is-active .pin-label, .pin:hover .pin-label, .pin:focus-visible .pin-label { display: block; }
 }
 @media (max-width: 699px) {
   .pin-dot { r: 11px; stroke-width: 4; }

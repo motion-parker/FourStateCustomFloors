@@ -67,4 +67,4 @@ The site says these as fact right now. Cross out anything that's wrong.
 - Removal: tile floors, shower walls and pans, backsplashes, mortar beds, tile on slab and on wood subfloors
 - Customers can usually stay home during tile removal
 - Based in Noel, MO
-- Service area towns: Joplin, Webb City, Carthage, Carl Junction, Neosho, Duquesne, Pittsburg, Galena, Miami, Grove, Bentonville, Rogers (add or remove any)
+- Service area towns: Joplin, Webb City, Carthage, Carl Junction, Neosho, Duquesne, Pittsburg, Galena, Miami, Grove, Afton, Bentonville, Rogers, Bella Vista (add or remove any)
