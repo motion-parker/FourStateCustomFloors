@@ -41,7 +41,7 @@ These show on the site in [brackets].
 - Do we do full bathroom remodels, or just the tile?
 - Do we pull and reset toilets and appliances?
 - Do we move furniture, or should the customer clear the rooms?
-- Do we install heated floors?
+- Do we install heated floors? Yes (Lorn Cottongim review). Now on the tile floors page
 - Do we do stairs in LVP or hardwood?
 - Solid hardwood: prefinished only, or site-finished too?
 - Do we install baseboards and quarter round with new floors?

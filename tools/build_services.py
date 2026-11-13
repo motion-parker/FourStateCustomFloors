@@ -96,7 +96,7 @@ SERVICES = [
       ("Patterned layouts", "Herringbone, chevron and offset patterns."),
       ("Bathroom floors", "Often done along with a new tile shower."),
       ("Kitchens and entries", "Hard-wearing floors for your busiest rooms."),
-      ("Heated floors", "[Confirm with Tim: whether we install in-floor heat.]"),
+      ("Heated floors", "Warm tile underfoot, installed under the tile in bathrooms and showers."),
     ],
     "steps_h": "How your new floor goes in.",
     "steps": [
