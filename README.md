@@ -35,4 +35,3 @@ When you change `assets/styles.css` or `assets/main.js`, bump the `?v=` number i
 ## Launch checklist
 
 - Switch the og:image and twitter:image URLs (index.html and tools/build_services.py) from the github.io preview address to https://www.fourstatecustomfloors.com/assets/share-image.jpg, then rebuild the service pages.
-- Replace the Google Maps search links (Read all 13 reviews, footer Google) with Tim's real Google Business Profile share link: index.html and tools/build_services.py.
