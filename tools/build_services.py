@@ -314,7 +314,7 @@ PAGE_IMG = {
   "tile-flooring": {
     "hero": ("hex-mosaic-bathroom-floor-walk-in-shower", "Bathroom floor in white and gray hex mosaic with brass accents", "50% 70%"),
     "steps": ("uncoupling-membrane-bathroom-floor-prep", "Uncoupling membrane down on a bathroom floor before tile, with the vanity covered in plastic", "50% 55%"),
-    "Patterned layouts": ("black-hex-mosaic-shower-floor-detail", "Black hex mosaic floor with tight, even grout", "50% 60%"),
+    "Patterned layouts": ("black-hex-mosaic-shower-floor-detail", "Black hex mosaic floor with smooth, consistent grout", "50% 60%"),
     "Bathroom floors": ("curbless-walk-in-shower-marble-subway-tile", "Hex mosaic bathroom floor running into a curbless shower", "50% 80%"),
     "projects": [
       ("River pebble stone floor", "river-pebble-stone-floor", "River pebble stone floor", "50% 50%"),
