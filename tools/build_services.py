@@ -278,7 +278,7 @@ CARD_PH = {
 }
 CARD_LINE = {
   "custom-tile-showers": "A walk-in shower or a tub-to-shower conversion, waterproofed so it lasts.",
-  "tile-flooring": "Mosaic, porcelain and large format tile, set flat and level.",
+  "tile-flooring": "Mosaic, porcelain, natural stone and large format tile, set flat and level.",
   "backsplashes": "Kitchen backsplashes with clean cuts around every outlet and edge.",
   "vinyl-plank-and-hardwood": "Vinyl plank and hardwood for the rest of your home, from the first row to the last cut.",
   "dust-free-tile-removal": "Your old tile comes out. The dust stays in that room.",
