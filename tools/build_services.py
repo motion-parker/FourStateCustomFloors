@@ -31,7 +31,7 @@ SERVICES = [
     "included_h": "What's included.",
     "included": [
       ("Dust-controlled demo", "Your old shower or tub comes out with the room sealed off from the rest of the house."),
-      ("Waterproofing", "[Waterproofing system] goes on the walls and floor before any tile goes up."),
+      ("Waterproofing", "The Schluter waterproofing system goes on the walls and floor before any tile goes up."),
       ("Sloped pan and drain", "Water runs to the drain instead of sitting in the corners."),
       ("Tile install", "We plan the layout with you before the first cut."),
       ("Niches and benches", "Built in and waterproofed along with the rest of the shower."),
@@ -59,7 +59,7 @@ SERVICES = [
     "faqs": [
       ("How much does a custom tile shower cost?", "Most custom tile showers we build across the Four State area run [$X,XXX to $XX,XXX]. Size, tile choice, niches, benches and glass drive the price. You get a written quote before any work starts."),
       ("How long does a tile shower take?", "Most showers take [X to X] working days from demo to grout. You get the schedule in writing with your quote."),
-      ("What waterproofing system do you use?", "Every shower gets [waterproofing system] behind the tile, so water stays away from the studs and subfloor."),
+      ("What waterproofing system do you use?", "Every shower gets the Schluter waterproofing system behind the tile, so water stays away from the studs and subfloor."),
       ("Can you turn my tub into a walk-in shower?", "Yes. The tub comes out and a tile shower is built in its place. [Confirm with Tim: who handles moving the drain and plumbing.]"),
       ("Can I use my bathroom during the job?", "Not the shower being rebuilt. If you have another bathroom, plan to use it while the job is underway."),
       ("Do you install the glass?", "[Answer to confirm with Tim: whether we install glass or work with a glass company we trust.]"),
