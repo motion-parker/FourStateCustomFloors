@@ -24,7 +24,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../assets/styles.css?v=20261113b">
+  <link rel="stylesheet" href="../assets/styles.css?v=20261113d">
 
   <script type="application/ld+json">
 {
@@ -155,7 +155,19 @@
 
       <nav class="nav" aria-label="Main">
         <ul>
-          <li><a href="../#services">Services</a></li>
+          <li class="has-drop">
+            <a href="../#services" class="drop-toggle" aria-haspopup="true">Services<span class="caret" aria-hidden="true"></span></a>
+            <div class="drop">
+              <ul>
+                <li><a href="../custom-tile-showers/" aria-current="page">Custom Tile Showers<small>Our specialty</small></a></li>
+                <li><a href="../tile-flooring/">Tile Floors</a></li>
+                <li><a href="../backsplashes/">Backsplashes</a></li>
+                <li><a href="../vinyl-plank-and-hardwood/">LVP and Hardwood</a></li>
+                <li><a href="../dust-free-tile-removal/">Dust-Controlled Removal</a></li>
+              </ul>
+              <a class="drop-all" href="../#services">See all services &rsaquo;</a>
+            </div>
+          </li>
           <li><a href="../#projects">Projects</a></li>
           <li><a href="../#about">About</a></li>
           <li><a href="../#reviews">Reviews</a></li>
@@ -170,7 +182,17 @@
           <summary aria-label="Open menu"><i></i></summary>
           <div class="menu-panel">
             <nav aria-label="Mobile">
-              <a href="../#services">Services</a>
+              <details class="m-sub">
+                <summary>Services<span class="caret" aria-hidden="true"></span></summary>
+                <div class="m-sub-links">
+                <a href="../custom-tile-showers/" aria-current="page">Custom Tile Showers</a>
+                <a href="../tile-flooring/">Tile Floors</a>
+                <a href="../backsplashes/">Backsplashes</a>
+                <a href="../vinyl-plank-and-hardwood/">LVP and Hardwood</a>
+                <a href="../dust-free-tile-removal/">Dust-Controlled Removal</a>
+                <a class="m-sub-all" href="../#services">See all services &rsaquo;</a>
+                </div>
+              </details>
               <a href="../#projects">Projects</a>
               <a href="../#about">About</a>
               <a href="../#reviews">Reviews</a>
@@ -457,7 +479,7 @@
         <nav class="footer-col" aria-label="Find us">
           <h2>Find us</h2>
           <ul>
-            <li><a href="#" rel="noopener">Google</a></li>
+            <li><a href="https://www.google.com/maps/search/?api=1&amp;query=Four%20State%20Custom%20Floors%20Noel%20MO" target="_blank" rel="noopener">Google</a></li>
             <li><a href="#" rel="noopener">Facebook</a></li>
             <li><a href="#" rel="noopener">Houzz</a></li>
           </ul>
@@ -476,6 +498,6 @@
     <a class="btn" href="../#estimate">Free Estimate</a>
   </div>
 
-  <script src="../assets/main.js?v=20261113b" defer></script>
+  <script src="../assets/main.js?v=20261113d" defer></script>
 </body>
 </html>

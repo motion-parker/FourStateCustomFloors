@@ -14,7 +14,7 @@ REPO = sys.argv[1]
 SITE = "https://www.fourstatecustomfloors.com"
 UPDATED = "November 2026"
 # Bump when styles.css or main.js changes (also in index.html) so phones fetch the new files
-ASSET_VERSION = "20261113b"
+ASSET_VERSION = "20261113d"
 STATES = ["Missouri", "Kansas", "Oklahoma", "Arkansas"]
 
 SERVICES = [
@@ -290,6 +290,7 @@ e = html.escape
 # Each entry: photo name, alt text, object-position. Anything not listed keeps its labeled placeholder.
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from photos import img
+import nav
 CARD_IMG = {
   "custom-tile-showers": ("gray-subway-tile-walk-in-shower-penny-floor", "Walk-in shower with gray subway tile, a penny tile floor and a fold-down teak seat", "50% 55%"),
   "tile-flooring": ("hex-mosaic-bathroom-floor-walk-in-shower", "Bathroom floor in white and gray hex mosaic with brass accent tiles", "50% 75%"),
@@ -344,7 +345,7 @@ def box(cls, label, ph_text, photo=None, p="../", sizes="(min-width: 900px) 30vw
   return f'<div class="{classes}" role="img" aria-label="{e(label)}"><span>{e(ph_text)}</span></div>'
 
 
-def header(p):
+def header(p, current=None):
   return f'''  <a class="skip-link" href="#main">Skip to content</a>
 
   <!-- ===== Header ===== -->
@@ -356,7 +357,7 @@ def header(p):
 
       <nav class="nav" aria-label="Main">
         <ul>
-          <li><a href="{p}#services">Services</a></li>
+{nav.desktop_item(p, current)}
           <li><a href="{p}#projects">Projects</a></li>
           <li><a href="{p}#about">About</a></li>
           <li><a href="{p}#reviews">Reviews</a></li>
@@ -371,7 +372,7 @@ def header(p):
           <summary aria-label="Open menu"><i></i></summary>
           <div class="menu-panel">
             <nav aria-label="Mobile">
-              <a href="{p}#services">Services</a>
+{nav.mobile_item(p, current)}
               <a href="{p}#projects">Projects</a>
               <a href="{p}#about">About</a>
               <a href="{p}#reviews">Reviews</a>
@@ -413,7 +414,7 @@ def footer(p):
         <nav class="footer-col" aria-label="Find us">
           <h2>Find us</h2>
           <ul>
-            <li><a href="#" rel="noopener">Google</a></li>
+            <li><a href="https://www.google.com/maps/search/?api=1&amp;query=Four%20State%20Custom%20Floors%20Noel%20MO" target="_blank" rel="noopener">Google</a></li>
             <li><a href="#" rel="noopener">Facebook</a></li>
             <li><a href="#" rel="noopener">Houzz</a></li>
           </ul>
@@ -533,7 +534,7 @@ def page(s):
   </script>
 </head>
 <body>
-{header(p)}
+{header(p, s["slug"])}
   <main id="main">
 
     <!-- ===== Hero ===== -->

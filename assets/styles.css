@@ -145,29 +145,50 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 .logo img { height: 60px; width: auto; }
 
 .nav { flex: 1; display: flex; justify-content: center; }
-.nav ul { display: flex; gap: 28px; }
+.nav ul { display: flex; gap: 28px; align-items: center; }
 .nav a { font-size: 14px; font-weight: 500; color: var(--color-text); text-decoration: none; padding: 12px 0; }
 .nav a:hover { color: var(--color-green-text); }
+
+/* Services dropdown (desktop): opens on hover or keyboard focus */
+.has-drop { position: relative; }
+.caret { display: inline-block; flex-shrink: 0; width: 7px; height: 7px; margin-left: 7px; border-right: 1.5px solid currentColor; border-bottom: 1.5px solid currentColor; transform: translateY(-3px) rotate(45deg); transition: transform .2s ease; }
+.drop-toggle { display: inline-flex; align-items: center; }
+.drop {
+  position: absolute; top: 100%; left: 50%; z-index: 60;
+  min-width: 268px; padding: 8px; margin-top: 4px;
+  background: var(--color-bg); border: 1px solid var(--color-border); border-radius: var(--radius-stat);
+  opacity: 0; visibility: hidden; transform: translate(-50%, -4px);
+  transition: opacity .15s ease, transform .15s ease, visibility 0s linear .15s;
+}
+.drop::before { content: ""; position: absolute; left: 0; right: 0; top: -12px; height: 12px; } /* hover bridge */
+.has-drop:hover .drop, .has-drop:focus-within .drop { opacity: 1; visibility: visible; transform: translate(-50%, 0); transition-delay: 0s; }
+.has-drop:hover .caret, .has-drop:focus-within .caret { transform: translateY(0) rotate(-135deg); }
+.nav .drop ul { display: block; }
+.nav .drop li a { display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 11px 14px; border-radius: var(--radius-input); font-size: 15px; white-space: nowrap; }
+.nav .drop li a:hover, .nav .drop li a:focus-visible { background: var(--color-bg-soft); color: var(--color-text); }
+.nav .drop li a[aria-current] { color: var(--color-green-text); }
+.nav .drop small { font-size: 11px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: var(--color-green-text); }
+.nav .drop .drop-all { display: block; margin-top: 4px; padding: 11px 14px; border-top: 1px solid var(--color-divider); font-size: 14px; font-weight: 600; color: var(--color-green-text); }
 .header-actions { display: flex; align-items: center; gap: 18px; margin-left: auto; }
 .header-phone { font-size: 15px; font-weight: 600; text-decoration: none; white-space: nowrap; padding: 12px 0; }
 
 .menu { display: none; position: relative; }
-.menu summary {
+.menu > summary {
   list-style: none; cursor: pointer; display: flex; align-items: center; justify-content: center;
   width: 44px; height: 44px; border-radius: var(--radius-pill); border: 1px solid var(--color-border);
 }
-.menu summary::-webkit-details-marker { display: none; }
-.menu summary i, .menu summary i::before, .menu summary i::after {
+.menu > summary::-webkit-details-marker { display: none; }
+.menu > summary i, .menu summary i::before, .menu summary i::after {
   display: block; width: 16px; height: 2px; background: var(--color-text); border-radius: 2px; position: relative;
 }
-.menu summary i::before, .menu summary i::after { content: ""; position: absolute; left: 0; }
-.menu summary i { width: 20px; transition: background-color .2s ease; }
-.menu summary i::before, .menu summary i::after { width: 20px; transition: transform .2s ease, top .2s ease; }
-.menu summary i::before { top: -6px; }
-.menu summary i::after { top: 6px; }
-.menu[open] summary i { background: transparent; }
-.menu[open] summary i::before { top: 0; transform: rotate(45deg); }
-.menu[open] summary i::after { top: 0; transform: rotate(-45deg); }
+.menu > summary i::before, .menu summary i::after { content: ""; position: absolute; left: 0; }
+.menu > summary i { width: 20px; transition: background-color .2s ease; }
+.menu > summary i::before, .menu summary i::after { width: 20px; transition: transform .2s ease, top .2s ease; }
+.menu > summary i::before { top: -6px; }
+.menu > summary i::after { top: 6px; }
+.menu[open] > summary i { background: transparent; }
+.menu[open] > summary i::before { top: 0; transform: rotate(45deg); }
+.menu[open] > summary i::after { top: 0; transform: rotate(-45deg); }
 .menu-panel {
   /* header's backdrop-filter makes it the containing block, so size by viewport height, not bottom:0 */
   position: fixed; left: 0; right: 0; top: 72px; z-index: 70;
@@ -182,6 +203,16 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
   border-bottom: 1px solid var(--color-divider);
 }
 .menu-panel nav a:hover { color: var(--color-green-text); }
+/* Services row inside the hamburger menu */
+.m-sub { border-bottom: 1px solid var(--color-divider); }
+.m-sub summary { list-style: none; cursor: pointer; display: flex; align-items: center; justify-content: space-between; min-height: 64px; font-size: 28px; font-weight: 700; letter-spacing: -0.02em; }
+.m-sub summary::-webkit-details-marker { display: none; }
+.m-sub summary .caret { width: 11px; height: 11px; border-width: 2.5px; margin-right: 6px; }
+.m-sub[open] summary .caret { transform: translateY(2px) rotate(-135deg); }
+.m-sub-links { display: flex; flex-direction: column; padding: 0 0 14px 2px; }
+.menu-panel nav .m-sub-links a { min-height: 48px; font-size: 19px; font-weight: 500; letter-spacing: 0; border: 0; color: var(--color-text-muted); }
+.menu-panel nav .m-sub-links a[aria-current] { color: var(--color-green-text); }
+.menu-panel nav .m-sub-links .m-sub-all { font-size: 16px; font-weight: 600; color: var(--color-green-text); }
 .menu-ctas { margin-top: auto; padding-top: 32px; display: flex; flex-direction: column; gap: 12px; }
 .no-scroll { overflow: hidden; }
 .no-scroll .mobile-bar { display: none !important; }
@@ -197,7 +228,7 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
   .header-inner { height: 64px; }
   .site-header .logo img { height: 52px; }
   .desk-only { display: none; }
-  .menu summary { border: 0; width: 44px; margin-right: -10px; }
+  .menu > summary { border: 0; width: 44px; margin-right: -10px; }
   .menu-panel { top: 64px; height: calc(100vh - 64px); height: calc(100dvh - 64px); }
   html { scroll-padding-top: 80px; }
 }
