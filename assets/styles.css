@@ -338,7 +338,7 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 .review { max-width: 1040px; margin: 0 auto; text-align: center; }
 .stars { color: var(--color-green-text); font-size: 24px; letter-spacing: 4px; }
 .review blockquote {
-  margin: 24px 0 0; font-size: clamp(28px, 3.4vw, 44px); font-weight: 600;
+  margin: 24px 0 0; font-size: clamp(22px, 2.6vw, 34px); font-weight: 600; /* sized for a full-length review */
   line-height: 1.25; letter-spacing: -0.02em;
 }
 .review figcaption { margin-top: 28px; font-size: 17px; font-weight: 600; }

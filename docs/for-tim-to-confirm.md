@@ -27,7 +27,7 @@ These show on the site in [brackets].
 
 **Reviews**
 - Google star rating and review count: 5.0, 13 reviews (confirmed Nov 2026, update as it grows)
-- 1 real Google review, quoted word for word, with the reviewer's name and town
+- 1 real Google review: Lorn Cottongim (on the homepage). Add his town if Tim knows it
 
 **Projects**
 - For every project photo: what it is and what town it's in
