@@ -19,7 +19,7 @@ STATES = ["Missouri", "Kansas", "Oklahoma", "Arkansas"]
 
 SERVICES = [
   {
-    "slug": "custom-tile-showers", "nav": "Custom Tile Showers", "short": "Custom tile showers",
+    "slug": "custom-tile-showers", "h1_accent": "showers", "nav": "Custom Tile Showers", "short": "Custom tile showers",
     "projects_sub": "Real showers we've built around the Four State area.",
     "title": "Custom Tile Showers | Four State Custom Floors",
     "desc": "Walk-in showers and tub-to-shower conversions, fully waterproofed. 28 years of tile work, a written quote up front and dust-controlled demo. Call 417-825-8240.",
@@ -70,7 +70,7 @@ SERVICES = [
     "cta_sub": "Send us a photo of the one you have now and we'll tell you what it takes.",
   },
   {
-    "slug": "tile-flooring", "nav": "Tile Floors", "short": "Tile floors",
+    "slug": "tile-flooring", "h1_accent": "floors", "nav": "Tile Floors", "short": "Tile floors",
     "projects_sub": "Real tile floors we've laid around the Four State area.",
     "title": "Tile Floor Installation | Four State Custom Floors",
     "desc": "Porcelain, ceramic and large format tile floors, set flat on a properly prepped subfloor across the Four State area. Call 417-825-8240.",
@@ -120,7 +120,7 @@ SERVICES = [
     "cta_sub": "Send us a photo of the room and we'll tell you what it takes.",
   },
   {
-    "slug": "backsplashes", "nav": "Backsplashes", "short": "Backsplashes",
+    "slug": "backsplashes", "h1_accent": "backsplashes", "nav": "Backsplashes", "short": "Backsplashes",
     "projects_sub": "Real backsplashes we've installed around the Four State area.",
     "title": "Kitchen Backsplash Installation | Four State Custom Floors",
     "desc": "Kitchen tile backsplashes with clean cuts and finished edges across the Four State area. Written quote up front. Call 417-825-8240.",
@@ -170,7 +170,7 @@ SERVICES = [
     "cta_sub": "Send us a photo of the wall and we'll get back to you with next steps.",
   },
   {
-    "slug": "vinyl-plank-and-hardwood", "nav": "LVP and Hardwood", "short": "LVP and hardwood",
+    "slug": "vinyl-plank-and-hardwood", "h1_accent": "floors", "nav": "LVP and Hardwood", "short": "LVP and hardwood",
     "projects_sub": "Real LVP and hardwood jobs from around the Four State area.",
     "title": "LVP and Hardwood Installation | Four State Custom Floors",
     "desc": "Luxury vinyl plank and hardwood floors installed on a flat, prepped subfloor with clean trim across the Four State area. Call 417-825-8240.",
@@ -220,7 +220,7 @@ SERVICES = [
     "cta_sub": "Send us photos of the rooms and we'll get back to you with next steps.",
   },
   {
-    "slug": "dust-free-tile-removal", "nav": "Dust-Controlled Removal", "short": "Dust-controlled removal",
+    "slug": "dust-free-tile-removal", "h1_accent": "without dust", "nav": "Dust-Controlled Removal", "short": "Dust-controlled removal",
     "projects_sub": "Real removal jobs from around the Four State area.",
     "title": "Dust-Controlled Tile Removal | Four State Custom Floors",
     "desc": "Old tile removed with the work area sealed off and dust control running, so the rest of your house stays clean. Call 417-825-8240.",
@@ -552,7 +552,7 @@ def page(s):
           </ol>
         </nav>
         <p class="eyebrow">{e(s["eyebrow"])}</p>
-        <h1 class="h1">{e(s["h1"])}</h1>
+        <h1 class="h1">{e(s["h1"]).replace(e(s["h1_accent"]), '<span class="accent">' + e(s["h1_accent"]) + '</span>', 1)}</h1>
         <p class="subhead">{e(s["sub"])}</p>
         <div class="cta-row">
           <a class="btn" href="{p}#estimate">Get a Free Estimate</a>
