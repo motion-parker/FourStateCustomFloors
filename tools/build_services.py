@@ -292,7 +292,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from photos import img
 import nav
 CARD_IMG = {
-  "custom-tile-showers": ("gray-subway-tile-walk-in-shower-penny-floor", "Walk-in shower with gray subway tile, a penny tile floor and a fold-down teak seat", "50% 55%"),
+  "custom-tile-showers": ("penny-tile-shower-floor-marble-look-walls", "Custom walk-in shower with a penny tile floor sloped to a square drain, marble-look wall tile and a tiled curb", "50% 22%"),
   "tile-flooring": ("hex-mosaic-bathroom-floor-walk-in-shower", "Bathroom floor in white and gray hex mosaic with brass accent tiles", "50% 75%"),
   "backsplashes": ("stone-subway-tile-kitchen-backsplash", "Stone subway tile backsplash behind a range", "50% 55%"),
   "dust-free-tile-removal": ("dust-control-containment-tile-removal", "Bathroom sealed off with plastic sheeting during tile removal", "50% 45%"),  "vinyl-plank-and-hardwood": ("gray-wood-look-lvp-floor-bedroom", "Gray wood-look vinyl plank floor with staggered seams across a bedroom", "50% 50%"),
