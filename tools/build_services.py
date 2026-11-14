@@ -294,6 +294,7 @@ import nav
 PROJECT_TOWNS = {
   "River pebble stone floor": "Joplin, MO",
   "Hand-set floral mosaic medallion": "Grove, OK",
+  "Subway tile shower with teak seat and grab bar": "Noel, MO",
 }
 CARD_IMG = {
   "custom-tile-showers": ("penny-tile-shower-floor-marble-look-walls", "Custom walk-in shower with a penny tile floor sloped to a square drain, marble-look wall tile and a tiled curb", "50% 22%"),
