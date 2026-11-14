@@ -7,10 +7,10 @@ Everything on the site that only Tim can answer or approve. Nothing goes live un
 These show on the site in [brackets].
 
 **Numbers**
-- Shower price range: $____ to $____
-- Tile floor price: $____ to $____ per square foot, installed
-- Backsplash price range: $____ to $____
-- LVP and hardwood price: $____ to $____ per square foot
+- Shower price range: $4,000 to $12,000, larger custom showers more (Tim, Nov 2026)
+- Tile floor price: $10 to $25 per sq ft, large format at the high end, includes thinset and DITRA (Tim)
+- Backsplash price range: $800 to $2,000 (Tim)
+- LVP about $3 per sq ft, prefinished hardwood $4 to $6 per sq ft (Tim)
 - Tile removal price: $____ to $____ per square foot
 - How long a shower takes: ____ to ____ working days
 - How long a tile floor takes (bathroom / kitchen): ____ days / ____ days
@@ -22,7 +22,7 @@ These show on the site in [brackets].
 
 **Products and methods**
 - Waterproofing system on every shower: Schluter (confirmed Nov 2026, on the site)
-- Underlayment under tile floors (backer board, uncoupling membrane, other): ________
+- Underlayment under tile floors: Schluter DITRA (Tim)
 - Dust control equipment used during demo: ________
 
 **Reviews**
@@ -35,7 +35,7 @@ These show on the site in [brackets].
 
 ## Yes or no
 
-- Do we supply tile and flooring, or does the customer buy it? If they buy it, which supplier do we send them to?
+- Do we supply tile and flooring? Customer buys the tile; price includes setting and waterproofing materials (Tim). Still: any supplier he recommends?
 - Do we install shower glass, or work with a glass company?
 - Do we move drains and plumbing for tub-to-shower conversions, or bring someone in?
 - Do we do full bathroom remodels, or just the tile?
@@ -43,7 +43,7 @@ These show on the site in [brackets].
 - Do we move furniture, or should the customer clear the rooms?
 - Do we install heated floors? Yes (Lorn Cottongim review). Now on the tile floors page
 - Do we do stairs in LVP or hardwood?
-- Solid hardwood: prefinished only, or site-finished too?
+- Hardwood: prefinished (Tim)
 - Do we install baseboards and quarter round with new floors?
 - Do we add outlet extenders on backsplashes?
 - Do we take removal-only jobs?
@@ -52,7 +52,7 @@ These show on the site in [brackets].
 
 The site says these as fact right now. Cross out anything that's wrong.
 
-- 25+ years setting tile
+- 28 years setting tile (from Tim, Nov 2026)
 - Tim is on every job
 - Written quote before any work starts
 - Dust-controlled demo on every job: the work area is sealed off from the rest of the house
