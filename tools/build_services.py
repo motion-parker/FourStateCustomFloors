@@ -27,7 +27,7 @@ SERVICES = [
     "h1": "Custom tile showers in the Four State area.",
     "sub": "Get the shower you've been picturing, built by a tile setter with 28 years in the trade and waterproofed to stay dry for decades. No leaks, no surprises, no dust through the house.",
     "hero_ph": "Hero: finished custom shower, straight on",
-    "answer": "Four State Custom Floors builds custom tile showers for homeowners across Missouri, Kansas, Oklahoma and Arkansas. The company is owned by Tim Schmit, who has set tile for 28 years and is on every job. Most showers run $4,000 to $12,000, with larger custom showers costing more, and take [X to X] working days from demo to grout.",
+    "answer": "Four State Custom Floors builds custom tile showers for homeowners across Missouri, Kansas, Oklahoma and Arkansas. The company is owned by Tim Schmit, who has set tile for 28 years and is on every job. Most showers run $4,000 to $12,000, with larger custom showers costing more, and take 7 to 14 working days, depending on the size and details of the shower.",
     "included_h": "What's included.",
     "included": [
       ("Dust-controlled demo", "Your old shower or tub comes out with the room sealed off from the rest of the house."),
@@ -49,7 +49,7 @@ SERVICES = [
     ],
     "steps_h": "How your shower gets built.",
     "steps": [
-      ("Send us a photo.", "Text or call with a picture of your current shower. We'll get back to you [same day]."),
+      ("Send us a photo.", "Text or call with a picture of your current shower. We'll get back to you the same day."),
       ("Get a design and written quote.", "We measure, help you choose the layout and tile, and put the price in writing."),
       ("Demo and waterproofing.", "The old shower comes out, the room stays sealed off, and the waterproofing goes in."),
       ("Tile, grout and cleanup.", "The tile goes up, the grout goes in, and we clean up before we leave."),
@@ -58,7 +58,7 @@ SERVICES = [
     "projects": ["Walk-in shower with niche and bench", "Curbless shower with linear drain", "Tub-to-shower conversion"],
     "faqs": [
       ("How much does a custom tile shower cost?", "Most custom tile showers we build across the Four State area run $4,000 to $12,000, with larger custom showers costing more. That includes the setting and Schluter waterproofing materials. Size, tile choice, niches, benches and glass drive the price. You get a written quote before any work starts."),
-      ("How long does a tile shower take?", "Most showers take [X to X] working days from demo to grout. You get the schedule in writing with your quote."),
+      ("How long does a tile shower take?", "Most showers take 7 to 14 working days, depending on the size and details of the shower. You get the schedule in writing with your quote."),
       ("What waterproofing system do you use?", "Every shower gets the Schluter waterproofing system behind the tile, so water stays away from the studs and subfloor."),
       ("Can you turn my tub into a walk-in shower?", "Yes. The tub comes out and a tile shower is built in its place. [Confirm with Tim: who handles moving the drain and plumbing.]"),
       ("Can I use my bathroom during the job?", "Not the shower being rebuilt. If you have another bathroom, plan to use it while the job is underway."),
@@ -78,7 +78,7 @@ SERVICES = [
     "h1": "Tile floors in the Four State area.",
     "sub": "A tile floor that looks great on day one and still looks great in year twenty. 28 years of setting tile taught us it all starts under the tile.",
     "hero_ph": "Hero: large format tile floor, wide shot",
-    "answer": "Four State Custom Floors installs tile floors in kitchens, bathrooms, entries and whole homes across Missouri, Kansas, Oklahoma and Arkansas. The company is owned by Tim Schmit, who has set tile for 28 years. Most tile floors run $10 to $25 per square foot installed, with large format tile at the high end, and take [X to X] days. We check and prep the subfloor first, because that's what keeps tile from cracking.",
+    "answer": "Four State Custom Floors installs tile floors in kitchens, bathrooms, entries and whole homes across Missouri, Kansas, Oklahoma and Arkansas. The company is owned by Tim Schmit, who has set tile for 28 years. Most tile floors run $10 to $25 per square foot installed, with large format tile at the high end. Timing depends on the square footage, and you get the schedule with your quote. We check and prep the subfloor first, because that's what keeps tile from cracking.",
     "included_h": "What's included.",
     "included": [
       ("Old floor removal", "Your old tile, vinyl or carpet comes out with dust control."),
@@ -109,7 +109,7 @@ SERVICES = [
     "projects": ["Large format porcelain kitchen floor", "Wood-look tile living room", "Herringbone bathroom floor"],
     "faqs": [
       ("How much does tile flooring cost?", "Most tile floors we install run $10 to $25 per square foot, with large format tile at the high end. That includes setting materials like thinset and Schluter DITRA. Tile choice, layout and subfloor repairs change the price. You get a written quote first."),
-      ("How long does a tile floor take?", "A bathroom floor usually takes [X to X] days. A kitchen or larger area takes [X to X] days, plus time for the grout to cure."),
+      ("How long does a tile floor take?", "It depends on the square footage, so there's no one-size answer. You get the schedule in writing with your quote, plus time for the grout to cure before heavy use."),
       ("Can you tile over my existing floor?", "Usually not. We check what's there first, because tiling over a bad floor is one of the main reasons tile cracks later."),
       ("Will large tiles be uneven?", "Not on a flat floor with the tile set right. We prep the subfloor first, then use a tile leveling system when the tile calls for it. Leveling clips help, but they can't fix a floor that wasn't prepped right."),
       ("Do you move appliances and toilets?", "[Answer to confirm with Tim: whether we pull and reset toilets and appliances.]"),
@@ -128,7 +128,7 @@ SERVICES = [
     "h1": "Kitchen backsplashes in the Four State area.",
     "sub": "Finish your kitchen with a backsplash that looks like it was always meant to be there: straight lines, clean cuts and edges that look finished, set by hands with 28 years of experience.",
     "hero_ph": "Hero: kitchen backsplash, straight on",
-    "answer": "Four State Custom Floors installs kitchen tile backsplashes across Missouri, Kansas, Oklahoma and Arkansas. The company is owned by Tim Schmit, who has set tile for 28 years. Most backsplashes run $800 to $2,000 and take [X to X] days. We protect your counters, cut clean around outlets and windows, and finish every edge.",
+    "answer": "Four State Custom Floors installs kitchen tile backsplashes across Missouri, Kansas, Oklahoma and Arkansas. The company is owned by Tim Schmit, who has set tile for 28 years. Most backsplashes run $800 to $2,000 and usually take about 2 days. We protect your counters, cut clean around outlets and windows, and finish every edge.",
     "included_h": "What's included.",
     "included": [
       ("Counter and cabinet protection", "Everything gets covered before we start."),
@@ -159,7 +159,7 @@ SERVICES = [
     "projects": ["Subway tile backsplash", "Full-height backsplash to the hood", "Herringbone backsplash"],
     "faqs": [
       ("How much does a backsplash cost?", "Most kitchen backsplashes we install run $800 to $2,000. The size of the wall, the tile and the number of outlets and windows change the price."),
-      ("How long does a backsplash take?", "Most take [X to X] days. Bigger or patterned jobs can take longer."),
+      ("How long does a backsplash take?", "Usually about 2 days. Bigger or patterned jobs can take a little longer."),
       ("Do I need to clear off my counters?", "Yes, clear the counters along the wall being tiled. We cover them and your cabinets before we start."),
       ("What happens with the outlets?", "We cut around them so the covers sit flush with the new tile. [Confirm with Tim: whether we add outlet extenders.]"),
       ("Can you remove my old backsplash?", "Yes. The old tile comes out with dust control and the wall gets patched before the new tile goes up."),
@@ -178,7 +178,7 @@ SERVICES = [
     "h1": "LVP and hardwood floors in the Four State area.",
     "sub": "New floors that lie flat, lock tight and don't bounce, gap or squeak. Same 28 years of care we put into every tile job.",
     "hero_ph": "Hero: LVP living room, wide shot",
-    "answer": "Four State Custom Floors installs luxury vinyl plank (LVP) and hardwood floors across Missouri, Kansas, Oklahoma and Arkansas. The company is owned by Tim Schmit, who has 28 years in the trade. LVP runs about $3 per square foot and prefinished hardwood $4 to $6 per square foot installed. Most homes take [X to X] days. We flatten the subfloor first so your new floor lies flat and stays tight.",
+    "answer": "Four State Custom Floors installs luxury vinyl plank (LVP) and hardwood floors across Missouri, Kansas, Oklahoma and Arkansas. The company is owned by Tim Schmit, who has 28 years in the trade. LVP runs about $3 per square foot and prefinished hardwood $4 to $6 per square foot installed. Timing depends on the square footage, and you get the schedule with your quote. We flatten the subfloor first so your new floor lies flat and stays tight.",
     "included_h": "What's included.",
     "included": [
       ("Old floor removal", "Carpet, vinyl or tile comes out with dust control."),
@@ -210,7 +210,7 @@ SERVICES = [
     "faqs": [
       ("Should I pick LVP or hardwood?", "LVP handles water, pets and kids better and usually costs less. Hardwood is real wood and can be refinished. We'll help you decide what fits each room."),
       ("Is LVP waterproof?", "Most LVP is water-resistant on the surface, but water can still get under it at the edges. That's why the install and transitions matter in kitchens and baths."),
-      ("How long does it take?", "Most homes take [X to X] days, depending on square footage and how much subfloor prep is needed."),
+      ("How long does it take?", "It depends on the square footage and how much subfloor prep is needed. You get the schedule in writing with your quote."),
       ("How much does it cost?", "LVP runs about $3 per square foot and prefinished hardwood $4 to $6 per square foot installed. Flooring, subfloor repairs and stairs change the price. You get a written quote first."),
       ("Do you move furniture?", "[Answer to confirm with Tim: whether we move furniture or you clear the rooms.]"),
       ("Do I buy the flooring?", "[Answer to confirm with Tim: whether we supply flooring or send you to a supplier we trust.]"),
@@ -291,6 +291,10 @@ e = html.escape
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from photos import img
 import nav
+PROJECT_TOWNS = {
+  "River pebble stone floor": "Joplin, MO",
+  "Hand-set floral mosaic medallion": "Grove, OK",
+}
 CARD_IMG = {
   "custom-tile-showers": ("penny-tile-shower-floor-marble-look-walls", "Custom walk-in shower with a penny tile floor sloped to a square drain, marble-look wall tile and a tiled curb", "50% 22%"),
   "tile-flooring": ("hex-mosaic-bathroom-floor-walk-in-shower", "Bathroom floor in white and gray hex mosaic with brass accent tiles", "50% 75%"),
@@ -486,7 +490,7 @@ def page(s):
   projs = "\n".join(f'''          <article class="project reveal">
             {box("", t, "Project photo", (n, a, pos) if n else None)}
             <h3>{e(t)}</h3>
-            <p class="caption">[Town, ST]</p>
+            <p class="caption">{e(PROJECT_TOWNS.get(t, "[Town, ST]"))}</p>
           </article>''' for t, n, a, pos in proj_list)
   faqs = "\n".join(f'''          <div class="faq-item">
             <h3>{e(q)}</h3>

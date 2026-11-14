@@ -12,12 +12,12 @@ These show on the site in [brackets].
 - Backsplash price range: $800 to $2,000 (Tim)
 - LVP about $3 per sq ft, prefinished hardwood $4 to $6 per sq ft (Tim)
 - Tile removal price: $____ to $____ per square foot
-- How long a shower takes: ____ to ____ working days
-- How long a tile floor takes (bathroom / kitchen): ____ days / ____ days
-- How long a backsplash takes: ____ days
-- How long LVP or hardwood takes for a typical home: ____ days
+- How long a shower takes: 7 to 14 working days, depending on the shower (Tim)
+- How long a tile floor takes: depends on square footage, no set estimate (Tim)
+- How long a backsplash takes: usually 2 days (Tim)
+- How long LVP or hardwood takes: depends on square footage (Tim)
 - How long tile removal takes for one room: ____ days
-- How fast we get back to people after they send a photo or the form: ________
+- How fast we get back to people: same day, by text or call (Tim)
 - Business hours: ________
 
 **Products and methods**
@@ -30,7 +30,7 @@ These show on the site in [brackets].
 - 1 real Google review: Lorn Cottongim (on the homepage). Add his town if Tim knows it
 
 **Projects**
-- For every project photo: what it is and what town it's in
+- For every project photo: what it is and what town it's in. Done: medallion Grove OK, pebble floor Joplin MO, waterproofing-to-finished shower Pineville MO
 - One real line about recent work in Joplin, Carthage and Neosho (or other towns)
 
 ## Yes or no
@@ -38,7 +38,7 @@ These show on the site in [brackets].
 - Do we supply tile and flooring? Customer buys the tile; price includes setting and waterproofing materials (Tim). Still: any supplier he recommends?
 - Do we install shower glass, or work with a glass company?
 - Do we move drains and plumbing for tub-to-shower conversions, or bring someone in?
-- Do we do full bathroom remodels, or just the tile?
+- Do we do full bathroom remodels? No, tile only (Tim)
 - Do we pull and reset toilets and appliances?
 - Do we move furniture, or should the customer clear the rooms?
 - Do we install heated floors? Yes (Lorn Cottongim review). Now on the tile floors page
