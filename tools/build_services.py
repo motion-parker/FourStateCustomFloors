@@ -667,9 +667,37 @@ def page(s):
 
 {footer(p)}'''
 
+# One word or phrase per section heading in brand green (headings as written; matched after HTML escaping)
+H2_ACCENT_ALL = {
+  "What's included.": "included",
+  "Recent work.": "Recent",
+  "Questions, answered.": "Questions",
+  "More for your home.": "home",
+}
+H2_ACCENT = {
+  "custom-tile-showers": {"What your shower could look like.": "shower", "How your shower gets built.": "built", "Ready for a shower you love walking into?": "love"},
+  "tile-flooring": {"Floors homeowners ask for.": "ask for", "How your new floor goes in.": "floor", "Ready for a floor you never have to think about?": "never"},
+  "backsplashes": {"Backsplash styles.": "Backsplash", "How your backsplash goes in.": "backsplash", "Ready to finish your kitchen?": "finish"},
+  "vinyl-plank-and-hardwood": {"Floors homeowners ask for.": "ask for", "How your new floor goes in.": "floor", "Ready for floors that feel solid underfoot?": "solid"},
+  "dust-free-tile-removal": {"What we remove.": "remove", "How dust-controlled removal works.": "dust-controlled", "Ready to get the old tile out?": "out"},
+}
+
+def accent_h2s(html_text, slug):
+  import re
+  rules = {**H2_ACCENT_ALL, **H2_ACCENT.get(slug, {})}
+  def rep(m):
+    heading = m.group(2)
+    for text, word in rules.items():
+      if heading == e(text):
+        w = e(word)
+        # whole-word match so "out" doesn't hit inside another word
+        return m.group(1) + re.sub(r'(?<![\w-])' + re.escape(w) + r'(?![\w-])', '<span class="accent">' + w + '</span>', heading, count=1) + m.group(3)
+    return m.group(0)
+  return re.sub(r'(<h2 class="h2[^"]*"[^>]*>)([^<]*)(</h2>)', rep, html_text)
+
 for s in SERVICES:
   d = os.path.join(REPO, s["slug"])
   os.makedirs(d, exist_ok=True)
   with open(os.path.join(d, "index.html"), "w") as f:
-    f.write(page(s))
+    f.write(accent_h2s(page(s), s["slug"]))
   print("wrote", s["slug"])
