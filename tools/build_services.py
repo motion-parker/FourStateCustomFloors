@@ -27,7 +27,7 @@ SERVICES = [
     "h1": "Custom tile showers in the Four State area.",
     "sub": "Get the shower you've been picturing, built by a tile setter with 28 years in the trade and waterproofed to stay dry for decades. No leaks, no surprises, no dust through the house.",
     "hero_ph": "Hero: finished custom shower, straight on",
-    "answer": "Four State Custom Floors builds custom tile showers across Missouri, Kansas, Oklahoma and Arkansas. Owner Tim Schmit has set tile for 28 years and is on every job. Most showers run $4,000 to $12,000 and take 7 to 14 working days, depending on the size and details.",
+    "answer": "Four State Custom Floors builds custom tile showers across Missouri, Kansas, Oklahoma and Arkansas. Most showers run $4,000 to $12,000 and take 7 to 14 working days, depending on the size and details.",
     "included_h": "What's included.",
     "included": [
       ("Dust-controlled demo", "Your old shower or tub comes out with the room sealed off from the rest of the house."),
@@ -78,7 +78,7 @@ SERVICES = [
     "h1": "Tile floors in the Four State area.",
     "sub": "A tile floor that looks great on day one and still looks great in year twenty. 28 years of setting tile taught us it all starts under the tile.",
     "hero_ph": "Hero: large format tile floor, wide shot",
-    "answer": "Four State Custom Floors installs tile floors in kitchens, bathrooms and whole homes across Missouri, Kansas, Oklahoma and Arkansas. Owner Tim Schmit has set tile for 28 years. Most tile floors run $10 to $25 per square foot installed, with large format tile at the high end.",
+    "answer": "Four State Custom Floors installs tile floors in kitchens, bathrooms and whole homes across Missouri, Kansas, Oklahoma and Arkansas. Most tile floors run $10 to $25 per square foot installed, with large format tile at the high end.",
     "included_h": "What's included.",
     "included": [
       ("Old floor removal", "Your old tile, vinyl or carpet comes out with dust control."),
@@ -128,7 +128,7 @@ SERVICES = [
     "h1": "Kitchen backsplashes in the Four State area.",
     "sub": "Finish your kitchen with a backsplash that looks like it was always meant to be there: straight lines, clean cuts and edges that look finished, set by hands with 28 years of experience.",
     "hero_ph": "Hero: kitchen backsplash, straight on",
-    "answer": "Four State Custom Floors installs kitchen tile backsplashes across Missouri, Kansas, Oklahoma and Arkansas. Owner Tim Schmit has set tile for 28 years. Most backsplashes run $800 to $2,000 and usually take about 2 days.",
+    "answer": "Four State Custom Floors installs kitchen tile backsplashes across Missouri, Kansas, Oklahoma and Arkansas. Most backsplashes run $800 to $2,000 and usually take about 2 days.",
     "included_h": "What's included.",
     "included": [
       ("Counter and cabinet protection", "Everything gets covered before we start."),
@@ -178,7 +178,7 @@ SERVICES = [
     "h1": "LVP and hardwood floors in the Four State area.",
     "sub": "New floors that lie flat, lock tight and don't bounce, gap or squeak. Same 28 years of care we put into every tile job.",
     "hero_ph": "Hero: LVP living room, wide shot",
-    "answer": "Four State Custom Floors installs luxury vinyl plank (LVP) and hardwood floors across Missouri, Kansas, Oklahoma and Arkansas. Owner Tim Schmit has 28 years in the trade. LVP runs about $3 per square foot and prefinished hardwood $4 to $6 per square foot installed.",
+    "answer": "Four State Custom Floors installs luxury vinyl plank (LVP) and hardwood floors across Missouri, Kansas, Oklahoma and Arkansas. LVP runs about $3 per square foot and prefinished hardwood $4 to $6 per square foot installed.",
     "included_h": "What's included.",
     "included": [
       ("Old floor removal", "Carpet, vinyl or tile comes out with dust control."),
@@ -228,7 +228,7 @@ SERVICES = [
     "h1": "Your old tile out, without dust through the house.",
     "sub": "We seal off the room so the dust stays where the work is, not on your furniture, vents and floors. Your house stays livable while the old tile comes out.",
     "hero_ph": "Hero: sealed-off room during tile removal",
-    "answer": "Four State Custom Floors removes old tile floors, shower walls and backsplashes across Missouri, Kansas, Oklahoma and Arkansas. Owner Tim Schmit has 28 years in the trade. We seal off the work area, so the dust that normally covers a whole house stays in one room.",
+    "answer": "Four State Custom Floors removes old tile floors, shower walls and backsplashes across Missouri, Kansas, Oklahoma and Arkansas. We seal off the work area, so the dust that normally covers a whole house stays in one room.",
     "included_h": "What's included.",
     "included": [
       ("Sealed work area", "The room gets closed off from the rest of your house."),
