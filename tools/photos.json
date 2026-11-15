@@ -212,5 +212,15 @@
   ],
   "w": 1536,
   "h": 2048
+ },
+ "25": {
+  "name": "tim-schmit-owner-four-state-custom-floors",
+  "widths": [
+   640,
+   1000,
+   1206
+  ],
+  "w": 1206,
+  "h": 1113
  }
 }
