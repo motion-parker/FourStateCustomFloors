@@ -141,11 +141,11 @@ SERVICES = [
     "options_h": "Backsplash styles.",
     "options_sub": "A few of the looks homeowners ask for most.",
     "options": [
-      ("Subway tile", "Classic, clean and easy to live with."),
+      ("Subway tile", "Classic, clean and easy to live with, from glossy to stone-look."),
       ("Handmade-look tile", "Glossy, slightly uneven tile with a lot of character."),
       ("Mosaics", "Small tiles on sheets for a detailed look."),
       ("Full-height backsplash", "Tile from the counter to the ceiling or up to the hood."),
-      ("Herringbone and patterns", "A little more work for a lot more interest."),
+      ("Patterns and shapes", "Arabesque, diamond and other shaped tile that makes the wall stand out."),
       ("Range feature wall", "A standout section behind your stove."),
     ],
     "steps_h": "How your backsplash goes in.",
@@ -332,6 +332,18 @@ PAGE_IMG = {
   },
   "backsplashes": {
     "hero": ("stone-subway-tile-kitchen-backsplash", "Stone subway tile backsplash behind a range, between two windows", "50% 50%"),
+    "steps": ("marble-basketweave-mosaic-backsplash-outlet", "Marble basketweave mosaic backsplash cut cleanly around an outlet", "50% 40%"),
+    "Subway tile": ("stone-look-subway-backsplash-white-cabinets", "Stone-look subway tile backsplash under white cabinets", "50% 55%"),
+    "Handmade-look tile": ("handmade-gray-subway-tile-cooktop-backsplash", "Glossy handmade-look gray subway tile behind a cooktop", "50% 40%"),
+    "Mosaics": ("marble-basketweave-backsplash-pot-filler", "Marble basketweave mosaic backsplash behind a range with a pot filler", "50% 45%"),
+    "Full-height backsplash": ("diamond-tile-full-height-backsplash-range-hood", "Diamond pattern tile running full height around a white range hood", "50% 35%"),
+    "Patterns and shapes": ("black-arabesque-tile-backsplash", "Black arabesque tile backsplash with light grout lines", "50% 50%"),
+    "Range feature wall": ("travertine-range-wall-mosaic-medallion", "Travertine backsplash with a mosaic medallion behind a range", "50% 55%"),
+    "projects": [
+      ("Travertine backsplash with butcher block counters", "travertine-versailles-backsplash-butcher-block", "Travertine tile backsplash in a mixed pattern above butcher block counters", "50% 55%"),
+      ("Linear stone mosaic backsplash", "linear-stone-mosaic-backsplash-kitchen", "Linear stone mosaic backsplash wrapping a kitchen with alder cabinets", "50% 40%"),
+      ("Textured ceramic tile backsplash", "textured-blue-ceramic-tile-backsplash", "Textured blue-gray ceramic tile backsplash above a white quartz counter", "50% 40%"),
+    ],
   },
   "vinyl-plank-and-hardwood": {
     "hero": ("gray-wood-look-lvp-floor-bedroom", "Gray wood-look vinyl plank floor with staggered seams across a bedroom", "50% 55%"),
