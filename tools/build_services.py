@@ -44,7 +44,7 @@ SERVICES = [
       ("Curbless showers", "Level with the bathroom floor, so there's nothing to trip on."),
       ("Tub-to-shower conversions", "Trade the tub you never use for a shower you'll use every day."),
       ("Niches and benches", "A place for your shampoo and a place to sit."),
-      ("Tile patterns", "Stacked, offset, herringbone or vertical layouts."),
+      ("Tile patterns", "Mosaics, herringbone, stacked or offset layouts."),
       ("Drain styles", "Linear or square drains to match your tile."),
     ],
     "steps_h": "How your shower gets built.",
@@ -308,10 +308,10 @@ PAGE_IMG = {
   "custom-tile-showers": {
     "hero": ("curbless-walk-in-shower-marble-subway-tile", "Curbless walk-in shower with marble subway tile walls and a hex mosaic floor", "50% 62%"),
     "steps": ("schluter-kerdi-waterproofing-before-tile", "Shower walls and floor covered in Schluter-KERDI waterproofing before tile", "60% 45%"),
-    "Walk-in showers": ("tiled-shower-bench-niche-detail", "Dark marble-look walk-in shower with a tiled bench and niche", "50% 60%"),
-    "Curbless showers": ("hex-mosaic-bathroom-floor-walk-in-shower", "Curbless shower with a glass panel and a hex mosaic floor that runs through the bathroom", "60% 55%"),
-    "Niches and benches": ("shower-niche-hex-mosaic-metal-trim", "Built-in shower niche with a hex mosaic back and metal trim", "50% 40%"),
-    "Tile patterns": ("hex-mosaic-brass-accent-grout-detail", "Hex mosaic tile with brass accent tiles", "50% 50%"),
+    "Walk-in showers": ("stone-look-walk-in-shower-pebble-floor", "Walk-in shower with stone-look wall tile, a ledge, a niche and a river pebble floor", "50% 55%"),
+    "Curbless showers": ("curbless-shower-skylight-penny-floor", "Curbless shower under a skylight with marble-look walls, a decorative band and a penny tile floor", "50% 60%"),
+    "Niches and benches": ("marble-look-shower-corner-bench-niche", "Marble-look shower with a tiled corner bench and a two-shelf niche", "50% 30%"),
+    "Tile patterns": ("flower-mosaic-shower-floor", "Marble flower mosaic shower floor around a square drain", "50% 45%"),
     "Drain styles": ("schluter-shower-drain-pebble-floor-detail", "Square stainless steel shower drain set flush in a river pebble floor", "50% 50%"),
     "projects": [
       ("Subway tile shower with teak seat and grab bar", "subway-tile-shower-teak-seat-grab-bar", "Subway tile shower with a fold-down teak seat, grab bar and handheld shower", "50% 45%"),
@@ -322,7 +322,7 @@ PAGE_IMG = {
   "tile-flooring": {
     "hero": ("hex-mosaic-bathroom-floor-walk-in-shower", "Bathroom floor in white and gray hex mosaic with brass accents", "50% 70%"),
     "steps": ("uncoupling-membrane-bathroom-floor-prep", "Uncoupling membrane down on a bathroom floor before tile, with the vanity covered in plastic", "50% 55%"),
-    "Patterned layouts": ("black-hex-mosaic-shower-floor-detail", "Black hex mosaic floor with smooth, consistent grout", "50% 60%"),
+    "Patterned layouts": ("black-white-geometric-tile-bathroom-floor", "Black and white geometric pattern tile floor in a bathroom", "50% 50%"),
     "Bathroom floors": ("curbless-walk-in-shower-marble-subway-tile", "Hex mosaic bathroom floor running into a curbless shower", "50% 80%"),
     "Large format porcelain": ("marble-look-large-format-tile-hallway", "Large format marble-look porcelain tile in a bathroom hallway", "50% 55%"),
     "Kitchens and entries": ("gray-tile-entry-floor", "Gray stone-look tile in an offset pattern through an entry", "50% 60%"),
