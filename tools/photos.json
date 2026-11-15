@@ -339,5 +339,59 @@
   ],
   "w": 1512,
   "h": 2016
+ },
+ "39": {
+  "name": "tile-removal-hepa-vacuums-living-room",
+  "widths": [
+   640,
+   1000
+  ],
+  "w": 1932,
+  "h": 2576
+ },
+ "40": {
+  "name": "tile-removal-down-to-slab",
+  "widths": [
+   640,
+   1000
+  ],
+  "w": 1932,
+  "h": 2576
+ },
+ "41": {
+  "name": "air-scrubber-vented-outside-during-demo",
+  "widths": [
+   640,
+   1000
+  ],
+  "w": 1932,
+  "h": 2576
+ },
+ "42": {
+  "name": "marble-look-large-format-tile-hallway",
+  "widths": [
+   640,
+   1000
+  ],
+  "w": 1932,
+  "h": 2576
+ },
+ "43": {
+  "name": "gray-tile-entry-floor",
+  "widths": [
+   640,
+   1000
+  ],
+  "w": 1512,
+  "h": 2016
+ },
+ "44": {
+  "name": "slate-look-tile-living-room-floor",
+  "widths": [
+   640,
+   1000
+  ],
+  "w": 1932,
+  "h": 2576
  }
 }

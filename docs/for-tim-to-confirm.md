@@ -23,7 +23,7 @@ These show on the site in [brackets].
 **Products and methods**
 - Waterproofing system on every shower: Schluter (confirmed Nov 2026, on the site)
 - Underlayment under tile floors: Schluter DITRA (Tim)
-- Dust control equipment used during demo: ________
+- Dust control equipment: HEPA vacuums, ZipWall plastic, air scrubber vented outside (from Tim's photos)
 
 **Reviews**
 - Google star rating and review count: 5.0, 13 reviews (confirmed Nov 2026, update as it grows)

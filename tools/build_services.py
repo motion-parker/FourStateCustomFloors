@@ -233,7 +233,7 @@ SERVICES = [
     "included": [
       ("Sealed work area", "The room gets closed off from the rest of your house."),
       ("Protected path", "We cover the floor from your door to the work area."),
-      ("Dust control equipment", "[Dust control equipment] runs the whole time."),
+      ("Dust control equipment", "HEPA-filtered vacuums and an air scrubber vented outside run the whole time."),
       ("Tile and adhesive removal", "Your old tile and what's holding it down come up."),
       ("Floor left ready", "The slab or subfloor is cleaned up and ready for what's next."),
       ("Haul-off and cleanup", "Debris is hauled away and the room is cleaned."),
@@ -258,7 +258,7 @@ SERVICES = [
     "steps_ph": "Tall: sealed-off room during removal",
     "projects": ["Kitchen tile floor removal", "Shower tear-out before rebuild", "Whole-house tile removal on slab"],
     "faqs": [
-      ("Is it really dust-free?", "No removal is completely dust-free, which is why we call it dust-controlled. With the room sealed and [dust control equipment] running, the dust stays in the work area instead of spreading through your house."),
+      ("Is it really dust-free?", "No removal is completely dust-free, which is why we call it dust-controlled. With the room sealed and HEPA vacuums and an air scrubber running, the dust stays in the work area instead of spreading through your house."),
       ("Can I stay home during removal?", "Yes. The work area is sealed off, so most homeowners stay home. It is loud while the tile is coming up."),
       ("How long does tile removal take?", "Most rooms take [X to X] days. Whole-house removal and thick mortar beds take longer."),
       ("Do you haul the old tile away?", "Yes. Debris is hauled off and the work area is cleaned before we leave."),
@@ -324,10 +324,12 @@ PAGE_IMG = {
     "steps": ("uncoupling-membrane-bathroom-floor-prep", "Uncoupling membrane down on a bathroom floor before tile, with the vanity covered in plastic", "50% 55%"),
     "Patterned layouts": ("black-hex-mosaic-shower-floor-detail", "Black hex mosaic floor with smooth, consistent grout", "50% 60%"),
     "Bathroom floors": ("curbless-walk-in-shower-marble-subway-tile", "Hex mosaic bathroom floor running into a curbless shower", "50% 80%"),
+    "Large format porcelain": ("marble-look-large-format-tile-hallway", "Large format marble-look porcelain tile in a bathroom hallway", "50% 55%"),
+    "Kitchens and entries": ("gray-tile-entry-floor", "Gray stone-look tile in an offset pattern through an entry", "50% 60%"),
     "projects": [
       ("River pebble stone floor", "river-pebble-stone-floor", "River pebble stone floor", "50% 50%"),
       ("Black hex mosaic shower floor", "black-hex-mosaic-shower-floor-detail", "Black hex mosaic shower floor meeting the bathroom floor tile in a clean edge", "50% 60%"),
-      ("Large format porcelain kitchen floor", None, None, None),
+      ("Slate-look tile living room floor", "slate-look-tile-living-room-floor", "Rust and blue slate-look tile floor in a living room with a stacked stone fireplace", "50% 55%"),
     ],
   },
   "backsplashes": {
@@ -358,7 +360,9 @@ PAGE_IMG = {
   },
   "dust-free-tile-removal": {
     "hero": ("dust-control-containment-tile-removal", "Bathroom sealed off with plastic sheeting and an air scrubber running during tile removal", "50% 45%"),
-    "steps": ("uncoupling-membrane-bathroom-floor-prep", "Vanity and mirror covered in plastic to keep dust off during floor work", "50% 30%"),
+    "steps": ("air-scrubber-vented-outside-during-demo", "Air scrubber with its exhaust duct vented out a sealed window during tile removal", "50% 55%"),
+    "Tile floors": ("tile-removal-hepa-vacuums-living-room", "Living room tile floor coming up with HEPA vacuums running", "50% 60%"),
+    "Tile on slab": ("tile-removal-down-to-slab", "Old tile removed down to the slab, with a HEPA vacuum and plastic sealing the doorway", "50% 55%"),
   },
 }
 
@@ -508,12 +512,26 @@ def page(s):
                 <p>{e(d)}</p>
               </div>
             </li>''' for i, (t, d) in enumerate(s["steps"], 1))
-  proj_list = pi.get("projects") or [(t, None, None, None) for t in s["projects"]]
+  proj_list = [x for x in (pi.get("projects") or []) if x[1]]
   projs = "\n".join(f'''          <article class="project reveal">
             {box("", t, "Project photo", (n, a, pos) if n else None)}
             <h3>{e(t)}</h3>
             <p class="caption">{e(PROJECT_TOWNS.get(t, "[Town, ST]"))}</p>
           </article>''' for t, n, a, pos in proj_list)
+  projects_section = (f'''    <!-- ===== Projects ===== -->
+    <section class="section" aria-labelledby="proj-h">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2 class="h2" id="proj-h">Recent work.</h2>
+          <p class="subhead">{e(s["projects_sub"])}</p>
+        </div>
+        <div class="grid">
+{projs}
+        </div>
+      </div>
+    </section>
+
+''' if proj_list else "")
   faqs = "\n".join(f'''          <div class="faq-item">
             <h3>{e(q)}</h3>
             <p>{e(a)}</p>
@@ -632,20 +650,7 @@ def page(s):
       </div>
     </section>
 
-    <!-- ===== Projects ===== -->
-    <section class="section" aria-labelledby="proj-h">
-      <div class="container">
-        <div class="section-head reveal">
-          <h2 class="h2" id="proj-h">Recent work.</h2>
-          <p class="subhead">{e(s["projects_sub"])}</p>
-        </div>
-        <div class="grid">
-{projs}
-        </div>
-      </div>
-    </section>
-
-    <!-- ===== FAQ ===== -->
+{projects_section}    <!-- ===== FAQ ===== -->
     <section class="section band-soft" id="faq">
       <div class="container split split--top">
         <div class="faq-head reveal">
