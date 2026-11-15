@@ -568,7 +568,6 @@ def page(s):
     <section class="answer" aria-label="About this service">
       <div class="container">
         <p class="lead reveal">{e(s["answer"])}</p>
-        <p class="caption updated">Last updated {UPDATED}</p>
       </div>
     </section>
 
