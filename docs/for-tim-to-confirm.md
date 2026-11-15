@@ -68,3 +68,18 @@ The site says these as fact right now. Cross out anything that's wrong.
 - Customers can usually stay home during tile removal
 - Based in Noel, MO
 - Service area towns: Joplin, Webb City, Carthage, Carl Junction, Neosho, Duquesne, Pittsburg, Galena, Miami, Grove, Afton, Bentonville, Rogers, Bella Vista (add or remove any)
+
+## Answered Nov 16 (Tim)
+
+- Hours: open 7 days a week
+- Glass: installs over-the-counter shower doors; most people hire a glass company
+- Tub-to-shower: Tim makes minor drain adjustments; a plumber moves water lines
+- Outlet extenders: never needed
+- LVP/hardwood: customer buys the flooring
+- Furniture: customer moves small items, Tim moves furniture
+- Baseboards and quarter round: yes
+- Tile removal: about $4/sq ft, 1 to 2 days per room depending on factors
+- Removal-only jobs: yes
+- No photos of heated floors, shower/backsplash tear-outs or hardwood (those cards removed)
+
+Still open: towns for the slate-look living room floor and the three LVP jobs.

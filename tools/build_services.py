@@ -14,7 +14,7 @@ REPO = sys.argv[1]
 SITE = "https://www.fourstatecustomfloors.com"
 UPDATED = "November 2026"
 # Bump when styles.css or main.js changes (also in index.html) so phones fetch the new files
-ASSET_VERSION = "20261113d"
+ASSET_VERSION = "20261116a"
 STATES = ["Missouri", "Kansas", "Oklahoma", "Arkansas"]
 
 SERVICES = [
@@ -60,9 +60,9 @@ SERVICES = [
       ("How much does a custom tile shower cost?", "Most custom tile showers we build across the Four State area run $4,000 to $12,000, with larger custom showers costing more. That includes the setting and Schluter waterproofing materials. Size, tile choice, niches, benches and glass drive the price. You get a written quote before any work starts."),
       ("How long does a tile shower take?", "Most showers take 7 to 14 working days, depending on the size and details of the shower. You get the schedule in writing with your quote."),
       ("What waterproofing system do you use?", "Every shower gets the Schluter waterproofing system behind the tile, so water stays away from the studs and subfloor."),
-      ("Can you turn my tub into a walk-in shower?", "Yes. The tub comes out and a tile shower is built in its place. [Confirm with Tim: who handles moving the drain and plumbing.]"),
+      ("Can you turn my tub into a walk-in shower?", "Yes. The tub comes out and a tile shower is built in its place. We can make minor adjustments to the drain, and a plumber moves any water lines."),
       ("Can I use my bathroom during the job?", "Not the shower being rebuilt. If you have another bathroom, plan to use it while the job is underway."),
-      ("Do you install the glass?", "[Answer to confirm with Tim: whether we install glass or work with a glass company we trust.]"),
+      ("Do you install the glass?", "We can install over-the-counter shower doors. For custom glass, most homeowners hire a glass company once the tile is done."),
       ("Do I have to pick out and buy the tile?", "You pick out and buy the tile, so you get exactly the look you want. Our price covers the setting and Schluter waterproofing materials, and we're happy to help you choose."),
     ],
     "related": ["tile-flooring", "backsplashes", "dust-free-tile-removal"],
@@ -96,7 +96,7 @@ SERVICES = [
       ("Patterned layouts", "Herringbone, chevron and offset patterns."),
       ("Bathroom floors", "Often done along with a new tile shower."),
       ("Kitchens and entries", "Hard-wearing floors for your busiest rooms."),
-      ("Heated floors", "Warm tile underfoot, installed under the tile in bathrooms and showers."),
+      ("Polished porcelain", "Glossy marble-look tile that makes a bathroom feel bigger and brighter."),
     ],
     "steps_h": "How your new floor goes in.",
     "steps": [
@@ -111,6 +111,7 @@ SERVICES = [
       ("How much does tile flooring cost?", "Most tile floors we install run $10 to $25 per square foot, with large format tile at the high end. That includes setting materials like thinset and Schluter DITRA. Tile choice, layout and subfloor repairs change the price. You get a written quote first."),
       ("How long does a tile floor take?", "It depends on the square footage, so there's no one-size answer. You get the schedule in writing with your quote, plus time for the grout to cure before heavy use."),
       ("Can you tile over my existing floor?", "Usually not. We check what's there first, because tiling over a bad floor is one of the main reasons tile cracks later."),
+      ("Do you install heated floors?", "Yes. The heating goes in under the tile, so the floor is warm underfoot in bathrooms and showers."),
       ("Will large tiles be uneven?", "Not on a flat floor with the tile set right. We prep the subfloor first, then use a tile leveling system when the tile calls for it. Leveling clips help, but they can't fix a floor that wasn't prepped right."),
       ("Do you move appliances and toilets?", "Yes. We pull and reset toilets and move appliances as part of the job, so you don't have to line up anyone else."),
       ("Do I have to pick out and buy the tile?", "You pick out and buy the tile, so you get exactly the look you want. Our price covers the setting and Schluter waterproofing materials, and we're happy to help you choose."),
@@ -161,7 +162,7 @@ SERVICES = [
       ("How much does a backsplash cost?", "Most kitchen backsplashes we install run $800 to $2,000. The size of the wall, the tile and the number of outlets and windows change the price."),
       ("How long does a backsplash take?", "Usually about 2 days. Bigger or patterned jobs can take a little longer."),
       ("Do I need to clear off my counters?", "Yes, clear the counters along the wall being tiled. We cover them and your cabinets before we start."),
-      ("What happens with the outlets?", "We cut around them so the covers sit flush with the new tile. [Confirm with Tim: whether we add outlet extenders.]"),
+      ("What happens with the outlets?", "We cut clean around every outlet and switch so the covers sit right on the new tile."),
       ("Can you remove my old backsplash?", "Yes. The old tile comes out with dust control and the wall gets patched before the new tile goes up."),
       ("Do I have to pick out and buy the tile?", "You pick out and buy the tile, so you get exactly the look you want. Our price covers the setting and Schluter waterproofing materials, and we're happy to help you choose."),
     ],
@@ -185,7 +186,7 @@ SERVICES = [
       ("Subfloor prep", "We fix high and low spots so the floor lies flat."),
       ("Underlayment", "The right underlayment for your floor and subfloor."),
       ("Install", "Seams staggered so the room looks right."),
-      ("Trim and transitions", "Clean edges at doorways and where your new floor meets tile. [Confirm with Tim: baseboards and quarter round.]"),
+      ("Trim and transitions", "Baseboards and quarter round installed, plus clean edges at doorways and where your new floor meets tile."),
       ("Cleanup", "Scraps hauled off and your floor cleaned."),
     ],
     "options_h": "Floors homeowners ask for.",
@@ -212,8 +213,8 @@ SERVICES = [
       ("Is LVP waterproof?", "Most LVP is water-resistant on the surface, but water can still get under it at the edges. That's why the install and transitions matter in kitchens and baths."),
       ("How long does it take?", "It depends on the square footage and how much subfloor prep is needed. You get the schedule in writing with your quote."),
       ("How much does it cost?", "LVP runs about $3 per square foot and prefinished hardwood $4 to $6 per square foot installed. Flooring, subfloor repairs and stairs change the price. You get a written quote first."),
-      ("Do you move furniture?", "[Answer to confirm with Tim: whether we move furniture or you clear the rooms.]"),
-      ("Do I buy the flooring?", "[Answer to confirm with Tim: whether we supply flooring or send you to a supplier we trust.]"),
+      ("Do you move furniture?", "You move the small stuff, and we can move the furniture."),
+      ("Do I buy the flooring?", "You buy the flooring, so you get exactly the look you want. Our price covers the install."),
     ],
     "related": ["tile-flooring", "dust-free-tile-removal", "custom-tile-showers"],
     "cta_h": "Ready for floors that feel solid underfoot?",
@@ -260,10 +261,10 @@ SERVICES = [
     "faqs": [
       ("Is it really dust-free?", "No removal is completely dust-free, which is why we call it dust-controlled. With the room sealed and HEPA vacuums and an air scrubber running, the dust stays in the work area instead of spreading through your house."),
       ("Can I stay home during removal?", "Yes. The work area is sealed off, so most homeowners stay home. It is loud while the tile is coming up."),
-      ("How long does tile removal take?", "Most rooms take [X to X] days. Whole-house removal and thick mortar beds take longer."),
+      ("How long does tile removal take?", "Most rooms take 1 to 2 days, depending on the floor and what's under it. Whole-house removal and thick mortar beds take longer."),
       ("Do you haul the old tile away?", "Yes. Debris is hauled off and the work area is cleaned before we leave."),
-      ("Can you remove tile without installing new flooring?", "[Answer to confirm with Tim: whether we take removal-only jobs.]"),
-      ("What does removal cost?", "Most removals run [$X to $X per square foot]. Thick mortar beds and glued-down tile cost more. You get a written quote first."),
+      ("Can you remove tile without installing new flooring?", "Yes. We'll take out the old tile even if you have someone else installing the new floor, or you're doing it yourself."),
+      ("What does removal cost?", "Most removals run about $4 per square foot. Thick mortar beds and glued-down tile can cost more. You get a written quote first."),
     ],
     "related": ["tile-flooring", "custom-tile-showers", "vinyl-plank-and-hardwood"],
     "cta_h": "Ready to get the old tile out?",
@@ -292,6 +293,12 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from photos import img
 import nav
 PROJECT_TOWNS = {
+  "Subway tile shower with penny mosaic niche": "Noel, MO",
+  "Marble-look shower with corner bench and niche": "Grove, OK",
+  "Black hex mosaic shower floor": "Pineville, MO",
+  "Travertine backsplash with butcher block counters": "Noel, MO",
+  "Linear stone mosaic backsplash": "Grove, OK",
+  "Marble-look subway backsplash": "Grove, OK",
   "River pebble stone floor": "Joplin, MO",
   "Hand-set floral mosaic medallion": "Grove, OK",
   "Subway tile shower with teak seat and grab bar": "Noel, MO",
@@ -315,7 +322,7 @@ PAGE_IMG = {
     "Tile patterns": ("flower-mosaic-shower-floor", "Marble flower mosaic shower floor around a square drain", "50% 45%"),
     "Drain styles": ("shower-drain-penny-tile-floor", "Square shower drain set flush in a penny tile floor", "50% 45%"),
     "projects": [
-      ("Glass subway shower with penny mosaic niche", "penny-mosaic-niche-glass-subway-shower", "Built-in niche with a penny mosaic back, a shelf and gold trim in a glass subway tile shower", "50% 45%"),
+      ("Subway tile shower with penny mosaic niche", "penny-mosaic-niche-glass-subway-shower", "Built-in niche with a penny mosaic back, a shelf and gold trim in a gray subway tile shower", "50% 45%"),
       ("Marble-look shower with corner bench and niche", "marble-look-shower-corner-bench-niche", "Marble-look shower with a tiled corner bench and a two-shelf niche", "50% 40%"),
       ("Hex mosaic tub surround with brass accents", "hex-mosaic-tub-surround-brass-accents", "Hex mosaic tub surround with brass accent tiles", "50% 50%"),
     ],
@@ -323,6 +330,7 @@ PAGE_IMG = {
   "tile-flooring": {
     "hero": ("hex-mosaic-bathroom-floor-walk-in-shower", "Bathroom floor in white and gray hex mosaic with brass accents", "50% 70%"),
     "steps": ("uncoupling-membrane-bathroom-floor-prep", "Uncoupling membrane down on a bathroom floor before tile, with the vanity covered in plastic", "50% 55%"),
+    "Polished porcelain": ("polished-marble-look-porcelain-bathroom-floor", "Polished marble-look porcelain tile floor in a bathroom", "50% 60%"),
     "Wood-look tile": ("wood-look-tile-basketweave-inset-floor", "Wood-look plank tile laid in a weave pattern with basketweave mosaic insets", "50% 50%"),
     "Patterned layouts": ("black-white-geometric-tile-bathroom-floor", "Black and white geometric pattern tile floor in a bathroom", "50% 50%"),
     "Bathroom floors": ("curbless-walk-in-shower-marble-subway-tile", "Hex mosaic bathroom floor running into a curbless shower", "50% 80%"),
@@ -507,10 +515,12 @@ def page(s):
   p = "../"
   inc = "\n".join(f'          <li><span class="check" aria-hidden="true">✓</span><div><h3>{e(t)}</h3><p>{e(d)}</p></div></li>' for t, d in s["included"])
   pi = PAGE_IMG.get(s["slug"], {})
+  opt_list = [(t, d) for t, d in s["options"] if pi.get(t)]
+  grid_cls = "grid grid--two" if len(opt_list) == 4 else "grid"
   opts = "\n".join(f'''          <article class="bento-card bento-third reveal">
             {box("", t, t, pi.get(t))}
             <div class="bento-text"><h3 class="h3">{e(t)}.</h3><p>{e(d)}</p></div>
-          </article>''' for t, d in s["options"])
+          </article>''' for t, d in opt_list)
   steps = "\n".join(f'''            <li class="step">
               <span class="step-num" aria-hidden="true">{i}</span>
               <div>
@@ -634,7 +644,7 @@ def page(s):
           <h2 class="h2" id="opt-h">{e(s["options_h"])}</h2>
           <p class="subhead">{e(s["options_sub"])}</p>
         </div>
-        <div class="grid">
+        <div class="{grid_cls}">
 {opts}
         </div>
       </div>
