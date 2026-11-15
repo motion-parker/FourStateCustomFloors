@@ -438,5 +438,23 @@
   ],
   "w": 1512,
   "h": 2016
+ },
+ "50": {
+  "name": "floor-grinder-vacuum-wood-subfloor",
+  "widths": [
+   640,
+   1000
+  ],
+  "w": 1932,
+  "h": 2576
+ },
+ "51": {
+  "name": "navy-kitchen-marble-look-subway-backsplash",
+  "widths": [
+   640,
+   1000
+  ],
+  "w": 1512,
+  "h": 2016
  }
 }

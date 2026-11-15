@@ -344,7 +344,7 @@ PAGE_IMG = {
     "projects": [
       ("Travertine backsplash with butcher block counters", "travertine-versailles-backsplash-butcher-block", "Travertine tile backsplash in a mixed pattern above butcher block counters", "50% 55%"),
       ("Linear stone mosaic backsplash", "linear-stone-mosaic-backsplash-kitchen", "Linear stone mosaic backsplash wrapping a kitchen with alder cabinets", "50% 40%"),
-      ("Textured ceramic tile backsplash", "textured-blue-ceramic-tile-backsplash", "Textured blue-gray ceramic tile backsplash above a white quartz counter", "50% 40%"),
+      ("Marble-look subway backsplash", "navy-kitchen-marble-look-subway-backsplash", "Marble-look subway tile backsplash behind a range in a navy kitchen with LVP floors", "50% 45%"),
     ],
   },
   "vinyl-plank-and-hardwood": {
@@ -362,6 +362,7 @@ PAGE_IMG = {
     "hero": ("dust-control-containment-tile-removal", "Bathroom sealed off with plastic sheeting and an air scrubber running during tile removal", "50% 45%"),
     "steps": ("air-scrubber-vented-outside-during-demo", "Air scrubber with its exhaust duct vented out a sealed window during tile removal", "50% 55%"),
     "Tile floors": ("tile-removal-hepa-vacuums-living-room", "Living room tile floor coming up with HEPA vacuums running", "50% 60%"),
+    "Tile on wood subfloor": ("floor-grinder-vacuum-wood-subfloor", "Floor grinder hooked to a dust vacuum, cleaning old adhesive off a wood subfloor", "50% 55%"),
     "Tile on slab": ("tile-removal-down-to-slab", "Old tile removed down to the slab, with a HEPA vacuum and plastic sealing the doorway", "50% 55%"),
   },
 }
