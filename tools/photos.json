@@ -456,5 +456,32 @@
   ],
   "w": 1512,
   "h": 2016
+ },
+ "52": {
+  "name": "penny-mosaic-niche-glass-subway-shower",
+  "widths": [
+   640,
+   1000
+  ],
+  "w": 1536,
+  "h": 2048
+ },
+ "53": {
+  "name": "shower-drain-penny-tile-floor",
+  "widths": [
+   640,
+   1000
+  ],
+  "w": 1536,
+  "h": 2048
+ },
+ "54": {
+  "name": "wood-look-tile-shower-bench-niche-stone-floor",
+  "widths": [
+   640,
+   1000
+  ],
+  "w": 1536,
+  "h": 2048
  }
 }
