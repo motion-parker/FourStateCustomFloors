@@ -222,5 +222,23 @@
   ],
   "w": 1206,
   "h": 1113
+ },
+ "26": {
+  "name": "lvp-stairs-and-landing-top-view",
+  "widths": [
+   640,
+   1000
+  ],
+  "w": 1932,
+  "h": 2576
+ },
+ "27": {
+  "name": "lvp-stairs-and-upstairs-hallway",
+  "widths": [
+   640,
+   1000
+  ],
+  "w": 1932,
+  "h": 2576
  }
 }

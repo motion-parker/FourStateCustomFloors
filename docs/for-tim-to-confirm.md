@@ -42,7 +42,7 @@ These show on the site in [brackets].
 - Do we pull and reset toilets and appliances? Yes (Tim)
 - Do we move furniture, or should the customer clear the rooms?
 - Do we install heated floors? Yes (Lorn Cottongim review). Now on the tile floors page
-- Do we do stairs in LVP or hardwood?
+- Do we do stairs in LVP or hardwood? Yes, LVP stairs (Tim sent photos)
 - Hardwood: prefinished (Tim)
 - Do we install baseboards and quarter round with new floors?
 - Do we add outlet extenders on backsplashes?

@@ -195,7 +195,7 @@ SERVICES = [
       ("LVP in kitchens and baths", "Water-resistant floors where you need them most."),
       ("Engineered hardwood", "Real wood on top with a stable core underneath."),
       ("Prefinished hardwood", "Real hardwood that arrives finished, so it's ready to walk on as soon as it's down."),
-      ("Stairs", "[Confirm with Tim: whether we do stairs in LVP or hardwood.]"),
+      ("Stairs", "Treads and risers covered in LVP to match the floors around them."),
       ("Transitions to tile", "Clean lines where your new floor meets tile."),
     ],
     "steps_h": "How your new floor goes in.",
@@ -336,6 +336,12 @@ PAGE_IMG = {
   "vinyl-plank-and-hardwood": {
     "hero": ("gray-wood-look-lvp-floor-bedroom", "Gray wood-look vinyl plank floor with staggered seams across a bedroom", "50% 55%"),
     "Whole-house LVP": ("wood-look-plank-floor-bedroom", "Wood-look plank floor with long, staggered planks", "50% 75%"),
+    "Stairs": ("lvp-stairs-and-landing-top-view", "Staircase and landing covered in wood-look LVP, seen from above", "50% 45%"),
+    "projects": [
+      ("LVP stairs and upstairs hallway", "lvp-stairs-and-upstairs-hallway", "Staircase and upstairs hallway finished in matching wood-look LVP", "50% 60%"),
+      ("Wood-look plank bedroom floor", "wood-look-plank-floor-bedroom", "Wood-look plank floor with long, staggered planks in a bedroom", "50% 60%"),
+      ("LVP kitchen and dining room", None, None, None),
+    ],
   },
   "dust-free-tile-removal": {
     "hero": ("dust-control-containment-tile-removal", "Bathroom sealed off with plastic sheeting and an air scrubber running during tile removal", "50% 45%"),
