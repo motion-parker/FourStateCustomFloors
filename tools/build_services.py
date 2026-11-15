@@ -112,7 +112,7 @@ SERVICES = [
       ("How long does a tile floor take?", "It depends on the square footage, so there's no one-size answer. You get the schedule in writing with your quote, plus time for the grout to cure before heavy use."),
       ("Can you tile over my existing floor?", "Usually not. We check what's there first, because tiling over a bad floor is one of the main reasons tile cracks later."),
       ("Will large tiles be uneven?", "Not on a flat floor with the tile set right. We prep the subfloor first, then use a tile leveling system when the tile calls for it. Leveling clips help, but they can't fix a floor that wasn't prepped right."),
-      ("Do you move appliances and toilets?", "[Answer to confirm with Tim: whether we pull and reset toilets and appliances.]"),
+      ("Do you move appliances and toilets?", "Yes. We pull and reset toilets and move appliances as part of the job, so you don't have to line up anyone else."),
       ("Do I have to pick out and buy the tile?", "You pick out and buy the tile, so you get exactly the look you want. Our price covers the setting and Schluter waterproofing materials, and we're happy to help you choose."),
     ],
     "related": ["custom-tile-showers", "vinyl-plank-and-hardwood", "dust-free-tile-removal"],
@@ -295,6 +295,8 @@ PROJECT_TOWNS = {
   "River pebble stone floor": "Joplin, MO",
   "Hand-set floral mosaic medallion": "Grove, OK",
   "Subway tile shower with teak seat and grab bar": "Noel, MO",
+  "Gray tile shower with niche and teak seat": "Noel, MO",
+  "Hex mosaic tub surround with brass accents": "Rogers, AR",
 }
 CARD_IMG = {
   "custom-tile-showers": ("penny-tile-shower-floor-marble-look-walls", "Custom walk-in shower with a penny tile floor sloped to a square drain, marble-look wall tile and a tiled curb", "50% 22%"),

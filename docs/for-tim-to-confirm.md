@@ -39,7 +39,7 @@ These show on the site in [brackets].
 - Do we install shower glass, or work with a glass company?
 - Do we move drains and plumbing for tub-to-shower conversions, or bring someone in?
 - Do we do full bathroom remodels? No, tile only (Tim)
-- Do we pull and reset toilets and appliances?
+- Do we pull and reset toilets and appliances? Yes (Tim)
 - Do we move furniture, or should the customer clear the rooms?
 - Do we install heated floors? Yes (Lorn Cottongim review). Now on the tile floors page
 - Do we do stairs in LVP or hardwood?
