@@ -483,5 +483,41 @@
   ],
   "w": 1536,
   "h": 2048
+ },
+ "55": {
+  "name": "wood-look-tile-tub-deck-lvp-floor",
+  "widths": [
+   640,
+   1000
+  ],
+  "w": 1536,
+  "h": 2048
+ },
+ "56": {
+  "name": "old-flagstone-mortar-bed-under-tile",
+  "widths": [
+   640,
+   1000
+  ],
+  "w": 1080,
+  "h": 1440
+ },
+ "57": {
+  "name": "self-leveler-poured-floor-prep",
+  "widths": [
+   640,
+   1000
+  ],
+  "w": 1080,
+  "h": 1440
+ },
+ "58": {
+  "name": "wood-look-tile-basketweave-inset-floor",
+  "widths": [
+   640,
+   720
+  ],
+  "w": 720,
+  "h": 960
  }
 }

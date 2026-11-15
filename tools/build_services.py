@@ -322,6 +322,7 @@ PAGE_IMG = {
   "tile-flooring": {
     "hero": ("hex-mosaic-bathroom-floor-walk-in-shower", "Bathroom floor in white and gray hex mosaic with brass accents", "50% 70%"),
     "steps": ("uncoupling-membrane-bathroom-floor-prep", "Uncoupling membrane down on a bathroom floor before tile, with the vanity covered in plastic", "50% 55%"),
+    "Wood-look tile": ("wood-look-tile-basketweave-inset-floor", "Wood-look plank tile laid in a weave pattern with basketweave mosaic insets", "50% 50%"),
     "Patterned layouts": ("black-white-geometric-tile-bathroom-floor", "Black and white geometric pattern tile floor in a bathroom", "50% 50%"),
     "Bathroom floors": ("curbless-walk-in-shower-marble-subway-tile", "Hex mosaic bathroom floor running into a curbless shower", "50% 80%"),
     "Large format porcelain": ("marble-look-large-format-tile-hallway", "Large format marble-look porcelain tile in a bathroom hallway", "50% 55%"),
@@ -349,6 +350,8 @@ PAGE_IMG = {
   },
   "vinyl-plank-and-hardwood": {
     "hero": ("gray-wood-look-lvp-floor-bedroom", "Gray wood-look vinyl plank floor with staggered seams across a bedroom", "50% 55%"),
+    "steps": ("self-leveler-poured-floor-prep", "Self-leveling compound poured across a room so the new floor goes down flat", "50% 50%"),
+    "Transitions to tile": ("wood-look-tile-tub-deck-lvp-floor", "Wood-look tile tub surround meeting a wood-look LVP floor in a clean line", "50% 60%"),
     "Whole-house LVP": ("wood-look-plank-floor-bedroom", "Wood-look plank floor with long, staggered planks", "50% 75%"),
     "LVP in kitchens and baths": ("gray-lvp-kitchen-floor", "Gray wood-look LVP installed through a galley kitchen between oak cabinets", "50% 45%"),
     "Stairs": ("lvp-stairs-and-landing-top-view", "Staircase and landing covered in wood-look LVP, seen from above", "50% 45%"),
@@ -362,6 +365,7 @@ PAGE_IMG = {
     "hero": ("dust-control-containment-tile-removal", "Bathroom sealed off with plastic sheeting and an air scrubber running during tile removal", "50% 45%"),
     "steps": ("air-scrubber-vented-outside-during-demo", "Air scrubber with its exhaust duct vented out a sealed window during tile removal", "50% 55%"),
     "Tile floors": ("tile-removal-hepa-vacuums-living-room", "Living room tile floor coming up with HEPA vacuums running", "50% 60%"),
+    "Mortar beds": ("old-flagstone-mortar-bed-under-tile", "Old flagstone and mortar bed uncovered under a tile floor during removal", "50% 50%"),
     "Tile on wood subfloor": ("floor-grinder-vacuum-wood-subfloor", "Floor grinder hooked to a dust vacuum, cleaning old adhesive off a wood subfloor", "50% 55%"),
     "Tile on slab": ("tile-removal-down-to-slab", "Old tile removed down to the slab, with a HEPA vacuum and plastic sealing the doorway", "50% 55%"),
   },
