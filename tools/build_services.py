@@ -331,7 +331,7 @@ PAGE_IMG = {
     "hero": ("hex-mosaic-bathroom-floor-walk-in-shower", "Bathroom floor in white and gray hex mosaic with brass accents", "50% 70%"),
     "steps": ("uncoupling-membrane-bathroom-floor-prep", "Uncoupling membrane down on a bathroom floor before tile, with the vanity covered in plastic", "50% 55%"),
     "Polished porcelain": ("polished-marble-look-porcelain-bathroom-floor", "Polished marble-look porcelain tile floor in a bathroom", "50% 60%"),
-    "Wood-look tile": ("wood-look-tile-basketweave-inset-floor", "Wood-look plank tile laid in a weave pattern with basketweave mosaic insets", "50% 50%"),
+    "Wood-look tile": ("wood-look-tile-floor-master-bath-tub-shower", "Dark wood-look plank tile through a master bath with a freestanding tub and glass shower", "50% 75%"),
     "Patterned layouts": ("black-white-geometric-tile-bathroom-floor", "Black and white geometric pattern tile floor in a bathroom", "50% 50%"),
     "Bathroom floors": ("curbless-walk-in-shower-marble-subway-tile", "Hex mosaic bathroom floor running into a curbless shower", "50% 80%"),
     "Large format porcelain": ("marble-look-large-format-tile-hallway", "Large format marble-look porcelain tile in a bathroom hallway", "50% 55%"),
