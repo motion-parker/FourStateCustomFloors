@@ -143,7 +143,7 @@ SERVICES = [
     "options_sub": "A few of the looks homeowners ask for most.",
     "options": [
       ("Subway tile", "Classic, clean and easy to live with, from glossy to stone-look."),
-      ("Handmade-look tile", "Glossy, slightly uneven tile with a lot of character."),
+      ("Handmade-look tile", "Glossy tile with natural color variation and a hand-crafted look."),
       ("Mosaics", "Small tiles on sheets for a detailed look."),
       ("Full-height backsplash", "Tile from the counter to the ceiling or up to the hood."),
       ("Patterns and shapes", "Arabesque, diamond and other shaped tile that makes the wall stand out."),
