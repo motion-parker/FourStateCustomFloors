@@ -36,3 +36,7 @@ When you change `assets/styles.css` or `assets/main.js`, bump the `?v=` number i
 
 - llms.txt and the sitemap use www.fourstatecustomfloors.com URLs already; no change needed at launch.
 - Switch the og:image and twitter:image URLs (index.html and tools/build_services.py) from the github.io preview address to https://www.fourstatecustomfloors.com/assets/share-image.jpg, then rebuild the service pages.
+
+## Sitemap
+
+After rebuilding pages and committing, run `python3 tools/build_sitemap.py` and commit again. It sets each page's last-modified date from git and lists every photo on the page (with its alt text) so Google Images can find Tim's work.
