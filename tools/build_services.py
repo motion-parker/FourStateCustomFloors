@@ -229,7 +229,7 @@ SERVICES = [
     "h1": "Your old tile out, without dust through the house.",
     "sub": "We seal off the room so the dust stays where the work is, not on your furniture, vents and floors. Your house stays livable while the old tile comes out.",
     "hero_ph": "Hero: sealed-off room during tile removal",
-    "answer": "Four State Custom Floors removes old tile floors, shower walls and backsplashes across Missouri, Kansas, Oklahoma and Arkansas. We seal off the work area, so the dust that normally covers a whole house stays in one room.",
+    "answer": "Four State Custom Floors removes old tile floors, shower walls and backsplashes across Missouri, Kansas, Oklahoma and Arkansas. Most removals run about $4 per square foot. We seal off the work area, so the dust that normally covers a whole house stays in one room.",
     "included_h": "What's included.",
     "included": [
       ("Sealed work area", "The room gets closed off from the rest of your house."),
