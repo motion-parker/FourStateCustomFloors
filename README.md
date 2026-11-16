@@ -34,4 +34,5 @@ When you change `assets/styles.css` or `assets/main.js`, bump the `?v=` number i
 
 ## Launch checklist
 
+- llms.txt and the sitemap use www.fourstatecustomfloors.com URLs already; no change needed at launch.
 - Switch the og:image and twitter:image URLs (index.html and tools/build_services.py) from the github.io preview address to https://www.fourstatecustomfloors.com/assets/share-image.jpg, then rebuild the service pages.

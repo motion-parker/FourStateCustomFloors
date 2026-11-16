@@ -537,3 +537,6 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
   .js .reveal { opacity: 1; transform: none; transition: none; }
   *, *::before, *::after { transition: none !important; }
 }
+
+/* 404 page */
+.notfound-links { display: flex; flex-wrap: wrap; justify-content: center; gap: 4px 24px; margin-top: 40px; }

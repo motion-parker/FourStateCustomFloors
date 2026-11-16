@@ -14,7 +14,7 @@ REPO = sys.argv[1]
 SITE = "https://www.fourstatecustomfloors.com"
 UPDATED = "November 2026"
 # Bump when styles.css or main.js changes (also in index.html) so phones fetch the new files
-ASSET_VERSION = "20261116b"
+ASSET_VERSION = "20261116c"
 STATES = ["Missouri", "Kansas", "Oklahoma", "Arkansas"]
 
 SERVICES = [
@@ -746,3 +746,46 @@ for s in SERVICES:
   with open(os.path.join(d, "index.html"), "w") as f:
     f.write(accent_h2s(page(s), s["slug"]))
   print("wrote", s["slug"])
+
+# ---------- 404 page (served by GitHub Pages for any missing URL, at any depth) ----------
+def page_404():
+  # A <base> tag pins relative links to the site root, both on the github.io preview and the real domain
+  base = ('<script>document.write(\'<base href="\' + (location.pathname.indexOf("/FourStateCustomFloors/") === 0 ? "/FourStateCustomFloors/" : "/") + \'">\')</script>')
+  links = "\n".join(f'          <li><a class="link-cta" href="{s["slug"]}/">{e(s["nav"])}&nbsp;›</a></li>' for s in SERVICES)
+  return f'''<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {base}
+  <title>Page Not Found | Four State Custom Floors</title>
+  <meta name="robots" content="noindex">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css?v={ASSET_VERSION}">
+</head>
+<body>
+{header("")}
+  <main id="main">
+    <section class="hero">
+      <div class="container">
+        <p class="eyebrow">Page not found</p>
+        <h1 class="h1">This page <span class="accent">moved</span>.</h1>
+        <p class="subhead">The page you were looking for isn't here anymore. Here's where to find what you need.</p>
+        <div class="cta-row">
+          <a class="btn" href="#estimate">Get a Free Estimate</a>
+          <a class="link-cta" href="./">Go to the homepage&nbsp;›</a>
+        </div>
+        <ul class="notfound-links">
+{links}
+        </ul>
+      </div>
+    </section>
+  </main>
+
+{footer("")}'''
+
+with open(os.path.join(REPO, "404.html"), "w") as f:
+  f.write(page_404())
+print("wrote 404.html")
