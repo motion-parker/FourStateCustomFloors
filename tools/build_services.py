@@ -363,7 +363,7 @@ PAGE_IMG = {
   },
   "vinyl-plank-and-hardwood": {
     "hero": ("gray-wood-look-lvp-floor-bedroom", "Gray wood-look vinyl plank floor with staggered seams across a bedroom", "50% 55%"),
-    "steps": ("self-leveler-poured-floor-prep", "Self-leveling compound poured across a room so the new floor goes down flat", "50% 50%"),
+    "steps": ("navy-kitchen-marble-look-subway-backsplash", "Wood-look LVP floor running through a navy kitchen", "50% 85%"),
     "Transitions to tile": ("wood-look-tile-tub-deck-lvp-floor", "Wood-look tile tub surround meeting a wood-look LVP floor in a clean line", "50% 60%"),
     "Whole-house LVP": ("wood-look-plank-floor-bedroom", "Wood-look plank floor with long, staggered planks", "50% 75%"),
     "LVP in kitchens and baths": ("gray-lvp-kitchen-floor", "Gray wood-look LVP installed through a galley kitchen between oak cabinets", "50% 45%"),
