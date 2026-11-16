@@ -14,7 +14,7 @@ REPO = sys.argv[1]
 SITE = "https://www.fourstatecustomfloors.com"
 UPDATED = "November 2026"
 # Bump when styles.css or main.js changes (also in index.html) so phones fetch the new files
-ASSET_VERSION = "20261116c"
+ASSET_VERSION = "20261116d"
 STATES = ["Missouri", "Kansas", "Oklahoma", "Arkansas"]
 
 SERVICES = [
@@ -470,7 +470,7 @@ def footer(p):
       </div>
       <div class="footer-bottom fine">
         <span>© 2026 Four State Custom Floors. All rights reserved.</span>
-        <span><a href="{p}privacy">Privacy</a> · <a href="{p}terms">Terms</a></span>
+        <span><a href="{p}privacy/">Privacy</a> · <a href="{p}terms/">Terms</a></span>
       </div>
     </div>
   </footer>
@@ -789,3 +789,127 @@ def page_404():
 with open(os.path.join(REPO, "404.html"), "w") as f:
   f.write(page_404())
 print("wrote 404.html")
+
+# ---------- Privacy and Terms (plain language; covers SMS/A2P requirements) ----------
+LEGAL_UPDATED = "November 16, 2026"
+LEGAL = {
+  "privacy": {
+    "title": "Privacy Policy | Four State Custom Floors",
+    "desc": "How Four State Custom Floors collects, uses and protects your information, including text messages.",
+    "h1": "Privacy Policy",
+    "body": """
+<p>Four State Custom Floors ("we," "us") respects your privacy. This page explains, in plain terms, what information we collect and what we do with it.</p>
+
+<h2>What we collect</h2>
+<p>When you fill out our estimate form, call or text us, we may collect:</p>
+<ul>
+  <li>Your name, phone number and town</li>
+  <li>Details about your project and any photos you send</li>
+  <li>Basic website data, like which page you came from, to help us understand how people find us</li>
+</ul>
+
+<h2>How we use it</h2>
+<ul>
+  <li>To contact you about your project and give you an estimate</li>
+  <li>To schedule and do the work</li>
+  <li>To send project updates, and after the job, a request for a review</li>
+</ul>
+
+<h2>Text messages</h2>
+<p>If you give us your phone number, you agree that we can text you about your project. Message frequency varies. Message and data rates may apply. Reply <b>STOP</b> at any time to stop texts, or <b>HELP</b> for help.</p>
+<p><b>We do not sell, rent or share your mobile number or text message consent with anyone for their marketing.</b> Mobile opt-in data and consent are never shared with third parties.</p>
+
+<h2>Who we share it with</h2>
+<p>We don't sell your information. We only share it with the tools that help us run the business (like our scheduling, texting and email software), and only so they can do that job for us. We may also share information if the law requires it.</p>
+
+<h2>Keeping it safe</h2>
+<p>We take reasonable steps to protect your information. No system is perfect, but we only keep what we need to serve you.</p>
+
+<h2>Your choices</h2>
+<p>You can ask us to update or delete your information, or stop contacting you, at any time. Just call or text <a href="tel:+14178258240">417-825-8240</a>.</p>
+
+<h2>Changes</h2>
+<p>If we update this policy, we'll post the new version here with a new date.</p>
+""",
+  },
+  "terms": {
+    "title": "Terms of Service | Four State Custom Floors",
+    "desc": "Terms for using the Four State Custom Floors website, estimates and text messages.",
+    "h1": "Terms of Service",
+    "body": """
+<p>By using this website, submitting our estimate form or texting us, you agree to these terms. We've kept them short and simple.</p>
+
+<h2>Estimates and quotes</h2>
+<p>Prices on this website are typical ranges, not quotes. Your actual price comes in a written quote after we see the space. The work and price in that written quote are what we agree to.</p>
+
+<h2>Text messages</h2>
+<ul>
+  <li><b>What you'll get:</b> texts from Four State Custom Floors about your estimate, scheduling, your project, and a review request after the job.</li>
+  <li><b>How often:</b> message frequency varies, depending on your project.</li>
+  <li><b>Cost:</b> message and data rates may apply.</li>
+  <li><b>To stop:</b> reply <b>STOP</b> at any time. You'll get one message confirming you're unsubscribed.</li>
+  <li><b>For help:</b> reply <b>HELP</b>, or call <a href="tel:+14178258240">417-825-8240</a>.</li>
+  <li>Carriers are not responsible for delayed or undelivered messages.</li>
+</ul>
+<p>See our <a href="../privacy/">Privacy Policy</a> for how we handle your information.</p>
+
+<h2>Photos and content</h2>
+<p>The photos on this website are our own work. Please don't copy them without asking. If you send us photos of your space, we only use them to plan and quote your project.</p>
+
+<h2>Website information</h2>
+<p>We do our best to keep this website accurate, but things like prices and timelines can change. Nothing on this site is a guarantee until it's in your written quote.</p>
+
+<h2>Changes</h2>
+<p>We may update these terms from time to time. The latest version will always be posted here.</p>
+
+<h2>Questions</h2>
+<p>Call or text <a href="tel:+14178258240">417-825-8240</a>.</p>
+""",
+  },
+}
+
+def page_legal(slug, L):
+  p = "../"
+  url = f"{SITE}/{slug}/"
+  return f'''<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{e(L["title"])}</title>
+  <meta name="description" content="{e(L["desc"])}">
+  <link rel="canonical" href="{url}">
+  <meta name="theme-color" content="#FFFFFF">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{p}assets/styles.css?v={ASSET_VERSION}">
+</head>
+<body>
+{header(p)}
+  <main id="main">
+    <section class="section legal">
+      <div class="container">
+        <nav class="crumbs" aria-label="Breadcrumb">
+          <ol>
+            <li><a href="{p}">Home</a></li>
+            <li aria-current="page">{e(L["h1"])}</li>
+          </ol>
+        </nav>
+        <h1 class="h2">{e(L["h1"])}.</h1>
+        <p class="caption">Last updated {LEGAL_UPDATED}</p>
+        <div class="legal-body">
+{L["body"]}
+        </div>
+      </div>
+    </section>
+  </main>
+
+{footer(p)}'''
+
+for slug, L in LEGAL.items():
+  d = os.path.join(REPO, slug)
+  os.makedirs(d, exist_ok=True)
+  with open(os.path.join(d, "index.html"), "w") as f:
+    f.write(page_legal(slug, L))
+  print("wrote", slug)
