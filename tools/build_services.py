@@ -14,7 +14,7 @@ REPO = sys.argv[1]
 SITE = "https://www.fourstatecustomfloors.com"
 UPDATED = "November 2026"
 # Bump when styles.css or main.js changes (also in index.html) so phones fetch the new files
-ASSET_VERSION = "20261116d"
+ASSET_VERSION = "20261116e"
 STATES = ["Missouri", "Kansas", "Oklahoma", "Arkansas"]
 
 SERVICES = [
@@ -400,7 +400,7 @@ def header(p, current=None):
   <header class="site-header">
     <div class="container header-inner">
       <a class="logo" href="{p}">
-        <img src="{p}assets/four-state-logo.png" alt="Four State Custom Floors" width="139" height="60">
+        <img src="{p}assets/four-state-logo.webp" alt="Four State Custom Floors" width="139" height="60">
       </a>
 
       <nav class="nav" aria-label="Main">
@@ -445,7 +445,7 @@ def footer(p):
       <div class="footer-top">
         <div class="footer-brand">
           <a class="logo" href="{p}">
-            <img src="{p}assets/four-state-logo.png" alt="Four State Custom Floors" width="148" height="64" loading="lazy">
+            <img src="{p}assets/four-state-logo.webp" alt="Four State Custom Floors" width="148" height="64" loading="lazy">
           </a>
           <address class="nap">
             Four State Custom Floors<br>
@@ -573,6 +573,9 @@ def page(s):
   <title>{e(s["title"])}</title>
   <meta name="description" content="{e(s["desc"])}">
   <link rel="canonical" href="{url}">
+  <link rel="icon" href="{p}favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" href="{p}assets/favicon-32.png">
+  <link rel="apple-touch-icon" href="{p}assets/apple-touch-icon.png">
   <meta name="theme-color" content="#FFFFFF">
 
   <meta property="og:type" content="website">
@@ -760,6 +763,7 @@ def page_404():
   {base}
   <title>Page Not Found | Four State Custom Floors</title>
   <meta name="robots" content="noindex">
+  <link rel="icon" href="favicon.ico" sizes="any">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -879,6 +883,9 @@ def page_legal(slug, L):
   <title>{e(L["title"])}</title>
   <meta name="description" content="{e(L["desc"])}">
   <link rel="canonical" href="{url}">
+  <link rel="icon" href="{p}favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" href="{p}assets/favicon-32.png">
+  <link rel="apple-touch-icon" href="{p}assets/apple-touch-icon.png">
   <meta name="theme-color" content="#FFFFFF">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

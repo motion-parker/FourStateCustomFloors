@@ -3,6 +3,7 @@
   "name": "black-hex-mosaic-shower-floor-detail",
   "widths": [
    640,
+   800,
    1000
   ],
   "w": 1536,
@@ -12,6 +13,7 @@
   "name": "dark-marble-look-walk-in-shower-bench-niche",
   "widths": [
    640,
+   800,
    1000
   ],
   "w": 1536,
@@ -21,6 +23,7 @@
   "name": "shower-niche-hex-mosaic-metal-trim",
   "widths": [
    640,
+   800,
    1000
   ],
   "w": 1536,
@@ -30,6 +33,7 @@
   "name": "gray-tile-shower-niche-teak-seat",
   "widths": [
    640,
+   800,
    1000
   ],
   "w": 1500,
@@ -39,6 +43,7 @@
   "name": "schluter-kerdi-waterproofing-before-tile",
   "widths": [
    640,
+   800,
    1000
   ],
   "w": 1536,
@@ -48,6 +53,7 @@
   "name": "stone-subway-tile-kitchen-backsplash",
   "widths": [
    640,
+   800,
    1000,
    1600
   ],
@@ -58,6 +64,7 @@
   "name": "dust-control-containment-tile-removal",
   "widths": [
    640,
+   800,
    1000
   ],
   "w": 1536,
@@ -67,6 +74,7 @@
   "name": "large-format-wall-tile-leveling-system",
   "widths": [
    640,
+   800,
    1000
   ],
   "w": 1536,
@@ -76,6 +84,7 @@
   "name": "subway-tile-shower-teak-seat-grab-bar",
   "widths": [
    640,
+   800,
    1000
   ],
   "w": 1536,
@@ -85,6 +94,7 @@
   "name": "gray-subway-tile-walk-in-shower-penny-floor",
   "widths": [
    640,
+   800,
    1000
   ],
   "w": 1536,
@@ -94,6 +104,7 @@
   "name": "uncoupling-membrane-bathroom-floor-prep",
   "widths": [
    640,
+   800,
    1000
   ],
   "w": 1536,
@@ -103,6 +114,7 @@
   "name": "hex-mosaic-tub-surround-brass-accents",
   "widths": [
    640,
+   800,
    1000
   ],
   "w": 1536,
@@ -112,6 +124,7 @@
   "name": "hex-mosaic-bathroom-floor-walk-in-shower",
   "widths": [
    640,
+   800,
    1000
   ],
   "w": 1536,
@@ -121,6 +134,7 @@
   "name": "curbless-walk-in-shower-marble-subway-tile",
   "widths": [
    640,
+   800,
    1000
   ],
   "w": 1536,
@@ -138,6 +152,7 @@
   "name": "river-pebble-stone-floor",
   "widths": [
    640,
+   800,
    1000
   ],
   "w": 1080,
@@ -171,6 +186,7 @@
   "name": "schluter-shower-drain-pebble-floor-detail",
   "widths": [
    640,
+   800,
    1000
   ],
   "w": 1080,
@@ -188,6 +204,7 @@
   "name": "wood-look-plank-floor-bedroom",
   "widths": [
    640,
+   800,
    1000
   ],
   "w": 1536,
@@ -197,6 +214,7 @@
   "name": "gray-wood-look-lvp-floor-bedroom",
   "widths": [
    640,
+   800,
    1000,
    1440
   ],
@@ -207,6 +225,7 @@
   "name": "penny-tile-shower-floor-marble-look-walls",
   "widths": [
    640,
+   800,
    1000,
    1536
   ],
@@ -217,6 +236,7 @@
   "name": "tim-schmit-owner-four-state-custom-floors",
   "widths": [
    640,
+   800,
    1000,
    1206
   ],
@@ -227,6 +247,7 @@
   "name": "lvp-stairs-and-landing-top-view",
   "widths": [
    640,
+   800,
    1000
   ],
   "w": 1932,
@@ -236,6 +257,7 @@
   "name": "lvp-stairs-and-upstairs-hallway",
   "widths": [
    640,
+   800,
    1000
   ],
   "w": 1932,
@@ -245,6 +267,7 @@
   "name": "gray-lvp-kitchen-floor",
   "widths": [
    640,
+   800,
    1000
   ],
   "w": 1206,
@@ -254,6 +277,7 @@
   "name": "diamond-tile-full-height-backsplash-range-hood",
   "widths": [
    640,
+   800,
    1000
   ],
   "w": 1512,
@@ -263,6 +287,7 @@
   "name": "textured-blue-ceramic-tile-backsplash",
   "widths": [
    640,
+   800,
    1000
   ],
   "w": 1512,
@@ -272,6 +297,7 @@
   "name": "handmade-gray-subway-tile-cooktop-backsplash",
   "widths": [
    640,
+   800,
    1000
   ],
   "w": 1512,
@@ -281,6 +307,7 @@
   "name": "marble-basketweave-mosaic-backsplash-outlet",
   "widths": [
    640,
+   800,
    1000
   ],
   "w": 1512,
@@ -290,6 +317,7 @@
   "name": "marble-basketweave-backsplash-pot-filler",
   "widths": [
    640,
+   800,
    1000
   ],
   "w": 1512,
@@ -299,6 +327,7 @@
   "name": "black-arabesque-tile-backsplash",
   "widths": [
    640,
+   800,
    1000
   ],
   "w": 1512,
@@ -308,6 +337,7 @@
   "name": "travertine-range-wall-mosaic-medallion",
   "widths": [
    640,
+   800,
    1000
   ],
   "w": 1512,
@@ -317,6 +347,7 @@
   "name": "stone-look-subway-backsplash-white-cabinets",
   "widths": [
    640,
+   800,
    1000
   ],
   "w": 1512,
@@ -326,6 +357,7 @@
   "name": "linear-stone-mosaic-backsplash-kitchen",
   "widths": [
    640,
+   800,
    1000
   ],
   "w": 1512,
@@ -335,6 +367,7 @@
   "name": "travertine-versailles-backsplash-butcher-block",
   "widths": [
    640,
+   800,
    1000
   ],
   "w": 1512,
@@ -344,6 +377,7 @@
   "name": "tile-removal-hepa-vacuums-living-room",
   "widths": [
    640,
+   800,
    1000
   ],
   "w": 1932,
@@ -353,6 +387,7 @@
   "name": "tile-removal-down-to-slab",
   "widths": [
    640,
+   800,
    1000
   ],
   "w": 1932,
@@ -362,6 +397,7 @@
   "name": "air-scrubber-vented-outside-during-demo",
   "widths": [
    640,
+   800,
    1000
   ],
   "w": 1932,
@@ -371,6 +407,7 @@
   "name": "marble-look-large-format-tile-hallway",
   "widths": [
    640,
+   800,
    1000
   ],
   "w": 1932,
@@ -380,6 +417,7 @@
   "name": "gray-tile-entry-floor",
   "widths": [
    640,
+   800,
    1000
   ],
   "w": 1512,
@@ -389,6 +427,7 @@
   "name": "slate-look-tile-living-room-floor",
   "widths": [
    640,
+   800,
    1000
   ],
   "w": 1932,
@@ -398,6 +437,7 @@
   "name": "black-white-geometric-tile-bathroom-floor",
   "widths": [
    640,
+   800,
    1000
   ],
   "w": 1512,
@@ -407,6 +447,7 @@
   "name": "flower-mosaic-shower-floor",
   "widths": [
    640,
+   800,
    1000
   ],
   "w": 1512,
@@ -416,6 +457,7 @@
   "name": "marble-look-shower-corner-bench-niche",
   "widths": [
    640,
+   800,
    1000
   ],
   "w": 1440,
@@ -425,6 +467,7 @@
   "name": "stone-look-walk-in-shower-pebble-floor",
   "widths": [
    640,
+   800,
    1000
   ],
   "w": 1512,
@@ -434,6 +477,7 @@
   "name": "curbless-shower-skylight-penny-floor",
   "widths": [
    640,
+   800,
    1000
   ],
   "w": 1512,
@@ -443,6 +487,7 @@
   "name": "floor-grinder-vacuum-wood-subfloor",
   "widths": [
    640,
+   800,
    1000
   ],
   "w": 1932,
@@ -452,6 +497,7 @@
   "name": "navy-kitchen-marble-look-subway-backsplash",
   "widths": [
    640,
+   800,
    1000
   ],
   "w": 1512,
@@ -461,6 +507,7 @@
   "name": "penny-mosaic-niche-glass-subway-shower",
   "widths": [
    640,
+   800,
    1000
   ],
   "w": 1536,
@@ -470,6 +517,7 @@
   "name": "shower-drain-penny-tile-floor",
   "widths": [
    640,
+   800,
    1000
   ],
   "w": 1536,
@@ -479,6 +527,7 @@
   "name": "wood-look-tile-shower-bench-niche-stone-floor",
   "widths": [
    640,
+   800,
    1000
   ],
   "w": 1536,
@@ -488,6 +537,7 @@
   "name": "wood-look-tile-tub-deck-lvp-floor",
   "widths": [
    640,
+   800,
    1000
   ],
   "w": 1536,
@@ -497,6 +547,7 @@
   "name": "old-flagstone-mortar-bed-under-tile",
   "widths": [
    640,
+   800,
    1000
   ],
   "w": 1080,
@@ -506,6 +557,7 @@
   "name": "self-leveler-poured-floor-prep",
   "widths": [
    640,
+   800,
    1000
   ],
   "w": 1080,
@@ -524,6 +576,7 @@
   "name": "polished-marble-look-porcelain-bathroom-floor",
   "widths": [
    640,
+   800,
    1000
   ],
   "w": 1512,
@@ -533,6 +586,7 @@
   "name": "wood-look-tile-floor-master-bath-tub-shower",
   "widths": [
    640,
+   800,
    1000
   ],
   "w": 1932,
