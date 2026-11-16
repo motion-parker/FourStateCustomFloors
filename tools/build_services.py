@@ -293,6 +293,10 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from photos import img
 import nav
 PROJECT_TOWNS = {
+  "Slate-look tile living room floor": "Neosho, MO",
+  "LVP stairs and upstairs hallway": "Noel, MO",
+  "Wood-look plank bedroom floor": "Grove, OK",
+  "LVP kitchen floor": "Joplin, MO",
   "Subway tile shower with penny mosaic niche": "Noel, MO",
   "Marble-look shower with corner bench and niche": "Grove, OK",
   "Black hex mosaic shower floor": "Pineville, MO",
