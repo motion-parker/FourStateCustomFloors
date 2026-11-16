@@ -85,21 +85,17 @@
     });
   }
 
-  // Reviews: rotate every 8 seconds; pause on hover, focus or touch; no auto-rotate for reduced motion
+  // Reviews: rotate every 8 seconds; pause on mouse hover or keyboard focus; no auto-rotate for reduced motion
   var reviews = document.querySelector('.review');
   if (reviews && reviews.querySelector('.review-slide + .review-slide')) {
     root.classList.add('js');
     var slides = reviews.querySelectorAll('.review-slide');
-    var dots = reviews.querySelectorAll('.review-dot');
-    var at = 0, timer = null, hovering = false, holdUntil = 0;
-    var hold = function () { holdUntil = Date.now() + 15000; }; // a tap or dot click pauses for 15s, then it resumes
+    var at = 0, timer = null, hovering = false;
     var show = function (i) {
       at = (i + slides.length) % slides.length;
       slides.forEach(function (s, k) { s.classList.toggle('is-active', k === at); s.setAttribute('aria-hidden', k === at ? 'false' : 'true'); });
-      dots.forEach(function (d, k) { d.classList.toggle('is-active', k === at); if (k === at) d.setAttribute('aria-current', 'true'); else d.removeAttribute('aria-current'); });
     };
-    var start = function () { if (reduced || timer) return; timer = setInterval(function () { if (!hovering && Date.now() > holdUntil && !document.hidden) show(at + 1); }, 8000); };
-    dots.forEach(function (d, k) { d.addEventListener('click', function () { show(k); hold(); }); });
+    var start = function () { if (reduced || timer) return; timer = setInterval(function () { if (!hovering && !document.hidden) show(at + 1); }, 8000); };
     // Hover pauses only on devices with a real mouse; phones fire fake hover events on tap
     var canHover = window.matchMedia('(hover: hover)').matches;
     if (canHover) {

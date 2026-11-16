@@ -380,11 +380,6 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 }
 .review figcaption { margin-top: 24px; font-size: 17px; font-weight: 600; }
 .review figcaption span { display: block; font-weight: 400; color: var(--color-text-quiet); font-size: 15px; }
-.review-dots { display: none; justify-content: center; gap: 2px; margin-top: 20px; }
-.js .review-dots { display: flex; }
-.review-dot { width: 44px; height: 44px; border: 0; background: none; cursor: pointer; display: flex; align-items: center; justify-content: center; padding: 0; }
-.review-dot::before { content: ""; width: 8px; height: 8px; border-radius: 50%; background: var(--color-border-strong); transition: background-color .2s ease, transform .2s ease; }
-.review-dot.is-active::before { background: var(--color-green); transform: scale(1.25); }
 .review .link-cta { margin-top: 20px; }
 
 /* ---------- FAQ ---------- */
