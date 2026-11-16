@@ -463,8 +463,8 @@ def footer(p):
           <h2>Find us</h2>
           <ul>
             <li><a href="https://maps.app.goo.gl/QmneSirVp7D9XJJp6" target="_blank" rel="noopener">Google</a></li>
-            <li><a href="#" rel="noopener">Facebook</a></li>
-            <li><a href="#" rel="noopener">Houzz</a></li>
+            <li><a href="https://www.facebook.com/fourstatecustomfloors" target="_blank" rel="noopener">Facebook</a></li>
+            <li><a href="https://www.instagram.com/four_state_custom_floors" target="_blank" rel="noopener">Instagram</a></li>
           </ul>
         </nav>
       </div>
