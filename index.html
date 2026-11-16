@@ -27,7 +27,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/styles.css?v=20261116e">
+  <link rel="stylesheet" href="assets/styles.css?v=20261116f">
 
   <script type="application/ld+json">
   {
@@ -417,12 +417,39 @@
     <!-- ===== 8. Reviews ===== -->
     <section class="section" id="reviews">
       <div class="container">
-        <figure class="review reveal">
+        <div class="review reveal" aria-roledescription="carousel" aria-label="Customer reviews">
           <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
-          <blockquote>“I have been in the cabinet business for over 40 years. I’ve worked with several tile setters over the years. Tim just completed a very difficult shower build with heated floors for my new home and it turned out better than I had imagined. He communicates well and gives you layout options. I recommend Tim over any tile man I’ve worked with.”</blockquote>
-          <figcaption>Lorn Cottongim<span>Google review</span></figcaption>
+          <div class="review-track" aria-live="polite">
+          <figure class="review-slide is-active" id="review-1" aria-roledescription="slide" aria-label="Review 1 of 5">
+            <blockquote>“I have been in the cabinet business for over 40 years. I’ve worked with several tile setters over the years. Tim just completed a very difficult shower build with heated floors for my new home and it turned out better than I had imagined. He communicates well and gives you layout options. I recommend Tim over any tile man I’ve worked with.”</blockquote>
+            <figcaption>Lorn Cottongim<span>Shower with heated floors · Google review</span></figcaption>
+          </figure>
+          <figure class="review-slide" id="review-2" aria-roledescription="slide" aria-label="Review 2 of 5">
+            <blockquote>“Four States Custom Floors just finished our bathroom flooring and complete shower redo. Was amazed at the attention to detail and better yet how amazing our bathroom looks. Tim is an honest and great person and will use for sure use again if we have another project”</blockquote>
+            <figcaption>Tim Thomas<span>Bathroom floor and shower · Google review</span></figcaption>
+          </figure>
+          <figure class="review-slide" id="review-3" aria-roledescription="slide" aria-label="Review 3 of 5">
+            <blockquote>“Tim was absolutely amazing the entire way through our shower remodel. Very knowledgeable and willing to help us out when it came to getting all of the materials. Our shower looks amazing and you can tell he put his best effort into it!”</blockquote>
+            <figcaption>Colton Eubanks<span>Shower remodel · Google review</span></figcaption>
+          </figure>
+          <figure class="review-slide" id="review-4" aria-roledescription="slide" aria-label="Review 4 of 5">
+            <blockquote>“Tim did an excellent job on our tile backsplash in our kitchen! Excellent communication. Great work!! Would hire again. Highly recommend.”</blockquote>
+            <figcaption>Erin Walkenshaw<span>Kitchen backsplash · Google review</span></figcaption>
+          </figure>
+          <figure class="review-slide" id="review-5" aria-roledescription="slide" aria-label="Review 5 of 5">
+            <blockquote>“Tim re-tiled my shower, and it now looks fantastic! In addition, he was there on time daily and worked full days until the project was completed. I would highly recommend him.”</blockquote>
+            <figcaption>Karen Key<span>Shower re-tile · Google review</span></figcaption>
+          </figure>
+          </div>
+          <div class="review-dots" role="group" aria-label="Choose a review">
+            <button type="button" class="review-dot is-active" aria-label="Show review 1" aria-controls="review-1" aria-current="true"></button>
+            <button type="button" class="review-dot" aria-label="Show review 2" aria-controls="review-2"></button>
+            <button type="button" class="review-dot" aria-label="Show review 3" aria-controls="review-3"></button>
+            <button type="button" class="review-dot" aria-label="Show review 4" aria-controls="review-4"></button>
+            <button type="button" class="review-dot" aria-label="Show review 5" aria-controls="review-5"></button>
+          </div>
           <a class="link-cta" href="https://maps.app.goo.gl/QmneSirVp7D9XJJp6" target="_blank" rel="noopener">Read all 13 reviews on Google&nbsp;›</a>
-        </figure>
+        </div>
       </div>
     </section>
 
@@ -738,6 +765,6 @@
     <a class="btn" href="#estimate">Free Estimate</a>
   </div>
 
-  <script src="assets/main.js?v=20261116e" defer></script>
+  <script src="assets/main.js?v=20261116f" defer></script>
 </body>
 </html>
