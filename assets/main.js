@@ -91,19 +91,23 @@
     root.classList.add('js');
     var slides = reviews.querySelectorAll('.review-slide');
     var dots = reviews.querySelectorAll('.review-dot');
-    var at = 0, timer = null, paused = false;
+    var at = 0, timer = null, hovering = false, holdUntil = 0;
+    var hold = function () { holdUntil = Date.now() + 15000; }; // a tap or dot click pauses for 15s, then it resumes
     var show = function (i) {
       at = (i + slides.length) % slides.length;
       slides.forEach(function (s, k) { s.classList.toggle('is-active', k === at); s.setAttribute('aria-hidden', k === at ? 'false' : 'true'); });
       dots.forEach(function (d, k) { d.classList.toggle('is-active', k === at); if (k === at) d.setAttribute('aria-current', 'true'); else d.removeAttribute('aria-current'); });
     };
-    var start = function () { if (reduced || timer) return; timer = setInterval(function () { if (!paused && !document.hidden) show(at + 1); }, 8000); };
-    dots.forEach(function (d, k) { d.addEventListener('click', function () { show(k); paused = true; }); });
-    reviews.addEventListener('mouseenter', function () { paused = true; });
-    reviews.addEventListener('mouseleave', function () { paused = false; });
-    reviews.addEventListener('focusin', function () { paused = true; });
-    reviews.addEventListener('focusout', function () { paused = false; });
-    reviews.addEventListener('touchstart', function () { paused = true; }, { passive: true });
+    var start = function () { if (reduced || timer) return; timer = setInterval(function () { if (!hovering && Date.now() > holdUntil && !document.hidden) show(at + 1); }, 8000); };
+    dots.forEach(function (d, k) { d.addEventListener('click', function () { show(k); hold(); }); });
+    // Hover pauses only on devices with a real mouse; phones fire fake hover events on tap
+    var canHover = window.matchMedia('(hover: hover)').matches;
+    if (canHover) {
+      reviews.addEventListener('mouseenter', function () { hovering = true; });
+      reviews.addEventListener('mouseleave', function () { hovering = false; });
+    }
+    reviews.addEventListener('focusin', function (ev) { if (ev.target.matches(':focus-visible')) hovering = true; });
+    reviews.addEventListener('focusout', function () { hovering = false; });
     show(0); start();
   }
 
