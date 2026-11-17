@@ -587,13 +587,13 @@ def page(s):
   <meta property="og:description" content="{e(s["desc"])}">
   <meta property="og:url" content="{url}">
   <meta property="og:site_name" content="Four State Custom Floors">
-  <!-- Share image: switch to https://www.fourstatecustomfloors.com/assets/share-image.jpg at launch -->
-  <meta property="og:image" content="https://www.fourstatecustomfloors.com/assets/share-image.jpg">
+  <!-- Share image: this page's hero photo, cropped to 1200x630 (assets/share-<slug>.jpg) -->
+  <meta property="og:image" content="{SITE}/assets/share-{s['slug']}.jpg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="Four State Custom Floors logo">
+  <meta property="og:image:alt" content="{e(PAGE_IMG[s['slug']]['hero'][1])}">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:image" content="https://www.fourstatecustomfloors.com/assets/share-image.jpg">
+  <meta name="twitter:image" content="{SITE}/assets/share-{s['slug']}.jpg">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
