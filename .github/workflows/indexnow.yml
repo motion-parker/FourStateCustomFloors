@@ -1,0 +1,25 @@
+# Tells Bing (and other IndexNow search engines) about every page in the sitemap
+# right after GitHub Pages publishes a change. Google does not use IndexNow.
+name: IndexNow ping
+
+on:
+  page_build:
+  workflow_dispatch:
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Wait for the published site to update
+        run: sleep 60
+      - name: Send sitemap pages to IndexNow
+        run: |
+          set -euo pipefail
+          HOST="www.fourstatecustomfloors.com"
+          KEY="fccc8f834be0ac3de1d70d662884154b"
+          URLS=$(curl -fsS "https://$HOST/sitemap.xml" | grep -oP '(?<=<loc>)https://[^<]*/(?=</loc>)' | python3 -c 'import json,sys; print(json.dumps([l.strip() for l in sys.stdin if l.strip()]))')
+          echo "Pages: $URLS"
+          BODY=$(printf '{"host":"%s","key":"%s","keyLocation":"https://%s/%s.txt","urlList":%s}' "$HOST" "$KEY" "$HOST" "$KEY" "$URLS")
+          CODE=$(curl -sS -o /dev/null -w '%{http_code}' -X POST https://api.indexnow.org/indexnow -H 'Content-Type: application/json; charset=utf-8' -d "$BODY")
+          echo "IndexNow response: $CODE"
+          [ "$CODE" = "200" ] || [ "$CODE" = "202" ]
