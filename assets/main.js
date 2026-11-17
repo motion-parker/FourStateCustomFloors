@@ -107,8 +107,6 @@
     show(0); start();
   }
 
-  var file = document.getElementById('f-photo');
-
   // Remember where the visitor came from (ad UTMs) for the rest of the visit, so a lead from any page is credited
   var UTM = ['utm_source', 'utm_medium', 'utm_campaign'];
   try {
@@ -116,63 +114,13 @@
     UTM.forEach(function (k) { if (qs.get(k)) sessionStorage.setItem(k, qs.get(k)); });
   } catch (err) {}
 
-  // Estimate form: send to the lead sheet, photos shrunk on the phone first so uploads are quick
-  var form = document.getElementById('estimate-form');
-  if (form && form.getAttribute('data-endpoint') && window.fetch && window.JSON) {
-    var status = document.getElementById('form-status');
-    var btn = form.querySelector('button[type="submit"]');
-    var fail = function () {
-      status.className = 'form-status is-error';
-      status.innerHTML = 'That didn\u2019t go through. Please call or text Tim at <a href="tel:+14178258240">417-825-8240</a>.';
-      btn.disabled = false; btn.textContent = 'Send my request';
-    };
-    var shrink = function (f) {
-      return new Promise(function (resolve) {
-        var url = URL.createObjectURL(f), im = new Image();
-        im.onload = function () {
-          var max = 1600, w = im.naturalWidth, h = im.naturalHeight, r = Math.min(1, max / Math.max(w, h));
-          var c = document.createElement('canvas'); c.width = Math.round(w * r); c.height = Math.round(h * r);
-          c.getContext('2d').drawImage(im, 0, 0, c.width, c.height);
-          URL.revokeObjectURL(url);
-          resolve({ data: c.toDataURL('image/jpeg', 0.8).split(',')[1] });
-        };
-        im.onerror = function () { URL.revokeObjectURL(url); resolve(null); };
-        im.src = url;
-      });
-    };
-    form.addEventListener('submit', function (ev) {
-      ev.preventDefault();
-      status.className = 'form-status'; status.textContent = '';
-      btn.disabled = true; btn.textContent = 'Sending\u2026';
-      var v = function (n) { var el = form.elements[n]; return el ? el.value : ''; };
-      var data = { name: v('name'), phone: v('phone'), town: v('town'), project: v('project'), timing: v('timing'),
-                   message: v('message'), website: v('website'), page: location.href };
-      UTM.forEach(function (k) { var x = v(k); try { x = x || sessionStorage.getItem(k) || ''; } catch (err) {} data[k] = x; });
-      var files = file && file.files ? Array.prototype.slice.call(file.files, 0, 5) : [];
-      Promise.all(files.map(shrink)).then(function (photos) {
-        data.photos = photos.filter(Boolean);
-        return fetch(form.getAttribute('data-endpoint'), {
-          method: 'POST', headers: { 'Content-Type': 'text/plain;charset=utf-8' }, body: JSON.stringify(data)
-        });
-      }).then(function (r) { return r.json(); }).then(function (res) {
-        if (!res || !res.ok) return fail();
-        if (window.gtag) window.gtag('event', 'generate_lead', { form: 'estimate', project: data.project || 'none' });
-        form.classList.add('is-sent');
-        form.innerHTML = '<div class="form-done" tabindex="-1"><h3>Got it, <span class="accent">thanks</span>.</h3>' +
-          '<p>Tim will text or call you back today.</p>' +
-          '<p>Need him sooner? <a href="tel:+14178258240">Call 417-825-8240</a></p></div>';
-        form.querySelector('.form-done').focus();
-      }).catch(fail);
-    });
-  }
-
-  // Show the chosen photo's file name in the upload box
-  if (file) {
-    file.addEventListener('change', function () {
-      var hint = document.getElementById('f-photo-hint');
-      if (hint && file.files.length) {
-        hint.textContent = file.files.length === 1 ? file.files[0].name : file.files.length + ' photos selected';
-      }
-    });
+  // Estimate form (GoHighLevel embed): pass along ad UTMs saved earlier in the visit, so the lead is credited to the ad
+  var ghl = document.querySelector('.form-shell--ghl iframe');
+  if (ghl) {
+    try {
+      var src = new URL(ghl.getAttribute('src')), added = false;
+      UTM.forEach(function (k) { var x = sessionStorage.getItem(k); if (x && !src.searchParams.get(k)) { src.searchParams.set(k, x); added = true; } });
+      if (added) ghl.setAttribute('src', src.toString());
+    } catch (err) {}
   }
 })();

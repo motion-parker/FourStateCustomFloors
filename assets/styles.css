@@ -491,6 +491,8 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 .form-done p { margin-top: 12px; font-size: 17px; color: var(--color-text-body); }
 .form-done a { color: var(--color-green-text); font-weight: 600; }
 .btn[disabled] { opacity: .65; cursor: progress; }
+.form-shell--ghl { padding: 20px 16px; }
+.form-shell--ghl iframe { display: block; min-height: 600px; }
 
 /* ---------- Service pages ---------- */
 .page-hero { padding-top: 40px; }
