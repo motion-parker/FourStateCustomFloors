@@ -15,6 +15,10 @@ SITE = "https://www.fourstatecustomfloors.com"
 UPDATED = "November 2026"
 # Bump when styles.css or main.js changes (also in index.html) so phones fetch the new files
 ASSET_VERSION = "20261116h"
+GA_TAG = """  <!-- Google Analytics (GA4) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-JN1SCW7LQX"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-JN1SCW7LQX');</script>
+"""
 STATES = ["Missouri", "Kansas", "Oklahoma", "Arkansas"]
 
 SERVICES = [
@@ -570,7 +574,7 @@ def page(s):
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{e(s["title"])}</title>
+{GA_TAG}  <title>{e(s["title"])}</title>
   <meta name="description" content="{e(s["desc"])}">
   <link rel="canonical" href="{url}">
   <link rel="icon" href="{p}favicon.ico" sizes="any">
@@ -760,7 +764,7 @@ def page_404():
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  {base}
+{GA_TAG}  {base}
   <title>Page Not Found | Four State Custom Floors</title>
   <meta name="robots" content="noindex">
   <link rel="icon" href="favicon.ico" sizes="any">
@@ -880,7 +884,7 @@ def page_legal(slug, L):
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{e(L["title"])}</title>
+{GA_TAG}  <title>{e(L["title"])}</title>
   <meta name="description" content="{e(L["desc"])}">
   <link rel="canonical" href="{url}">
   <link rel="icon" href="{p}favicon.ico" sizes="any">
