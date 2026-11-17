@@ -601,5 +601,16 @@
   ],
   "w": 1209,
   "h": 1008
+ },
+ "62": {
+  "name": "oak-look-lvp-floor-vanity-stacked-slate-wall",
+  "widths": [
+   640,
+   800,
+   1000,
+   1536
+  ],
+  "w": 1536,
+  "h": 2048
  }
 }
