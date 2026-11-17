@@ -480,6 +480,17 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 .upload:focus-within { outline: 2px solid var(--color-green-text); outline-offset: 2px; }
 .form-shell .fine { margin-top: 16px; }
 .form-shell .fine a { color: var(--color-green-text); }
+.hp { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
+.form-status { margin-top: 14px; font-size: 15px; font-weight: 600; }
+.form-status:empty { display: none; }
+.form-status.is-error { color: #B42318; }
+.form-status.is-error a { color: inherit; }
+.form-shell.is-sent { display: flex; flex-direction: column; justify-content: center; text-align: center; min-height: 360px; }
+.form-done h3 { font-size: 28px; font-weight: 700; letter-spacing: -0.02em; }
+.form-done h3 .accent { color: var(--color-green); }
+.form-done p { margin-top: 12px; font-size: 17px; color: var(--color-text-body); }
+.form-done a { color: var(--color-green-text); font-weight: 600; }
+.btn[disabled] { opacity: .65; cursor: progress; }
 
 /* ---------- Service pages ---------- */
 .page-hero { padding-top: 40px; }

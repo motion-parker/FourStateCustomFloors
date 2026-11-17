@@ -30,7 +30,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/styles.css?v=20261116h">
+  <link rel="stylesheet" href="assets/styles.css?v=20261117a">
 
   <script type="application/ld+json">
   {
@@ -654,7 +654,7 @@
         </div>
 
         <!-- Replace action with the GHL form endpoint, or swap the shell for the native GHL embed -->
-        <form class="form-shell reveal" action="#" method="post" enctype="multipart/form-data">
+        <form class="form-shell reveal" id="estimate-form" action="#" method="post" data-endpoint="https://script.google.com/macros/s/AKfycbx6aTlJNzOTPXx7pIaNCjNVl8Qp4ZNWhyLfjDDIcM-vT2Ji3_BH6o0oFf8QG75muvK60g/exec">
           <div class="form-row">
             <div class="field">
               <label for="f-name">Name</label>
@@ -711,8 +711,10 @@
           <input type="hidden" name="utm_source">
           <input type="hidden" name="utm_medium">
           <input type="hidden" name="utm_campaign">
+          <div class="hp" aria-hidden="true"><label for="f-website">Website</label><input id="f-website" name="website" type="text" tabindex="-1" autocomplete="off"></div>
 
           <button class="btn btn--block" type="submit">Send my request</button>
+          <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
           <p class="fine">By submitting, you agree to receive text messages from Four State Custom Floors about your project. Message frequency varies. Message and data rates may apply. Reply STOP to opt out or HELP for help. See our <a href="privacy/">Privacy Policy</a> and <a href="terms/">Terms</a>.</p>
         </form>
       </div>
@@ -765,6 +767,6 @@
     <a class="btn" href="#estimate">Free Estimate</a>
   </div>
 
-  <script src="assets/main.js?v=20261116h" defer></script>
+  <script src="assets/main.js?v=20261117a" defer></script>
 </body>
 </html>
