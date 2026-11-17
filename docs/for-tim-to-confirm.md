@@ -71,7 +71,7 @@ The site says these as fact right now. Cross out anything that's wrong.
 
 ## Answered Nov 16 (Tim)
 
-- Hours: open 7 days a week
+- Hours: every day, 8 AM to 8 PM (matches Google profile)
 - Glass: installs over-the-counter shower doors; most people hire a glass company
 - Tub-to-shower: Tim makes minor drain adjustments; a plumber moves water lines
 - Outlet extenders: never needed
